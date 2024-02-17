@@ -1,0 +1,653 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<vehicle type="livestockTrailer" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs22/vehicle.xsd">
+    <annotation>Vanquish081</annotation>
+    <storeData>
+        <name>
+            <en>LS-540 DK edit</en>
+		</name>
+        <specs>
+            <power>430</power>
+            <combination filterCategory="trucks" />
+            <combination xmlFilename="$data/vehicles/krampe/dolly10L/dolly10L.xml"/>
+        </specs>
+        <functions>
+            <function>$l10n_function_livestockTrailer</function>
+        </functions>
+        <storePacks>
+            <storePack>STARTER_ANIMALS</storePack>
+        </storePacks>
+        <image>icons/store_LV540.png</image>
+        <price>98000</price>
+        <lifetime>1200</lifetime>
+        <rotation>0</rotation>
+        <brand>LIZARD</brand>
+        <category>DennisKtools</category>
+        <vertexBufferMemoryUsage>464128</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>62720</indexBufferMemoryUsage>
+        <textureMemoryUsage>1310720</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+	
+    <base>
+        <typeDesc>$l10n_typeDesc_livestockTrailer</typeDesc>
+        <filename>i3d/LS540.i3d</filename>
+        <size width="3.5" length="15.5" lengthOffset="-0.5"/>
+        <components>
+            <component centerOfMass="0 0.58 0" solverIterationCount="10" mass="6500"/>
+        </components>
+        <schemaOverlay name="IMPLEMENT" attacherJointPosition="0 0"/>
+    </base>
+	
+    <wheels>
+        <wheelConfigurations>
+            <wheelConfiguration name="$l10n_configuration_valueDefault" price="0" brand="CONTINENTAL">
+                <wheels autoRotateBackSpeed="2.0">
+                    <wheel filename="wheels/contiHybridHD3_315_80R22_5.xml" configId="dual" isLeft="true" hasParticles="true" >
+                        <physics rotSpeed="0"  restLoad="1.2" repr="Izq_1"    forcePointRatio="0.5" initialCompression="15" suspTravel="0.09" spring="76" damper="250" frictionScale="2.1" yOffset="-0.032"/>
+                        <additionalWheel filename="wheels/contiHybridHD3_315_80R22_5.xml" configId="dualConnector" isLeft="true" offset="0.09" />
+                    </wheel>
+                    <wheel filename="wheels/contiHybridHD3_315_80R22_5.xml" configId="dual" isLeft="false" hasParticles="true" >
+                        <physics rotSpeed="0"  restLoad="1.2" repr="Der_1"   forcePointRatio="0.5" initialCompression="15" suspTravel="0.09" spring="76" damper="250" frictionScale="2.1" yOffset="-0.032"/>
+                        <additionalWheel filename="wheels/contiHybridHD3_315_80R22_5.xml" configId="dualConnector" isLeft="false" offset="0.09" />
+                    </wheel>
+                    <wheel filename="wheels/contiHybridHD3_315_80R22_5.xml" configId="dual" isLeft="true" hasTireTracks="true" hasParticles="true" >
+                        <physics rotSpeed="0"  restLoad="1.2" repr="Izq_2"  forcePointRatio="0.5" initialCompression="15" suspTravel="0.09" spring="76" damper="250" frictionScale="2.1" yOffset="-0.0256"/>
+                        <wheelChock parkingNode="LockL" />
+                        <wheelChock parkingNode="LockD" isInverted="true" />
+                        <additionalWheel filename="wheels/contiHybridHD3_315_80R22_5.xml" configId="dualConnector" isLeft="true" offset="0.09" />
+                    </wheel>
+                    <wheel filename="wheels/contiHybridHD3_315_80R22_5.xml" configId="dual" isLeft="false" hasTireTracks="true" hasParticles="true" >
+                        <physics rotSpeed="0"  restLoad="1.2" repr="Der_2" forcePointRatio="0.5" initialCompression="15" suspTravel="0.09" spring="76" damper="250" frictionScale="2.1" yOffset="-0.0256"/>
+                        <additionalWheel filename="wheels/contiHybridHD3_315_80R22_5.xml" configId="dualConnector" isLeft="false" offset="0.09" />
+                    </wheel>
+                    <wheel filename="wheels/contiHybridHD3_315_80R22_5.xml" configId="dual" isLeft="true" hasParticles="true" >
+                        <physics rotSpeed="0"  restLoad="1.2" repr="Izq_3"    forcePointRatio="0.5" initialCompression="15" suspTravel="0.09" spring="76" damper="250" frictionScale="2.1" yOffset="-0.032"/>
+                        <additionalWheel filename="wheels/contiHybridHD3_315_80R22_5.xml" configId="dualConnector" isLeft="true" offset="0.09" />
+                    </wheel>
+                    <wheel filename="wheels/contiHybridHD3_315_80R22_5.xml" configId="dual" isLeft="false" hasParticles="true" >
+                        <physics rotSpeed="0"  restLoad="1.2" repr="Der_3"   forcePointRatio="0.5" initialCompression="15" suspTravel="0.09" spring="76" damper="250" frictionScale="2.1" yOffset="-0.032"/>
+                        <additionalWheel filename="wheels/contiHybridHD3_315_80R22_5.xml" configId="dualConnector" isLeft="false" offset="0.09" />
+                    </wheel>
+                </wheels>
+                <objectChange node="Izq_21" visibilityActive="false" visibilityInactive="true"/>
+                <objectChange node="Der_21" visibilityActive="false" visibilityInactive="true"/>
+                <objectChange node="Izq_22" visibilityActive="false" visibilityInactive="true"/>
+                <objectChange node="Der_22" visibilityActive="false" visibilityInactive="true"/>
+                <objectChange node="Izq_23" visibilityActive="false" visibilityInactive="true"/>
+                <objectChange node="Der_23" visibilityActive="false" visibilityInactive="true"/>
+            </wheelConfiguration>
+			
+			<wheelConfiguration name="Default Special" price="0" brand="CONTINENTAL">
+                <wheels autoRotateBackSpeed="2.0">
+                    <wheel filename="wheels/tires/continental/contiHybridHD3/315_80R22_5.xml" configId="dual" isLeft="true" hasParticles="true" >
+                        <physics rotSpeed="0"  restLoad="1.2" repr="Izq_1"    forcePointRatio="0.5" initialCompression="15" suspTravel="0.09" spring="76" damper="250" frictionScale="2.1" yOffset="-0.032"/>
+                        <additionalWheel filename="wheels/tires/continental/contiHybridHD3/315_80R22_5.xml" configId="dualConnector" isLeft="true" offset="0.09" />
+                    </wheel>
+                    <wheel filename="wheels/tires/continental/contiHybridHD3/315_80R22_5.xml" configId="dual" isLeft="false" hasParticles="true" >
+                        <physics rotSpeed="0"  restLoad="1.2" repr="Der_1"   forcePointRatio="0.5" initialCompression="15" suspTravel="0.09" spring="76" damper="250" frictionScale="2.1" yOffset="-0.032"/>
+                        <additionalWheel filename="wheels/tires/continental/contiHybridHD3/315_80R22_5.xml" configId="dualConnector" isLeft="false" offset="0.09" />
+                    </wheel>
+                    <wheel filename="wheels/tires/continental/contiHybridHD3/315_80R22_5.xml" configId="dual" isLeft="true" hasTireTracks="true" hasParticles="true" >
+                        <physics rotSpeed="0"  restLoad="1.2" repr="Izq_2"  forcePointRatio="0.5" initialCompression="15" suspTravel="0.09" spring="76" damper="250" frictionScale="2.1" yOffset="-0.0256"/>
+                        <wheelChock parkingNode="LockL" />
+                        <wheelChock parkingNode="LockD" isInverted="true" />
+                        <additionalWheel filename="wheels/tires/continental/contiHybridHD3/315_80R22_5.xml" configId="dualConnector" isLeft="true" offset="0.09" />
+                    </wheel>
+                    <wheel filename="wheels/tires/continental/contiHybridHD3/315_80R22_5.xml" configId="dual" isLeft="false" hasTireTracks="true" hasParticles="true" >
+                        <physics rotSpeed="0"  restLoad="1.2" repr="Der_2" forcePointRatio="0.5" initialCompression="15" suspTravel="0.09" spring="76" damper="250" frictionScale="2.1" yOffset="-0.0256"/>
+                        <additionalWheel filename="wheels/tires/continental/contiHybridHD3/315_80R22_5.xml" configId="dualConnector" isLeft="false" offset="0.09" />
+                    </wheel>
+                    <wheel filename="wheels/tires/continental/contiHybridHD3/315_80R22_5.xml" configId="dual" isLeft="true" hasParticles="true" >
+                        <physics rotSpeed="0"  restLoad="1.2" repr="Izq_3"    forcePointRatio="0.5" initialCompression="15" suspTravel="0.09" spring="76" damper="250" frictionScale="2.1" yOffset="-0.032"/>
+                        <additionalWheel filename="wheels/tires/continental/contiHybridHD3/315_80R22_5.xml" configId="dualConnector" isLeft="true" offset="0.09" />
+                    </wheel>
+                    <wheel filename="wheels/tires/continental/contiHybridHD3/315_80R22_5.xml" configId="dual" isLeft="false" hasParticles="true" >
+                        <physics rotSpeed="0"  restLoad="1.2" repr="Der_3"   forcePointRatio="0.5" initialCompression="15" suspTravel="0.09" spring="76" damper="250" frictionScale="2.1" yOffset="-0.032"/>
+                        <additionalWheel filename="wheels/tires/continental/contiHybridHD3/315_80R22_5.xml" configId="dualConnector" isLeft="false" offset="0.09" />
+                    </wheel>
+                </wheels>
+                <objectChange node="Izq_21" visibilityActive="false" visibilityInactive="true"/>
+                <objectChange node="Der_21" visibilityActive="false" visibilityInactive="true"/>
+                <objectChange node="Izq_22" visibilityActive="false" visibilityInactive="true"/>
+                <objectChange node="Der_22" visibilityActive="false" visibilityInactive="true"/>
+                <objectChange node="Izq_23" visibilityActive="false" visibilityInactive="true"/>
+                <objectChange node="Der_23" visibilityActive="false" visibilityInactive="true"/>
+            </wheelConfiguration>
+			
+            <wheelConfiguration name="$l10n_configuration_valueWheelBroad" price="1700" brand="TRELLEBORG">
+                <wheels>
+                    <wheel filename="wheels/TwinRadial_500_60R22_5.xml" isLeft="true" hasTireTracks="true" hasParticles="true" >
+                        <physics tipOcclusionAreaGroupId="1" restLoad="2.0" repr="Izq_21"  forcePointRatio="0.5" initialCompression="20" suspTravel="0.21" spring="40" damper="60" />
+                        <wheelChock parkingNode="LockL" />
+                        <wheelChock parkingNode="LockD" isInverted="true" />
+                    </wheel>
+                    <wheel filename="wheels/TwinRadial_500_60R22_5.xml" isLeft="false" hasTireTracks="true" hasParticles="true" >
+                        <physics tipOcclusionAreaGroupId="1" restLoad="2.0" repr="Der_21" forcePointRatio="0.5" initialCompression="20" suspTravel="0.21" spring="40" damper="60" />
+                    </wheel>
+                    <wheel filename="wheels/TwinRadial_500_60R22_5.xml" isLeft="true" hasTireTracks="true" hasParticles="true" >
+                        <physics tipOcclusionAreaGroupId="1" restLoad="2.0" repr="Izq_22"  forcePointRatio="0.5" initialCompression="20" suspTravel="0.21" spring="40" damper="60" />
+                    </wheel>
+                    <wheel filename="wheels/TwinRadial_500_60R22_5.xml" isLeft="false" hasTireTracks="true" hasParticles="true" >
+                        <physics tipOcclusionAreaGroupId="1" restLoad="2.0" repr="Der_22" forcePointRatio="0.5" initialCompression="20" suspTravel="0.21" spring="40" damper="60" />
+                    </wheel>
+                    <wheel filename="wheels/TwinRadial_500_60R22_5.xml" isLeft="true" hasTireTracks="true" hasParticles="true" >
+                        <physics tipOcclusionAreaGroupId="1" restLoad="2.0" repr="Izq_23"  forcePointRatio="0.5" initialCompression="20" suspTravel="0.21" spring="40" damper="60" />
+                    </wheel>
+                    <wheel filename="wheels/TwinRadial_500_60R22_5.xml" isLeft="false" hasTireTracks="true" hasParticles="true" >
+                        <physics tipOcclusionAreaGroupId="1" restLoad="2.0" repr="Der_23" forcePointRatio="0.5" initialCompression="20" suspTravel="0.21" spring="40" damper="60" />
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+            <wheelConfiguration name="$l10n_configuration_valueDefault" price="1950" brand="MICHELIN">
+                <wheels>
+                    <wheel filename="wheels/cargoXBibHD_500_60R22_5.xml" isLeft="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" restLoad="1.1" repr="Izq_21" forcePointRatio="0.5" initialCompression="14" suspTravel="0.2" spring="35" damper="50"/>
+                        <wheelChock parkingNode="LockL"/>
+                        <wheelChock parkingNode="LockD" isInverted="true"/>
+                    </wheel>
+                    <wheel filename="wheels/cargoXBibHD_500_60R22_5.xml" isLeft="false" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" restLoad="1.1" repr="Der_21" forcePointRatio="0.5" initialCompression="14" suspTravel="0.2" spring="35" damper="50"/>
+                    </wheel>
+                    <wheel filename="wheels/cargoXBibHD_500_60R22_5.xml" isLeft="true">
+                        <physics tipOcclusionAreaGroupId="1" restLoad="1.1" repr="Izq_22" forcePointRatio="0.5" initialCompression="23" suspTravel="0.2" spring="35" damper="50"/>
+                    </wheel>
+                    <wheel filename="wheels/cargoXBibHD_500_60R22_5.xml" isLeft="false">
+                        <physics tipOcclusionAreaGroupId="1" restLoad="1.1" repr="Der_22" forcePointRatio="0.5" initialCompression="23" suspTravel="0.2" spring="35" damper="50"/>
+                    </wheel>
+                    <wheel filename="wheels/cargoXBibHD_500_60R22_5.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" restLoad="1.1" repr="Izq_23" forcePointRatio="0.5" initialCompression="33" suspTravel="0.2" spring="35" damper="50"/>
+                    </wheel>
+                    <wheel filename="wheels/cargoXBibHD_500_60R22_5.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" restLoad="1.1" repr="Der_23" forcePointRatio="0.5" initialCompression="33" suspTravel="0.2" spring="35" damper="50"/>
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+            <wheelConfiguration name="$l10n_configuration_valueDefault" price="1850" brand="BKT">
+                <wheels>
+                    <wheel filename="wheels/ridemaxFL693M_500_60R22_5.xml" isLeft="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" restLoad="1.1" repr="Izq_21" forcePointRatio="0.5" initialCompression="14" suspTravel="0.2" spring="35" damper="50"/>
+                        <wheelChock parkingNode="LockL"/>
+                        <wheelChock parkingNode="LockD" isInverted="true"/>
+                    </wheel>
+                    <wheel filename="wheels/ridemaxFL693M_500_60R22_5.xml" isLeft="false" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" restLoad="1.1" repr="Der_21" forcePointRatio="0.5" initialCompression="14" suspTravel="0.2" spring="35" damper="50"/>
+                    </wheel>
+                    <wheel filename="wheels/ridemaxFL693M_500_60R22_5.xml" isLeft="true">
+                        <physics tipOcclusionAreaGroupId="1" restLoad="1.1" repr="Izq_22" forcePointRatio="0.5" initialCompression="23" suspTravel="0.2" spring="35" damper="50"/>
+                    </wheel>
+                    <wheel filename="wheels/ridemaxFL693M_500_60R22_5.xml" isLeft="false">
+                        <physics tipOcclusionAreaGroupId="1" restLoad="1.1" repr="Der_22" forcePointRatio="0.5" initialCompression="23" suspTravel="0.2" spring="35" damper="50"/>
+                    </wheel>
+                    <wheel filename="wheels/ridemaxFL693M_500_60R22_5.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" restLoad="1.1" repr="Izq_23" forcePointRatio="0.5" initialCompression="33" suspTravel="0.2" spring="35" damper="50"/>
+                    </wheel>
+                    <wheel filename="wheels/ridemaxFL693M_500_60R22_5.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" restLoad="1.1" repr="Der_23" forcePointRatio="0.5" initialCompression="33" suspTravel="0.2" spring="35" damper="50"/>
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+            <wheelConfiguration name="$l10n_configuration_valueDefault" price="2150" brand="VREDESTEIN">
+                <wheels>
+                    <wheel filename="wheels/flotationPro_560_45R22_5.xml" isLeft="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" restLoad="1.1" repr="Izq_21" forcePointRatio="0.5" initialCompression="14" suspTravel="0.2" spring="35" damper="50"/>
+                        <wheelChock parkingNode="LockL"/>
+                        <wheelChock parkingNode="LockD" isInverted="true"/>
+                    </wheel>
+                    <wheel filename="wheels/flotationPro_560_45R22_5.xml" isLeft="false" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" restLoad="1.1" repr="Der_21" forcePointRatio="0.5" initialCompression="14" suspTravel="0.2" spring="35" damper="50"/>
+                    </wheel>
+                    <wheel filename="wheels/flotationPro_560_45R22_5.xml" isLeft="true">
+                        <physics tipOcclusionAreaGroupId="1" restLoad="1.1" repr="Izq_22" forcePointRatio="0.5" initialCompression="23" suspTravel="0.2" spring="35" damper="50"/>
+                    </wheel>
+                    <wheel filename="wheels/flotationPro_560_45R22_5.xml" isLeft="false">
+                        <physics tipOcclusionAreaGroupId="1" restLoad="1.1" repr="Der_22" forcePointRatio="0.5" initialCompression="23" suspTravel="0.2" spring="35" damper="50"/>
+                    </wheel>
+                    <wheel filename="wheels/flotationPro_560_45R22_5.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" restLoad="1.1" repr="Izq_23" forcePointRatio="0.5" initialCompression="33" suspTravel="0.2" spring="35" damper="50"/>
+                    </wheel>
+                    <wheel filename="wheels/flotationPro_560_45R22_5.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics tipOcclusionAreaGroupId="1" restLoad="1.1" repr="Der_23" forcePointRatio="0.5" initialCompression="33" suspTravel="0.2" spring="35" damper="50"/>
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+        </wheelConfigurations>
+        <hubs>
+            <color0>SHARED_BLACK2</color0>
+            <color1>SHARED_BLACK2</color1>
+            <hub linkNode="Izq_21" filename="$data/shared/wheels/hubs/hub_n10_5.xml" isLeft="true" scale="0.335 0.335 0.335"/>
+            <hub linkNode="Der_21" filename="$data/shared/wheels/hubs/hub_n10_5.xml" isLeft="false" scale="0.335 0.335 0.335"/>
+            <hub linkNode="Izq_22" filename="$data/shared/wheels/hubs/hub_n10_5.xml" isLeft="true" scale="0.335 0.335 0.335"/>
+            <hub linkNode="Der_22" filename="$data/shared/wheels/hubs/hub_n10_5.xml" isLeft="false" scale="0.335 0.335 0.335"/>
+            <hub linkNode="Izq_23" filename="$data/shared/wheels/hubs/hub_n10_5.xml" isLeft="true" scale="0.335 0.335 0.335"/>
+            <hub linkNode="Der_23" filename="$data/shared/wheels/hubs/hub_n10_5.xml" isLeft="false" scale="0.335 0.335 0.335"/>
+        </hubs>
+    </wheels>
+	
+    <rimColorConfigurations useDefaultColors="true" price="300" >
+        <rimColorConfiguration name="$l10n_ui_colorChrome" color="SHARED_WHITE2" uiColor="SHARED_GREY2" material="3" price="3500"/>
+    </rimColorConfigurations>
+
+    <attachable>
+        <inputAttacherJoints>
+            <inputAttacherJoint node="attacher" jointType="semitrailer"/>
+        </inputAttacherJoints>
+        <support animationName="moveSupport"/>
+        <brakeForce force="0.8"/>
+    </attachable>
+	
+    <connectionHoses>
+        <hose inputAttacherJointIndices="1" type="airDoubleRed" node="airIn" length="1.7" diameter="0.02" isTwoPointHose="true" straighteningFactor="0" maxCenterPointOffset="0 0 0" minCenterPointOffset="-0.1 0 0" />
+        <hose inputAttacherJointIndices="1" type="airDoubleYellow" node="airOut" length="1.7" diameter="0.02" isTwoPointHose="true" straighteningFactor="0" maxCenterPointOffset="0 0 0" minCenterPointOffset="-0.1 0 0" />
+        <hose inputAttacherJointIndices="1" type="electric"        node="hoseElectricSocket"	length="1.8" diameter="0.008" minCenterPointOffset="0 -0.2 0" maxCenterPointOffset="0 0 0" straighteningFactor="1" outgoingAdapter="DEFAULT" socket="electric"/>
+    </connectionHoses>
+	
+    <lights>
+        
+		
+        <sharedLight linkNode="redTriangle_02_01"				filename="$data/shared/assets/reflectors/lizard/redTriangle_02.xml"/>
+        <sharedLight linkNode="redTriangle_02_02"				filename="$data/shared/assets/reflectors/lizard/redTriangle_02.xml"/>
+		
+		<sharedLight linkNode="sideMarker_07White_01"			filename="lights/sideMarker08White.xml"/>
+        <sharedLight linkNode="sideMarker_07White_011"			filename="lights/sideMarker08White.xml"/>
+        <sharedLight linkNode="sideMarker_07White_02"			filename="lights/sideMarker08White.xml"/>
+        <sharedLight linkNode="sideMarker_07White_021"			filename="lights/sideMarker08White.xml"/>
+		
+        <sharedLight linkNode="sideMarker_07OrangeLeft_01"		filename="lights/sideMarker10Orange.xml"/>
+        <sharedLight linkNode="sideMarker_07OrangeLeft_03"		filename="lights/sideMarker10Orange.xml"/>
+        <sharedLight linkNode="sideMarker_07OrangeLeft_04"		filename="lights/sideMarker10Orange.xml"/>
+        <sharedLight linkNode="sideMarker_07OrangeLeft_06"		filename="lights/sideMarker10Orange.xml"/>
+        <sharedLight linkNode="sideMarker_07OrangeLeft_07"		filename="lights/sideMarker10Orange.xml"/>
+        <sharedLight linkNode="sideMarker_07OrangeLeft_08"		filename="lights/sideMarker10Orange.xml"/>
+        <sharedLight linkNode="sideMarker_07Orange_right_01"	filename="lights/sideMarker10Orange.xml"/>
+        <sharedLight linkNode="sideMarker_07Orange_right_03"	filename="lights/sideMarker10Orange.xml"/>
+        <sharedLight linkNode="sideMarker_07Orange_right_04"	filename="lights/sideMarker10Orange.xml"/>
+        <sharedLight linkNode="sideMarker_07Orange_right_06"	filename="lights/sideMarker10Orange.xml"/>
+        <sharedLight linkNode="sideMarker_07Orange_right_07"	filename="lights/sideMarker10Orange.xml"/>
+        <sharedLight linkNode="sideMarker_07Orange_right_08"	filename="lights/sideMarker10Orange.xml"/>
+		
+        <sharedLight linkNode="sideMarker_TLeft_01"				filename="lights/sideMarker10Orange.xml"/>
+        <sharedLight linkNode="sideMarker_TLeft_02"				filename="lights/sideMarker10Orange.xml"/>
+        <sharedLight linkNode="sideMarker_TLeft_03"				filename="lights/sideMarker10Orange.xml"/>
+        <sharedLight linkNode="sideMarker_TLeft_04"				filename="lights/sideMarker10Orange.xml"/>
+        <sharedLight linkNode="sideMarker_TLeft_05"				filename="lights/sideMarker10Orange.xml"/>
+        <sharedLight linkNode="sideMarker_TLeft_06"				filename="lights/sideMarker10Orange.xml"/>
+        <sharedLight linkNode="sideMarker_BLeft_01"				filename="lights/sideMarker10Orange.xml"/>
+        <sharedLight linkNode="sideMarker_BLeft_02"				filename="lights/sideMarker10Orange.xml"/>
+        <sharedLight linkNode="sideMarker_BLeft_03"				filename="lights/sideMarker10Orange.xml"/>
+        <sharedLight linkNode="sideMarker_BLeft_04"				filename="lights/sideMarker10Orange.xml"/>
+        <sharedLight linkNode="sideMarker_BLeft_05"				filename="lights/sideMarker10Orange.xml"/>
+        <sharedLight linkNode="sideMarker_Tright_01"			filename="lights/sideMarker10Orange.xml"/>
+        <sharedLight linkNode="sideMarker_Tright_02"			filename="lights/sideMarker10Orange.xml"/>
+        <sharedLight linkNode="sideMarker_Tright_03"			filename="lights/sideMarker10Orange.xml"/>
+        <sharedLight linkNode="sideMarker_Tright_04"			filename="lights/sideMarker10Orange.xml"/>
+        <sharedLight linkNode="sideMarker_Tright_05"			filename="lights/sideMarker10Orange.xml"/>
+        <sharedLight linkNode="sideMarker_Tright_06"			filename="lights/sideMarker10Orange.xml"/>
+        <sharedLight linkNode="sideMarker_Bright_01"			filename="lights/sideMarker10Orange.xml"/>
+        <sharedLight linkNode="sideMarker_Bright_02"			filename="lights/sideMarker10Orange.xml"/>
+        <sharedLight linkNode="sideMarker_Bright_03"			filename="lights/sideMarker10Orange.xml"/>
+        <sharedLight linkNode="sideMarker_Bright_04"			filename="lights/sideMarker10Orange.xml"/>
+        <sharedLight linkNode="sideMarker_Bright_05"			filename="lights/sideMarker10Orange.xml"/>
+		
+		
+		
+		
+		
+        <sharedLight linkNode="sideMarker_04Right01"			filename="lights/sideMarker10White.xml"/>
+        <sharedLight linkNode="sideMarker_04Left01"				filename="lights/sideMarker10White.xml"/>
+		
+        <sharedLight linkNode="sideMarker_04Right02"			filename="lights/sideMarker10Red.xml"/>
+        <sharedLight linkNode="sideMarker_04Left02"				filename="lights/sideMarker10Red.xml"/>
+		
+        <sharedLight linkNode="sideMarker_07White_03"			filename="lights/sideMarker08White.xml"/>
+        <sharedLight linkNode="sideMarker_07White_031"			filename="lights/sideMarker08White.xml"/>
+        <sharedLight linkNode="sideMarker_07White_04"			filename="lights/sideMarker08White.xml"/>
+        <sharedLight linkNode="sideMarker_07White_041"			filename="lights/sideMarker08White.xml"/>
+		
+        <sharedLight linkNode="turnlightLeft"					filename="lights/rearLight21Orange_left.xml"/>
+		
+        <sharedLight linkNode="turnlightRight"					filename="lights/rearLight21Orange_right.xml"/>
+		
+        <sharedLight linkNode="brakelightLeft"					filename="lights/rearLight21Red.xml"/>
+        <sharedLight linkNode="brakelightRight"					filename="lights/rearLight21Red.xml"/>
+		
+        <sharedLight linkNode="upMarker_04Right01"				filename="lights/rearLight21Red.xml"/>
+        <sharedLight linkNode="upMarker_04Left01"				filename="lights/rearLight21Red.xml"/>
+		
+        <sharedLight linkNode="reverselightLeft"				filename="lights/rearLight22White.xml"/>
+        <sharedLight linkNode="reverselightRight"				filename="lights/rearLight22White.xml"/>
+        <sharedLight linkNode="backlightLeft01"					filename="lights/rearLight22White.xml"/>
+        <sharedLight linkNode="backlightRight01"				filename="lights/rearLight22White.xml"/>
+		
+		
+        <sharedLight linkNode="PlateNumberLight01"				filename="$data/shared/assets/lights/lizard/plateNumberLight01.xml"/>
+        <sharedLight linkNode="PlateNumberLight02"				filename="$data/shared/assets/lights/lizard/plateNumberLight01.xml"/>
+		
+        <sharedLight linkNode="Deco"							filename="$data/shared/assets/lights/lizard/workingLight10.xml"/>
+        <sharedLight linkNode="Deco1"							filename="$data/shared/assets/lights/lizard/workingLight10.xml"/>
+		
+	    <states>
+			<state lightTypes="0" />
+			<state lightTypes="0 1" />
+			<state lightTypes="0 1 2" />
+        </states>
+		
+        <realLights>
+            <high>
+                <light 			node="realWorkLight" 			lightTypes="2"/>
+                <light 			node="backLight" 				lightTypes="0"/>
+                <light 			node="plateLight" 				lightTypes="0"/>
+                <light 			node="sidemarkerOrange_real" 	lightTypes="0"/>
+                <light 			node="sidemarkerWhite_real" 	lightTypes="0"/>
+                <turnLightLeft 	node="turnLightLeftBack"/>
+                <turnLightRight	node="turnLightRightBack"/>
+                <brakeLight 	node="breakLightsHigh"/>
+                <reverseLight 	node="reverseLight"/>
+            </high>
+        </realLights>
+    </lights>
+	
+    <licensePlates>
+        <licensePlate node="Matricula" position="BACK" preferedType="SQUARISH" placementArea="0.08 0.15 0.08 0.15"/>
+    </licensePlates>
+
+    <animations>
+        <animation name="moveSupport">
+            <part endTime="1" endTrans="0 -0.2 2.901" node="Soporte" startTime="0" startTrans="0 0.445 2.901"/>
+
+            <sound template="foldStopSm02" startTime="0.24" direction="1" volumeScale="1.5" pitchScale="1" linkNode="attacher"/>
+            <sound template="foldStopSm01" startTime="0.24" direction="-1" volumeScale="1.5" pitchScale="0.7" linkNode="attacher"/>
+        </animation>
+    </animations>
+
+    <livestockTrailer>
+        <animal type="cow"		node="cowSlots"		numSlots="56"/>
+        <animal type="pig"		node="pigSlots"		numSlots="64"/>
+        <animal type="sheep"	node="sheepSlots"	numSlots="108"/>
+        <animal type="horse"	node="horseSlots"	numSlots="38"/>
+        <animal type="chicken"	node="chickSlots"	numSlots="322" />
+    </livestockTrailer>
+	
+    <designConfigurations>
+        <designConfiguration name="$l10n_configuration_valueDefault" price="0">
+            <objectChange node="cowSlots"    visibilityActive="true" visibilityInactive="false"/>
+            <objectChange node="pigSlots"	 visibilityActive="true" visibilityInactive="false"/>
+            <objectChange node="sheepSlots"  visibilityActive="true" visibilityInactive="false"/>
+            <objectChange node="horseSlots"  visibilityActive="true" visibilityInactive="false"/>
+        </designConfiguration>
+        <designConfiguration name="$l10n_ui_statisticView_chicken" price="2000">
+            <objectChange node="chickSlots" 	visibilityActive="true" visibilityInactive="false"/>
+            <objectChange node="designChicken"  visibilityActive="true" visibilityInactive="false"/>
+        </designConfiguration>
+    </designConfigurations>
+	<!-- Farm info (logos, names, slogans) -->
+	<design2Configurations title="What farm are you on?">
+		<design2Configuration name="DennisK Farming" price="0">
+			<objectChange node="Farm1"    visibilityActive="false" visibilityInactive="false"/>
+			<objectChange node="Farm2"    visibilityActive="false" visibilityInactive="false"/>
+			<objectChange node="Farm3"    visibilityActive="false" visibilityInactive="false"/>
+			<objectChange node="Farm4"    visibilityActive="false" visibilityInactive="false"/>
+			<objectChange node="Farm5"    visibilityActive="false" visibilityInactive="false"/>
+			<objectChange node="Farm6"    visibilityActive="false" visibilityInactive="false"/>
+			<objectChange node="Farm7"    visibilityActive="false" visibilityInactive="false"/>
+			<objectChange node="Farm8"    visibilityActive="false" visibilityInactive="false"/>
+			<objectChange node="DennisKfarm"    visibilityActive="true" visibilityInactive="false"/>
+		<design2Configuration name="$l10n_configuration_valueDefault" price="0">
+			<objectChange node="Farm1"    visibilityActive="false" visibilityInactive="false"/>
+			<objectChange node="Farm2"    visibilityActive="false" visibilityInactive="false"/>
+			<objectChange node="Farm3"    visibilityActive="false" visibilityInactive="false"/>
+			<objectChange node="Farm4"    visibilityActive="false" visibilityInactive="false"/>
+			<objectChange node="Farm5"    visibilityActive="false" visibilityInactive="false"/>
+			<objectChange node="Farm6"    visibilityActive="false" visibilityInactive="false"/>
+			<objectChange node="Farm7"    visibilityActive="false" visibilityInactive="false"/>
+			<objectChange node="Farm8"    visibilityActive="false" visibilityInactive="false"/>
+			<objectChange node="DennisKfarm"    visibilityActive="false" visibilityInactive="false"/>
+		</design2Configuration>
+		<design2Configuration name="$l10n_farminfo_farm1" price="0">
+			<objectChange node="Farm1"    visibilityActive="true" visibilityInactive="false"/>
+			<objectChange node="Farm2"    visibilityActive="false" visibilityInactive="false"/>
+			<objectChange node="Farm3"    visibilityActive="false" visibilityInactive="false"/>
+			<objectChange node="Farm4"    visibilityActive="false" visibilityInactive="false"/>
+			<objectChange node="Farm5"    visibilityActive="false" visibilityInactive="false"/>
+			<objectChange node="Farm6"    visibilityActive="false" visibilityInactive="false"/>
+			<objectChange node="Farm7"    visibilityActive="false" visibilityInactive="false"/>
+			<objectChange node="Farm8"    visibilityActive="false" visibilityInactive="false"/>
+			<objectChange node="DennisKfarm"    visibilityActive="false" visibilityInactive="false"/>
+		</design2Configuration>
+		<design2Configuration name="$l10n_farminfo_farm2" price="0">
+			<objectChange node="Farm1"    visibilityActive="false" visibilityInactive="false"/>
+			<objectChange node="Farm2"    visibilityActive="true" visibilityInactive="false"/>
+			<objectChange node="Farm3"    visibilityActive="false" visibilityInactive="false"/>
+			<objectChange node="Farm4"    visibilityActive="false" visibilityInactive="false"/>
+			<objectChange node="Farm5"    visibilityActive="false" visibilityInactive="false"/>
+			<objectChange node="Farm6"    visibilityActive="false" visibilityInactive="false"/>
+			<objectChange node="Farm7"    visibilityActive="false" visibilityInactive="false"/>
+			<objectChange node="Farm8"    visibilityActive="false" visibilityInactive="false"/>
+			<objectChange node="DennisKfarm"    visibilityActive="false" visibilityInactive="false"/>
+		</design2Configuration>
+		<design2Configuration name="$l10n_farminfo_farm3" price="0">
+			<objectChange node="Farm1"    visibilityActive="false" visibilityInactive="false"/>
+			<objectChange node="Farm2"    visibilityActive="false" visibilityInactive="false"/>
+			<objectChange node="Farm3"    visibilityActive="true" visibilityInactive="false"/>
+			<objectChange node="Farm4"    visibilityActive="false" visibilityInactive="false"/>
+			<objectChange node="Farm5"    visibilityActive="false" visibilityInactive="false"/>
+			<objectChange node="Farm6"    visibilityActive="false" visibilityInactive="false"/>
+			<objectChange node="Farm7"    visibilityActive="false" visibilityInactive="false"/>
+			<objectChange node="Farm8"    visibilityActive="false" visibilityInactive="false"/>
+			<objectChange node="DennisKfarm"    visibilityActive="false" visibilityInactive="false"/>
+		</design2Configuration>
+		<design2Configuration name="$l10n_farminfo_farm4" price="0">
+			<objectChange node="Farm1"    visibilityActive="false" visibilityInactive="false"/>
+			<objectChange node="Farm2"    visibilityActive="false" visibilityInactive="false"/>
+			<objectChange node="Farm3"    visibilityActive="false" visibilityInactive="false"/>
+			<objectChange node="Farm4"    visibilityActive="true" visibilityInactive="false"/>
+			<objectChange node="Farm5"    visibilityActive="false" visibilityInactive="false"/>
+			<objectChange node="Farm6"    visibilityActive="false" visibilityInactive="false"/>
+			<objectChange node="Farm7"    visibilityActive="false" visibilityInactive="false"/>
+			<objectChange node="Farm8"    visibilityActive="false" visibilityInactive="false"/>
+			<objectChange node="DennisKfarm"    visibilityActive="false" visibilityInactive="false"/>
+		</design2Configuration>
+		<design2Configuration name="$l10n_farminfo_farm5" price="0">
+			<objectChange node="Farm1"    visibilityActive="false" visibilityInactive="false"/>
+			<objectChange node="Farm2"    visibilityActive="false" visibilityInactive="false"/>
+			<objectChange node="Farm3"    visibilityActive="false" visibilityInactive="false"/>
+			<objectChange node="Farm4"    visibilityActive="false" visibilityInactive="false"/>
+			<objectChange node="Farm5"    visibilityActive="true" visibilityInactive="false"/>
+			<objectChange node="Farm6"    visibilityActive="false" visibilityInactive="false"/>
+			<objectChange node="Farm7"    visibilityActive="false" visibilityInactive="false"/>
+			<objectChange node="Farm8"    visibilityActive="false" visibilityInactive="false"/>
+			<objectChange node="DennisKfarm"    visibilityActive="false" visibilityInactive="false"/>
+		</design2Configuration>
+		<design2Configuration name="$l10n_farminfo_farm6" price="0">
+			<objectChange node="Farm1"    visibilityActive="false" visibilityInactive="false"/>
+			<objectChange node="Farm2"    visibilityActive="false" visibilityInactive="false"/>
+			<objectChange node="Farm3"    visibilityActive="false" visibilityInactive="false"/>
+			<objectChange node="Farm4"    visibilityActive="false" visibilityInactive="false"/>
+			<objectChange node="Farm5"    visibilityActive="false" visibilityInactive="false"/>
+			<objectChange node="Farm6"    visibilityActive="true" visibilityInactive="false"/>
+			<objectChange node="Farm7"    visibilityActive="false" visibilityInactive="false"/>
+			<objectChange node="Farm8"    visibilityActive="false" visibilityInactive="false"/>
+			<objectChange node="DennisKfarm"    visibilityActive="false" visibilityInactive="false"/>
+		</design2Configuration>
+		<design2Configuration name="$l10n_farminfo_farm7" price="0">
+			<objectChange node="Farm1"    visibilityActive="false" visibilityInactive="false"/>
+			<objectChange node="Farm2"    visibilityActive="false" visibilityInactive="false"/>
+			<objectChange node="Farm3"    visibilityActive="false" visibilityInactive="false"/>
+			<objectChange node="Farm4"    visibilityActive="false" visibilityInactive="false"/>
+			<objectChange node="Farm5"    visibilityActive="false" visibilityInactive="false"/>
+			<objectChange node="Farm6"    visibilityActive="false" visibilityInactive="false"/>
+			<objectChange node="Farm7"    visibilityActive="true" visibilityInactive="false"/>
+			<objectChange node="Farm8"    visibilityActive="false" visibilityInactive="false"/>
+			<objectChange node="DennisKfarm"    visibilityActive="false" visibilityInactive="false"/>
+		</design2Configuration>
+		<design2Configuration name="$l10n_farminfo_farm8" price="0">
+			<objectChange node="Farm1"    visibilityActive="false" visibilityInactive="false"/>
+			<objectChange node="Farm2"    visibilityActive="false" visibilityInactive="false"/>
+			<objectChange node="Farm3"    visibilityActive="false" visibilityInactive="false"/>
+			<objectChange node="Farm4"    visibilityActive="false" visibilityInactive="false"/>
+			<objectChange node="Farm5"    visibilityActive="false" visibilityInactive="false"/>
+			<objectChange node="Farm6"    visibilityActive="false" visibilityInactive="false"/>
+			<objectChange node="Farm7"    visibilityActive="false" visibilityInactive="false"/>
+			<objectChange node="Farm8"    visibilityActive="true" visibilityInactive="false"/>
+			<objectChange node="DennisKfarm"    visibilityActive="false" visibilityInactive="false"/>
+		</design2Configuration>
+		</design2Configuration>
+	
+	</design2Configurations>
+
+    <foliageBending>
+        <bendingNode minX="-1.35" maxX="1.35" minZ="4.5" maxZ="7.4" yOffset="1.15" />
+        <bendingNode minX="-1.35" maxX="1.35" minZ="-6.35" maxZ="4.5" yOffset="0.6" />
+    </foliageBending>
+
+    <ai>
+        <agentAttachment jointNode="attacher" rotCenterWheelIndices="1 2 3 4" width="2.6" height="4" length="15" lengthOffset="5.8"/>
+    </ai>
+
+    <baseMaterial>
+        <material name="LS540FS19" baseNode="Remolque">
+            <shaderParameter name="colorMat0" value="KUHN_WHITE1"/>
+        </material>
+    </baseMaterial>
+	
+    <baseMaterialConfigurations price="3000" useDefaultColors="true" defaultColorIndex="0">
+		<material name="LS540FS19" shaderParameter="colorMat0"/>
+		
+		<baseMaterialConfiguration name="DennisK Dark Blue" 	color="0.005 0.001 0.533"/>
+		<baseMaterialConfiguration name="DennisK Light Blue" 	color="0.000 0.776 1.000"/>
+		<baseMaterialConfiguration name="DennisK Black" 		color="0 0 0"/>
+		<baseMaterialConfiguration name="Black Matt" 			color="0.015 0.015 0.015" material="23"/>
+		<baseMaterialConfiguration name="$l10n_Kuhn_White" value="KUHN_WHITE1" material="0"	price="0"/>
+    </baseMaterialConfigurations>
+	
+    <wearable wearDuration="480" workMultiplier="5" fieldMultiplier="2"/>
+    <washable dirtDuration="90" washDuration="1" workMultiplier="4" fieldMultiplier="2"/>
+	
+    <i3dMappings>
+        <i3dMapping id="Izq_1" 							node="0>0|0"/>
+        <i3dMapping id="Der_1" 							node="0>0|1"/>
+        <i3dMapping id="Izq_2" 							node="0>0|2"/>
+        <i3dMapping id="Der_2" 							node="0>0|3"/>
+        <i3dMapping id="Izq_3" 							node="0>0|4"/>
+        <i3dMapping id="Der_3" 							node="0>0|5"/>
+        <i3dMapping id="Izq_21" 						node="0>0|7"/>
+        <i3dMapping id="Der_21" 						node="0>0|8"/>
+        <i3dMapping id="Izq_22" 						node="0>0|9"/>
+        <i3dMapping id="Der_22" 						node="0>0|10"/>
+        <i3dMapping id="Izq_23" 						node="0>0|11"/>
+        <i3dMapping id="Der_23" 						node="0>0|12"/>
+        <i3dMapping id="LockL" 							node="0>0|13"/>
+        <i3dMapping id="LockD" 							node="0>0|14"/>
+		
+        <i3dMapping id="Remolque" 						node="0>1|0|1"/>
+        <i3dMapping id="Matricula" 						node="0>1|0|2"/>
+        <i3dMapping id="airIn" 							node="0>1|0|4|0"/>
+        <i3dMapping id="airOut" 						node="0>1|0|4|1"/>
+		<i3dMapping id="hoseElectricSocket" 			node="0>1|0|4|2"/>
+		
+		<i3dMapping id="cowSlots" 						node="0>2|0"/>
+        <i3dMapping id="pigSlots" 						node="0>2|1"/>
+        <i3dMapping id="sheepSlots" 					node="0>2|2"/>
+        <i3dMapping id="horseSlots" 					node="0>2|3"/>
+		<i3dMapping id="chickSlots" 					node="0>2|4"/>
+		
+        <i3dMapping id="attacher" 						node="0>3"/>
+		
+        <i3dMapping id="Soporte" 						node="0>4"/>
+		
+        <i3dMapping id="PlateNumberLight01" 			node="0>5|0|0"/>
+        <i3dMapping id="PlateNumberLight02" 			node="0>5|0|1"/>
+        <i3dMapping id="sideMarker_07White_01" 			node="0>5|0|2"/>
+        <i3dMapping id="sideMarker_07White_011" 		node="0>5|0|2|0"/>
+        <i3dMapping id="sideMarker_07White_02" 			node="0>5|0|3"/>
+        <i3dMapping id="sideMarker_07White_021" 		node="0>5|0|3|0"/>
+        <i3dMapping id="sideMarker_07OrangeLeft_01" 	node="0>5|0|4"/>
+        <i3dMapping id="sideMarker_07Orange_right_01" 	node="0>5|0|5"/>
+        <i3dMapping id="sideMarker_07OrangeLeft_03" 	node="0>5|0|6"/>
+        <i3dMapping id="sideMarker_07Orange_right_03"	node="0>5|0|7"/>
+        <i3dMapping id="sideMarker_07Orange_right_04" 	node="0>5|0|8"/>
+        <i3dMapping id="sideMarker_07OrangeLeft_04" 	node="0>5|0|9"/>
+        <i3dMapping id="sideMarker_07Orange_right_06" 	node="0>5|0|10"/>
+        <i3dMapping id="sideMarker_07OrangeLeft_06" 	node="0>5|0|11"/>
+        <i3dMapping id="sideMarker_07OrangeLeft_07" 	node="0>5|0|12"/>
+        <i3dMapping id="sideMarker_07Orange_right_07" 	node="0>5|0|13"/>
+        <i3dMapping id="sideMarker_07Orange_right_08" 	node="0>5|0|14"/>
+        <i3dMapping id="sideMarker_07OrangeLeft_08" 	node="0>5|0|15"/>
+        <i3dMapping id="redTriangle_02_01" 				node="0>5|0|16"/>
+        <i3dMapping id="redTriangle_02_02" 				node="0>5|0|17"/>
+        <i3dMapping id="sideMarker_04Right01" 			node="0>5|0|18"/>
+        <i3dMapping id="sideMarker_04Right02" 			node="0>5|0|18|0"/>
+        <i3dMapping id="sideMarker_04Left01" 			node="0>5|0|19"/>
+        <i3dMapping id="sideMarker_04Left02" 			node="0>5|0|19|0"/>
+        <i3dMapping id="turnlightLeft" 					node="0>5|0|20"/>
+        <i3dMapping id="reverselightLeft" 				node="0>5|0|21"/>
+        <i3dMapping id="backlightLeft01" 				node="0>5|0|21|0"/>
+        <i3dMapping id="brakelightLeft" 				node="0>5|0|22"/>
+        <i3dMapping id="brakelightRight" 				node="0>5|0|23"/>
+        <i3dMapping id="reverselightRight" 				node="0>5|0|24"/>
+        <i3dMapping id="backlightRight01" 				node="0>5|0|24|0"/>
+        <i3dMapping id="turnlightRight" 				node="0>5|0|25"/>
+        <i3dMapping id="sideMarker_07White_03" 			node="0>5|0|26"/>
+        <i3dMapping id="sideMarker_07White_031" 		node="0>5|0|26|0"/>
+        <i3dMapping id="sideMarker_07White_04" 			node="0>5|0|27"/>
+        <i3dMapping id="sideMarker_07White_041" 		node="0>5|0|27|0"/>
+        <i3dMapping id="reverse" 						node="0>5|1"/>
+        <i3dMapping id="reverseLight" 					node="0>5|1|0"/>
+        <i3dMapping id="reverseLight1" 					node="0>5|1|0|0"/>
+        <i3dMapping id="turnLights" 					node="0>5|2"/>
+        <i3dMapping id="turnLeft" 						node="0>5|2|0"/>
+        <i3dMapping id="turnLightLeftBack" 				node="0>5|2|0|0"/>
+        <i3dMapping id="turnRight" 						node="0>5|2|1"/>
+        <i3dMapping id="turnLightRightBack" 			node="0>5|2|1|0"/>
+        <i3dMapping id="workLight" 						node="0>5|3"/>
+        <i3dMapping id="realWorkLight" 					node="0>5|3|0"/>
+        <i3dMapping id="realWorkLight1" 				node="0>5|3|0|0"/>
+        <i3dMapping id="Deco" 							node="0>5|4|0"/>
+        <i3dMapping id="Deco1" 							node="0>5|4|1"/>
+        <i3dMapping id="upMarker_04Right01" 			node="0>5|0|28"/>
+        <i3dMapping id="upMarker_04Left01" 				node="0>5|0|29"/>
+        <i3dMapping id="brake" 							node="0>5|5"/>
+        <i3dMapping id="breakLightsHigh" 				node="0>5|5|0"/>
+        <i3dMapping id="breakLightsHigh1" 				node="0>5|5|0|0"/>
+        <i3dMapping id="backLight" 						node="0>5|5|1"/>
+        <i3dMapping id="backLight1" 					node="0>5|5|1|0"/>
+        <i3dMapping id="plateLight" 					node="0>5|5|2"/>
+        <i3dMapping id="sideMarker_TLeft_01" 			node="0>5|6|0|0"/>
+        <i3dMapping id="sideMarker_TLeft_02" 			node="0>5|6|0|1"/>
+        <i3dMapping id="sideMarker_TLeft_03" 			node="0>5|6|0|2"/>
+        <i3dMapping id="sideMarker_TLeft_04" 			node="0>5|6|0|3"/>
+        <i3dMapping id="sideMarker_TLeft_05" 			node="0>5|6|0|4"/>
+        <i3dMapping id="sideMarker_TLeft_06" 			node="0>5|6|0|5"/>
+        <i3dMapping id="sideMarker_BLeft_01" 			node="0>5|6|0|6"/>
+        <i3dMapping id="sideMarker_BLeft_02" 			node="0>5|6|0|7"/>
+        <i3dMapping id="sideMarker_BLeft_03" 			node="0>5|6|0|8"/>
+        <i3dMapping id="sideMarker_BLeft_04" 			node="0>5|6|0|9"/>
+        <i3dMapping id="sideMarker_BLeft_05" 			node="0>5|6|0|10"/>
+        <i3dMapping id="sideMarker_Tright_01" 			node="0>5|6|0|11"/>
+        <i3dMapping id="sideMarker_Tright_02" 			node="0>5|6|0|12"/>
+        <i3dMapping id="sideMarker_Tright_03" 			node="0>5|6|0|13"/>
+        <i3dMapping id="sideMarker_Tright_04" 			node="0>5|6|0|14"/>
+        <i3dMapping id="sideMarker_Tright_05" 			node="0>5|6|0|15"/>
+        <i3dMapping id="sideMarker_Tright_06" 			node="0>5|6|0|16"/>
+        <i3dMapping id="sideMarker_Bright_01" 			node="0>5|6|0|17"/>
+        <i3dMapping id="sideMarker_Bright_02" 			node="0>5|6|0|18"/>
+        <i3dMapping id="sideMarker_Bright_03" 			node="0>5|6|0|19"/>
+        <i3dMapping id="sideMarker_Bright_04" 			node="0>5|6|0|20"/>
+        <i3dMapping id="sideMarker_Bright_05" 			node="0>5|6|0|21"/>
+        <i3dMapping id="sidemarkerOrange_real" 			node="0>5|6|6|0"/>
+        <i3dMapping id="sidemarkerWhite_real" 			node="0>5|6|6|1"/>
+		
+		<i3dMapping id="designChicken" 					node="0>6"/>
+		<!-- Farminfo list -->
+		<i3dMapping id="DennisKfarm" node="0>8|0"/>
+		<i3dMapping id="Farm1" 							node="0>8|1"/>
+		<i3dMapping id="Farm2" 							node="0>8|2"/>
+		<i3dMapping id="Farm3" 							node="0>8|3"/>
+		<i3dMapping id="Farm4" 							node="0>8|4"/>
+		<i3dMapping id="Farm5" 							node="0>8|5"/>
+		<i3dMapping id="Farm6" 							node="0>8|6"/>
+		<i3dMapping id="Farm7" 							node="0>8|7"/>
+		<i3dMapping id="Farm8" 							node="0>8|8"/>
+    </i3dMappings>
+</vehicle>

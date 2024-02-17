@@ -1,0 +1,1338 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="LS540.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.4"/>
+  </Asset>
+
+  <Files>
+    <File fileId="4" filename="$data/shaders/vehicleShader.xml"/>
+    <File fileId="21" filename="$data/shared/assets/lights/lizard/rearLight16_normal.png"/>
+    <File fileId="22" filename="$data/shared/assets/lights/lizard/rearLight16_vmask.png"/>
+    <File fileId="16" filename="$data/shared/assets/lights/lizard/rearLight25_normal.png"/>
+    <File fileId="17" filename="$data/shared/assets/lights/lizard/rearLight25_vmask.png"/>
+    <File fileId="18" filename="$data/shared/assets/lights/lizard/sideMarker10Orange.i3d"/>
+    <File fileId="23" filename="$data/shared/assets/lights/lizard/workingLight10.i3d"/>
+    <File fileId="19" filename="$data/shared/clearPlastic_diffuse.png"/>
+    <File fileId="20" filename="$data/shared/default_normal.png"/>
+    <File fileId="12" filename="$data/shared/licensePlates/licensePlatesEU_vmask.dds"/>
+    <File fileId="2" filename="$data/shared/window_diffuse.dds"/>
+    <File fileId="3" filename="$data/shared/window_specular.dds"/>
+    <File fileId="11" filename="../textures/decals_dif.dds"/>
+    <File fileId="27" filename="../textures/farmInfo/DennisK/farmLogo.dds"/>
+    <File fileId="28" filename="../textures/farmInfo/DennisK/farmName.dds"/>
+    <File fileId="29" filename="../textures/farmInfo/DennisK/farmSlogan.dds"/>
+    <File fileId="31" filename="../textures/farmInfo/Farm1/farmFarmname.dds"/>
+    <File fileId="30" filename="../textures/farmInfo/Farm1/farmLogo.dds"/>
+    <File fileId="32" filename="../textures/farmInfo/Farm1/farmSlogan.dds"/>
+    <File fileId="34" filename="../textures/farmInfo/Farm2/farmFarmname.dds"/>
+    <File fileId="33" filename="../textures/farmInfo/Farm2/farmLogo.dds"/>
+    <File fileId="35" filename="../textures/farmInfo/Farm2/farmSlogan.dds"/>
+    <File fileId="37" filename="../textures/farmInfo/Farm3/farmFarmname.dds"/>
+    <File fileId="36" filename="../textures/farmInfo/Farm3/farmLogo.dds"/>
+    <File fileId="38" filename="../textures/farmInfo/Farm3/farmSlogan.dds"/>
+    <File fileId="40" filename="../textures/farmInfo/Farm4/farmFarmname.dds"/>
+    <File fileId="39" filename="../textures/farmInfo/Farm4/farmLogo.dds"/>
+    <File fileId="41" filename="../textures/farmInfo/Farm4/farmSlogan.dds"/>
+    <File fileId="43" filename="../textures/farmInfo/Farm5/farmFarmname.dds"/>
+    <File fileId="42" filename="../textures/farmInfo/Farm5/farmLogo.dds"/>
+    <File fileId="44" filename="../textures/farmInfo/Farm5/farmSlogan.dds"/>
+    <File fileId="46" filename="../textures/farmInfo/Farm6/farmFarmname.dds"/>
+    <File fileId="45" filename="../textures/farmInfo/Farm6/farmLogo.dds"/>
+    <File fileId="47" filename="../textures/farmInfo/Farm6/farmSlogan.dds"/>
+    <File fileId="49" filename="../textures/farmInfo/Farm7/farmFamname.dds"/>
+    <File fileId="48" filename="../textures/farmInfo/Farm7/farmLogo.dds"/>
+    <File fileId="50" filename="../textures/farmInfo/Farm7/farmSlogan.dds"/>
+    <File fileId="52" filename="../textures/farmInfo/Farm8/farmFarmname.dds"/>
+    <File fileId="51" filename="../textures/farmInfo/Farm8/farmLogo.dds"/>
+    <File fileId="53" filename="../textures/farmInfo/Farm8/farmSlogan.dds"/>
+    <File fileId="9" filename="../textures/livestock_c_nml.dds"/>
+    <File fileId="10" filename="../textures/livestock_c_spec.dds"/>
+    <File fileId="24" filename="../textures/main_diffuse.dds"/>
+    <File fileId="25" filename="../textures/main_normal.dds"/>
+    <File fileId="26" filename="../textures/main_specular.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="_decalsacmat_0" materialId="5" customShaderId="4">
+      <Texture fileId="11"/>
+      <Glossmap fileId="12"/>
+    </Material>
+    <Material name="boxChicken" materialId="6">
+      <Texture fileId="24"/>
+      <Normalmap fileId="25"/>
+      <Glossmap fileId="26"/>
+    </Material>
+    <Material name="clearPlastic_mat" materialId="1037" alphaBlending="true" customShaderId="4" customShaderVariation="staticLight">
+      <Texture fileId="19"/>
+      <Normalmap fileId="21"/>
+      <Glossmap fileId="22"/>
+      <CustomParameter name="colorMat0" value="1 1 1 2"/>
+      <CustomParameter name="colorMat1" value="1 0.25 0 2"/>
+      <CustomParameter name="colorMat2" value="0.5 0 0 2"/>
+      <CustomParameter name="lightControl" value="10 0 0 0"/>
+    </Material>
+    <Material name="clearPlastic_mat" materialId="861" alphaBlending="true" customShaderId="4" customShaderVariation="staticLight">
+      <Texture fileId="19"/>
+      <Normalmap fileId="20"/>
+      <Glossmap fileId="17"/>
+      <CustomParameter name="colorMat0" value="1 0.25 0 2"/>
+      <CustomParameter name="lightControl" value="5 0 0 0"/>
+    </Material>
+    <Material name="col" materialId="7" diffuseColor="0.8 0.8 0.8 1" specularColor="1 1 1">
+    </Material>
+    <Material name="decalLogo_DennisK" materialId="8">
+      <Texture fileId="27"/>
+    </Material>
+    <Material name="decalLogo_Farm1" materialId="9">
+      <Texture fileId="30"/>
+    </Material>
+    <Material name="decalLogo_Farm2" materialId="10">
+      <Texture fileId="33"/>
+    </Material>
+    <Material name="decalLogo_Farm3" materialId="11">
+      <Texture fileId="36"/>
+    </Material>
+    <Material name="decalLogo_Farm4" materialId="12">
+      <Texture fileId="39"/>
+    </Material>
+    <Material name="decalLogo_Farm5" materialId="13">
+      <Texture fileId="42"/>
+    </Material>
+    <Material name="decalLogo_Farm6" materialId="14">
+      <Texture fileId="45"/>
+    </Material>
+    <Material name="decalLogo_Farm7" materialId="15">
+      <Texture fileId="48"/>
+    </Material>
+    <Material name="decalLogo_Farm8" materialId="16">
+      <Texture fileId="51"/>
+    </Material>
+    <Material name="decalName_DennisK" materialId="17">
+      <Texture fileId="28"/>
+    </Material>
+    <Material name="decalName_Farm1" materialId="18">
+      <Texture fileId="31"/>
+    </Material>
+    <Material name="decalName_Farm2" materialId="19">
+      <Texture fileId="34"/>
+    </Material>
+    <Material name="decalName_Farm3" materialId="20">
+      <Texture fileId="37"/>
+    </Material>
+    <Material name="decalName_Farm4" materialId="21">
+      <Texture fileId="40"/>
+    </Material>
+    <Material name="decalName_Farm5" materialId="22">
+      <Texture fileId="43"/>
+    </Material>
+    <Material name="decalName_Farm6" materialId="23">
+      <Texture fileId="46"/>
+    </Material>
+    <Material name="decalName_Farm7" materialId="24">
+      <Texture fileId="49"/>
+    </Material>
+    <Material name="decalName_Farm8" materialId="25">
+      <Texture fileId="52"/>
+    </Material>
+    <Material name="decalSlogan_DennisK" materialId="26">
+      <Texture fileId="29"/>
+    </Material>
+    <Material name="decalSlogan_Farm1" materialId="27">
+      <Texture fileId="32"/>
+    </Material>
+    <Material name="decalSlogan_Farm2" materialId="28">
+      <Texture fileId="35"/>
+    </Material>
+    <Material name="decalSlogan_Farm3" materialId="29">
+      <Texture fileId="38"/>
+    </Material>
+    <Material name="decalSlogan_Farm4" materialId="30">
+      <Texture fileId="41"/>
+    </Material>
+    <Material name="decalSlogan_Farm5" materialId="31">
+      <Texture fileId="44"/>
+    </Material>
+    <Material name="decalSlogan_Farm6" materialId="32">
+      <Texture fileId="47"/>
+    </Material>
+    <Material name="decalSlogan_Farm7" materialId="33">
+      <Texture fileId="50"/>
+    </Material>
+    <Material name="decalSlogan_Farm8" materialId="34">
+      <Texture fileId="53"/>
+    </Material>
+    <Material name="lambert1" materialId="35" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="rearLight16_mat" materialId="1038" diffuseColor="0.498039 0.498039 0.498039 1" customShaderId="4" customShaderVariation="staticLight">
+      <Normalmap fileId="21"/>
+      <Glossmap fileId="22"/>
+      <CustomParameter name="colorMat0" value="1 1 1 2"/>
+      <CustomParameter name="colorMat1" value="1 0.25 0 2"/>
+      <CustomParameter name="colorMat2" value="0.5 0 0 2"/>
+    </Material>
+    <Material name="rearLight25_mat1" materialId="860" diffuseColor="0.498039 0.498039 0.498039 1" alphaBlending="true" customShaderId="4" customShaderVariation="staticLight">
+      <Normalmap fileId="16"/>
+      <Glossmap fileId="17"/>
+      <CustomParameter name="colorMat0" value="1 1 1 2"/>
+      <CustomParameter name="colorMat1" value="1 0.25 0 2"/>
+      <CustomParameter name="colorMat2" value="0.5 0 0 2"/>
+      <CustomParameter name="lightControl" value="5 0 0 0"/>
+    </Material>
+    <Material name="Remolque" materialId="36" diffuseColor="0.521569 0.521569 0.521569 1" customShaderId="4" customShaderVariation="colorMask">
+      <Normalmap fileId="9"/>
+      <Glossmap fileId="10"/>
+      <CustomParameter name="colorMat0" value="0.5234 0.5234 0.5234 0"/>
+      <CustomParameter name="colorMat1" value="1 0 0 1"/>
+      <CustomParameter name="colorMat2" value="0 1 0 1"/>
+    </Material>
+    <Material name="Soporte" materialId="37" diffuseColor="0.8 0.8 0.8 1" customShaderId="4" customShaderVariation="colorMask">
+      <Normalmap fileId="9"/>
+      <Glossmap fileId="10"/>
+      <CustomParameter name="colorMat0" value="0.8 0.55 0.05 0"/>
+      <CustomParameter name="colorMat1" value="0 0.1 0.1 1"/>
+    </Material>
+    <Material name="Tapas_LucesDelt" materialId="38" alphaBlending="true" customShaderId="4">
+      <Texture fileId="2"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="RDT" value="0 0 20 20"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="LS540.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <Shape shapeId="1" name="LV_540" dynamic="true" compound="true" collisionMask="2109442" density="0.17" clipDistance="300" nodeId="51" materialIds="35" castsShadows="true" receiveShadows="true" nonRenderable="true">
+        <TransformGroup name="wheels" translation="0 0.455 -2.56064" nodeId="52">
+          <TransformGroup name="Izq_1" translation="0.77 0 1.28364" scale="1 0.95 0.95" nodeId="53"/>
+          <TransformGroup name="Der_1" translation="-0.77 0 1.2835" scale="1 0.95 0.95" nodeId="54"/>
+          <TransformGroup name="Izq_2" translation="0.77 0 -0.0157435" scale="1 0.95 0.95" nodeId="55"/>
+          <TransformGroup name="Der_2" translation="-0.77 0 -0.0157435" scale="1 0.95 0.95" nodeId="56"/>
+          <TransformGroup name="Izq_3" translation="0.77 0 -1.26782" scale="1 0.95 0.95" nodeId="57"/>
+          <TransformGroup name="Der_3" translation="-0.77 0 -1.26782" scale="1 0.95 0.95" nodeId="58"/>
+          <Camera name="persp" translation="0.422747 9.00033 -13.9249" rotation="167.212 1.94361 180" visibility="false" nodeId="59" fov="60" nearClip="0.1" farClip="1000" orthographicHeight="1"/>
+          <TransformGroup name="Izq_21" translation="0.978 0 1.28364" scale="1 0.95 0.95" nodeId="60"/>
+          <TransformGroup name="Der_21" translation="-0.978 0 1.2835" scale="1 0.95 0.95" nodeId="61"/>
+          <TransformGroup name="Izq_22" translation="0.978 0 -0.0157435" scale="1 0.95 0.95" nodeId="62"/>
+          <TransformGroup name="Der_22" translation="-0.978 0 -0.0157435" scale="1 0.95 0.95" nodeId="63"/>
+          <TransformGroup name="Izq_23" translation="0.978 0 -1.26782" scale="1 0.95 0.95" nodeId="64"/>
+          <TransformGroup name="Der_23" translation="-0.978 0 -1.26782" scale="1 0.95 0.95" nodeId="65"/>
+          <TransformGroup name="LockL" translation="0.8 0.347591 5.05068" rotation="90 0 90" scale="1 0.95 0.95" nodeId="66"/>
+          <TransformGroup name="LockD" translation="-0.8 0.347591 5.05068" rotation="90 0 -90" scale="1 0.95 0.95" nodeId="67"/>
+        </TransformGroup>
+        <TransformGroup name="LV540" nodeId="68">
+          <TransformGroup name="VIS" nodeId="69">
+            <Shape shapeId="2" name="Tapa Pilotos Delt" translation="0 0 -0.00474453" nodeId="70" materialIds="38" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="Remolque" clipDistance="350" nodeId="71" materialIds="36" castsShadows="true" receiveShadows="true"/>
+            <TransformGroup name="Matricula" translation="0 0.721485 -6.20515" rotation="0 180 0" nodeId="72"/>
+            <Shape shapeId="4" name="decals" clipDistance="200" nodeId="73" materialIds="5" castsShadows="true" receiveShadows="true"/>
+            <TransformGroup name="connectionHoses" nodeId="74">
+              <TransformGroup name="airIn" translation="-0.184 1.718 7.07663" rotation="78 -0 0" nodeId="75"/>
+              <TransformGroup name="airOut" translation="0.184 1.718 7.07663" rotation="78 0 0" nodeId="76"/>
+              <TransformGroup name="hoseElectricSocket" translation="0.021 1.63274 7.04913" nodeId="77"/>
+            </TransformGroup>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="Planes" translation="0 0.795259 3.02591" nodeId="78">
+          <TransformGroup name="cow" translation="0 0.573168 -3.84879" nodeId="79">
+            <TransformGroup name="cow1" translation="-0.885743 -0.098 6.412" scale="0.6 0.6 0.6" nodeId="80"/>
+            <TransformGroup name="cow2" translation="0.892788 -0.098 6.4" scale="0.6 0.6 0.6" nodeId="81"/>
+            <TransformGroup name="cow3" translation="0.351966 -0.098 7.003" rotation="0 180 0" scale="0.6 0.6 0.6" nodeId="82"/>
+            <TransformGroup name="cow4" translation="-0.231809 -0.098 6.42465" rotation="0 -10.7552 0" scale="0.6 0.6 0.6" nodeId="83"/>
+            <TransformGroup name="cow5" translation="-0.885743 -0.098 4.427" scale="0.6 0.6 0.6" nodeId="84"/>
+            <TransformGroup name="cow2" translation="0.892788 -0.098 4.427" scale="0.6 0.6 0.6" nodeId="85"/>
+            <TransformGroup name="cow3" translation="0.351966 -0.098 4.427" rotation="0 180 0" scale="0.6 0.6 0.6" nodeId="86"/>
+            <TransformGroup name="cow8" translation="-0.231809 -0.098 4.427" rotation="0 -10.7552 0" scale="0.6 0.6 0.6" nodeId="87"/>
+            <TransformGroup name="cow9" translation="-0.885743 -0.098 2.393" scale="0.6 0.6 0.6" nodeId="88"/>
+            <TransformGroup name="cow2" translation="0.892788 -0.098 2.393" scale="0.6 0.6 0.6" nodeId="89"/>
+            <TransformGroup name="cow3" translation="0.351966 -0.098 2.393" rotation="0 180 0" scale="0.6 0.6 0.6" nodeId="90"/>
+            <TransformGroup name="cow12" translation="-0.231809 -0.098 2.393" rotation="0 -10.7552 0" scale="0.6 0.6 0.6" nodeId="91"/>
+            <TransformGroup name="cow13" translation="-0.885743 -0.098 0.386497" scale="0.6 0.6 0.6" nodeId="92"/>
+            <TransformGroup name="cow2" translation="0.892788 -0.098 6.4" scale="0.6 0.6 0.6" nodeId="93"/>
+            <TransformGroup name="cow3" translation="0.351966 -0.098 7.00264" rotation="0 180 0" scale="0.6 0.6 0.6" nodeId="94"/>
+            <TransformGroup name="cow16" translation="-0.231809 -0.098 6.42465" rotation="0 -10.7552 0" scale="0.6 0.6 0.6" nodeId="95"/>
+            <TransformGroup name="cow17" translation="-0.885743 -0.098 0.386" scale="0.6 0.6 0.6" nodeId="96"/>
+            <TransformGroup name="cow2" translation="0.892788 -0.098 0.386" scale="0.6 0.6 0.6" nodeId="97"/>
+            <TransformGroup name="cow3" translation="0.351966 -0.098 0.386" rotation="0 180 0" scale="0.6 0.6 0.6" nodeId="98"/>
+            <TransformGroup name="cow20" translation="-0.231809 -0.098 0.386" rotation="0 -10.7552 0" scale="0.6 0.6 0.6" nodeId="99"/>
+            <TransformGroup name="cow21" translation="-0.885743 -0.098 -1.77463" scale="0.6 0.6 0.6" nodeId="100"/>
+            <TransformGroup name="cow2" translation="-0.45342 -0.098 -1.775" scale="0.6 0.6 0.6" nodeId="101"/>
+            <TransformGroup name="cow3" translation="0.351966 -0.098 -1.775" rotation="0 180 0" scale="0.6 0.6 0.6" nodeId="102"/>
+            <TransformGroup name="cow24" translation="0.885712 -0.098 -1.56273" rotation="0 -10.7552 0" scale="0.6 0.6 0.6" nodeId="103"/>
+            <TransformGroup name="cow25" translation="-0.885743 -0.098 -3.804" scale="0.6 0.6 0.6" nodeId="104"/>
+            <TransformGroup name="cow2" translation="0.892788 -0.098 -3.804" scale="0.6 0.6 0.6" nodeId="105"/>
+            <TransformGroup name="cow3" translation="0.351966 -0.098 -3.15581" rotation="0 180 0" scale="0.6 0.6 0.6" nodeId="106"/>
+            <TransformGroup name="cow28" translation="-0.231809 -0.098 -3.804" rotation="0 -10.7552 0" scale="0.6 0.6 0.6" nodeId="107"/>
+            <TransformGroup name="cow29" translation="-0.231809 -0.098 -5.0152" rotation="0 90 0" scale="0.6 0.6 0.6" nodeId="108"/>
+            <TransformGroup name="cow30" translation="-0.885743 1.63 6.412" scale="0.6 0.6 0.6" nodeId="109"/>
+            <TransformGroup name="cow2" translation="0.892788 1.63 6.4" scale="0.6 0.6 0.6" nodeId="110"/>
+            <TransformGroup name="cow3" translation="0.351966 1.63 7.003" rotation="0 180 0" scale="0.6 0.6 0.6" nodeId="111"/>
+            <TransformGroup name="cow4" translation="-0.231809 1.63 6.42465" rotation="0 -10.7552 0" scale="0.6 0.6 0.6" nodeId="112"/>
+            <TransformGroup name="cow5" translation="-0.885743 1.63 4.427" scale="0.6 0.6 0.6" nodeId="113"/>
+            <TransformGroup name="cow2" translation="0.892788 1.63 4.427" scale="0.6 0.6 0.6" nodeId="114"/>
+            <TransformGroup name="cow3" translation="0.351966 1.63 4.427" rotation="0 180 0" scale="0.6 0.6 0.6" nodeId="115"/>
+            <TransformGroup name="cow8" translation="-0.231809 1.63 4.427" rotation="0 -10.7552 0" scale="0.6 0.6 0.6" nodeId="116"/>
+            <TransformGroup name="cow9" translation="-0.885743 1.63 2.393" scale="0.6 0.6 0.6" nodeId="117"/>
+            <TransformGroup name="cow2" translation="0.892788 1.63 2.393" scale="0.6 0.6 0.6" nodeId="118"/>
+            <TransformGroup name="cow3" translation="0.351966 1.63 2.393" rotation="0 180 0" scale="0.6 0.6 0.6" nodeId="119"/>
+            <TransformGroup name="cow12" translation="-0.231809 1.63 2.393" rotation="0 -10.7552 0" scale="0.6 0.6 0.6" nodeId="120"/>
+            <TransformGroup name="cow13" translation="-0.885743 1.63 0.386497" scale="0.6 0.6 0.6" nodeId="121"/>
+            <TransformGroup name="cow2" translation="0.892788 1.63 6.4" scale="0.6 0.6 0.6" nodeId="122"/>
+            <TransformGroup name="cow3" translation="0.351966 1.63 7.00264" rotation="0 180 0" scale="0.6 0.6 0.6" nodeId="123"/>
+            <TransformGroup name="cow16" translation="-0.231809 1.63 6.42465" rotation="0 -10.7552 0" scale="0.6 0.6 0.6" nodeId="124"/>
+            <TransformGroup name="cow17" translation="-0.885743 1.63 0.386" scale="0.6 0.6 0.6" nodeId="125"/>
+            <TransformGroup name="cow2" translation="0.892788 1.63 0.386" scale="0.6 0.6 0.6" nodeId="126"/>
+            <TransformGroup name="cow3" translation="0.351966 1.63 0.386" rotation="0 180 0" scale="0.6 0.6 0.6" nodeId="127"/>
+            <TransformGroup name="cow20" translation="-0.231809 1.63 0.386" rotation="0 -10.7552 0" scale="0.6 0.6 0.6" nodeId="128"/>
+            <TransformGroup name="cow21" translation="-0.885743 1.63 -1.77463" scale="0.6 0.6 0.6" nodeId="129"/>
+            <TransformGroup name="cow2" translation="-0.45342 1.63 -1.775" scale="0.6 0.6 0.6" nodeId="130"/>
+            <TransformGroup name="cow3" translation="0.351966 1.63 -1.775" rotation="0 180 0" scale="0.6 0.6 0.6" nodeId="131"/>
+            <TransformGroup name="cow24" translation="0.885712 1.63 -1.56273" rotation="0 -10.7552 0" scale="0.6 0.6 0.6" nodeId="132"/>
+            <TransformGroup name="cow25" translation="-0.885743 1.63 -3.804" scale="0.6 0.6 0.6" nodeId="133"/>
+            <TransformGroup name="cow2" translation="0.892788 1.63 -3.804" scale="0.6 0.6 0.6" nodeId="134"/>
+            <TransformGroup name="cow3" translation="0.351966 1.63 -3.15581" rotation="0 180 0" scale="0.6 0.6 0.6" nodeId="135"/>
+            <TransformGroup name="cow28" translation="-0.231809 1.63 -3.804" rotation="0 -10.7552 0" scale="0.6 0.6 0.6" nodeId="136"/>
+            <TransformGroup name="cow56" translation="-0.231809 1.63 -5.0152" rotation="0 90 0" scale="0.6 0.6 0.6" nodeId="137"/>
+          </TransformGroup>
+          <TransformGroup name="pig" translation="0 0.63 -3.84879" nodeId="138">
+            <TransformGroup name="pig1" translation="0.91453 -0.165 7.15022" rotation="0 180 0" scale="0.75 0.75 0.75" nodeId="139"/>
+            <TransformGroup name="pig2" translation="0.335167 -0.165 6.74497" scale="0.75 0.75 0.75" nodeId="140"/>
+            <TransformGroup name="pig3" translation="-0.888279 -0.165 6.94146" rotation="0 180 0" scale="0.75 0.75 0.75" nodeId="141"/>
+            <TransformGroup name="pig4" translation="-0.344975 -0.165 6.7574" rotation="0 8.0689 0" scale="0.75 0.75 0.75" nodeId="142"/>
+            <TransformGroup name="pig5" translation="0.91453 -0.165 5.561" rotation="0 180 0" scale="0.75 0.75 0.75" nodeId="143"/>
+            <TransformGroup name="pig2" translation="0.335167 -0.165 5.22294" scale="0.75 0.75 0.75" nodeId="144"/>
+            <TransformGroup name="pig3" translation="-0.888279 -0.165 5.561" rotation="0 180 0" scale="0.75 0.75 0.75" nodeId="145"/>
+            <TransformGroup name="pig4" translation="-0.306769 -0.165 5.31453" rotation="0 20.2659 0" scale="0.75 0.75 0.75" nodeId="146"/>
+            <TransformGroup name="pig9" translation="0.91453 -0.165 3.993" rotation="0 180 0" scale="0.75 0.75 0.75" nodeId="147"/>
+            <TransformGroup name="pig2" translation="0.335167 -0.165 3.68781" scale="0.75 0.75 0.75" nodeId="148"/>
+            <TransformGroup name="pig3" translation="-0.888279 -0.165 3.993" rotation="0 180 0" scale="0.75 0.75 0.75" nodeId="149"/>
+            <TransformGroup name="pig4" translation="-0.377864 -0.165 3.761" rotation="0 8.0689 0" scale="0.75 0.75 0.75" nodeId="150"/>
+            <TransformGroup name="pig13" translation="0.91453 -0.165 2.434" rotation="0 180 0" scale="0.75 0.75 0.75" nodeId="151"/>
+            <TransformGroup name="pig2" translation="0.335167 -0.165 2.14681" scale="0.75 0.75 0.75" nodeId="152"/>
+            <TransformGroup name="pig3" translation="-0.888279 -0.165 2.434" rotation="0 180 0" scale="0.75 0.75 0.75" nodeId="153"/>
+            <TransformGroup name="pig4" translation="-0.31798 -0.165 2.27379" rotation="0 -19.1742 0" scale="0.75 0.75 0.75" nodeId="154"/>
+            <TransformGroup name="pig17" translation="0.91453 -0.165 0.859" rotation="0 180 0" scale="0.75 0.75 0.75" nodeId="155"/>
+            <TransformGroup name="pig2" translation="0.335167 -0.165 0.602443" rotation="0 8.55008 0" scale="0.75 0.75 0.75" nodeId="156"/>
+            <TransformGroup name="pig3" translation="-0.888279 -0.165 0.859" rotation="0 180 0" scale="0.75 0.75 0.75" nodeId="157"/>
+            <TransformGroup name="pig4" translation="-0.253046 -0.165 0.65513" rotation="0 17.8732 0" scale="0.75 0.75 0.75" nodeId="158"/>
+            <TransformGroup name="pig21" translation="0.91453 -0.165 -0.723" rotation="0 180 0" scale="0.75 0.75 0.75" nodeId="159"/>
+            <TransformGroup name="pig2" translation="0.335167 -0.165 -0.723" rotation="0 180 0" scale="0.75 0.75 0.75" nodeId="160"/>
+            <TransformGroup name="pig3" translation="-0.888279 -0.165 -0.723" rotation="0 180 0" scale="0.75 0.75 0.75" nodeId="161"/>
+            <TransformGroup name="pig4" translation="-0.374153 -0.165 -0.928816" rotation="0 8.0689 0" scale="0.75 0.75 0.75" nodeId="162"/>
+            <TransformGroup name="pig25" translation="0.91453 -0.165 -2.35" rotation="0 180 0" scale="0.75 0.75 0.75" nodeId="163"/>
+            <TransformGroup name="pig2" translation="0.335167 -0.165 -2.62206" rotation="0 6.92656 0" scale="0.75 0.75 0.75" nodeId="164"/>
+            <TransformGroup name="pig3" translation="-0.888279 -0.165 -2.35" rotation="0 180 0" scale="0.75 0.75 0.75" nodeId="165"/>
+            <TransformGroup name="pig4" translation="-0.251464 -0.165 -2.60963" rotation="0 -18.6823 0" scale="0.75 0.75 0.75" nodeId="166"/>
+            <TransformGroup name="pig29" translation="0.91453 -0.165 -3.905" rotation="0 180 0" scale="0.75 0.75 0.75" nodeId="167"/>
+            <TransformGroup name="pig2" translation="0.335167 -0.165 -4.19725" rotation="0 -14.9635 0" scale="0.75 0.75 0.75" nodeId="168"/>
+            <TransformGroup name="pig3" translation="-0.888279 -0.165 -3.905" rotation="0 180 0" scale="0.75 0.75 0.75" nodeId="169"/>
+            <TransformGroup name="pig4" translation="-0.344975 -0.165 -3.905" rotation="-180 17.3003 -180" scale="0.75 0.75 0.75" nodeId="170"/>
+            <TransformGroup name="pig31" translation="-0.216167 -0.24588 -5.13462" rotation="0 90 0" scale="0.75 0.75 0.75" nodeId="171"/>
+            <TransformGroup name="pig32" translation="0.91453 1.58275 7.15022" rotation="0 180 0" scale="0.75 0.75 0.75" nodeId="172"/>
+            <TransformGroup name="pig2" translation="0.335167 1.58275 6.74497" scale="0.75 0.75 0.75" nodeId="173"/>
+            <TransformGroup name="pig3" translation="-0.888279 1.58275 6.94146" rotation="0 180 0" scale="0.75 0.75 0.75" nodeId="174"/>
+            <TransformGroup name="pig4" translation="-0.344975 1.58275 6.7574" rotation="0 8.0689 0" scale="0.75 0.75 0.75" nodeId="175"/>
+            <TransformGroup name="pig5" translation="0.91453 1.58275 5.561" rotation="0 180 0" scale="0.75 0.75 0.75" nodeId="176"/>
+            <TransformGroup name="pig2" translation="0.335167 1.58275 5.22294" scale="0.75 0.75 0.75" nodeId="177"/>
+            <TransformGroup name="pig3" translation="-0.888279 1.58275 5.561" rotation="0 180 0" scale="0.75 0.75 0.75" nodeId="178"/>
+            <TransformGroup name="pig4" translation="-0.306769 1.58275 5.31453" rotation="0 20.2659 0" scale="0.75 0.75 0.75" nodeId="179"/>
+            <TransformGroup name="pig9" translation="0.91453 1.58275 3.993" rotation="0 180 0" scale="0.75 0.75 0.75" nodeId="180"/>
+            <TransformGroup name="pig2" translation="0.335167 1.58275 3.68781" scale="0.75 0.75 0.75" nodeId="181"/>
+            <TransformGroup name="pig3" translation="-0.888279 1.58275 3.993" rotation="0 180 0" scale="0.75 0.75 0.75" nodeId="182"/>
+            <TransformGroup name="pig4" translation="-0.377864 1.58275 3.761" rotation="0 8.0689 0" scale="0.75 0.75 0.75" nodeId="183"/>
+            <TransformGroup name="pig13" translation="0.91453 1.58275 2.434" rotation="0 180 0" scale="0.75 0.75 0.75" nodeId="184"/>
+            <TransformGroup name="pig2" translation="0.335167 1.58275 2.14681" scale="0.75 0.75 0.75" nodeId="185"/>
+            <TransformGroup name="pig3" translation="-0.888279 1.58275 2.434" rotation="0 180 0" scale="0.75 0.75 0.75" nodeId="186"/>
+            <TransformGroup name="pig4" translation="-0.31798 1.58275 2.27379" rotation="0 -19.1742 0" scale="0.75 0.75 0.75" nodeId="187"/>
+            <TransformGroup name="pig17" translation="0.91453 1.58275 0.859" rotation="0 180 0" scale="0.75 0.75 0.75" nodeId="188"/>
+            <TransformGroup name="pig2" translation="0.335167 1.58275 0.602443" rotation="0 8.55008 0" scale="0.75 0.75 0.75" nodeId="189"/>
+            <TransformGroup name="pig3" translation="-0.888279 1.58275 0.859" rotation="0 180 0" scale="0.75 0.75 0.75" nodeId="190"/>
+            <TransformGroup name="pig4" translation="-0.253046 1.58275 0.65513" rotation="0 17.8732 0" scale="0.75 0.75 0.75" nodeId="191"/>
+            <TransformGroup name="pig21" translation="0.91453 1.58275 -0.723" rotation="0 180 0" scale="0.75 0.75 0.75" nodeId="192"/>
+            <TransformGroup name="pig2" translation="0.335167 1.58275 -0.723" rotation="0 180 0" scale="0.75 0.75 0.75" nodeId="193"/>
+            <TransformGroup name="pig3" translation="-0.888279 1.58275 -0.723" rotation="0 180 0" scale="0.75 0.75 0.75" nodeId="194"/>
+            <TransformGroup name="pig4" translation="-0.374153 1.58275 -0.928816" rotation="0 8.0689 0" scale="0.75 0.75 0.75" nodeId="195"/>
+            <TransformGroup name="pig25" translation="0.91453 1.58275 -2.35" rotation="0 180 0" scale="0.75 0.75 0.75" nodeId="196"/>
+            <TransformGroup name="pig2" translation="0.335167 1.58275 -2.62206" rotation="0 6.92656 0" scale="0.75 0.75 0.75" nodeId="197"/>
+            <TransformGroup name="pig3" translation="-0.888279 1.58275 -2.35" rotation="0 180 0" scale="0.75 0.75 0.75" nodeId="198"/>
+            <TransformGroup name="pig4" translation="-0.251464 1.58275 -2.60963" rotation="0 -18.6823 0" scale="0.75 0.75 0.75" nodeId="199"/>
+            <TransformGroup name="pig29" translation="0.91453 1.58275 -3.905" rotation="0 180 0" scale="0.75 0.75 0.75" nodeId="200"/>
+            <TransformGroup name="pig2" translation="0.335167 1.58275 -4.19725" rotation="0 -14.9635 0" scale="0.75 0.75 0.75" nodeId="201"/>
+            <TransformGroup name="pig3" translation="-0.888279 1.58275 -3.905" rotation="0 180 0" scale="0.75 0.75 0.75" nodeId="202"/>
+            <TransformGroup name="pig4" translation="-0.344975 1.58275 -3.905" rotation="-180 17.3003 -180" scale="0.75 0.75 0.75" nodeId="203"/>
+            <TransformGroup name="pig64" translation="-0.216167 1.58275 -5.13462" rotation="0 90 0" scale="0.75 0.75 0.75" nodeId="204"/>
+          </TransformGroup>
+          <TransformGroup name="sheep" translation="0 -0.227803 0.875065" nodeId="205">
+            <TransformGroup name="sheep1" translation="-0.95 0.7 2.265" scale="0.7 0.7 0.7" nodeId="206"/>
+            <TransformGroup name="sheep2" translation="0.980977 0.7 2.2589" scale="0.7 0.7 0.7" nodeId="207"/>
+            <TransformGroup name="sheep3" translation="-0.47831 0.7 2.26435" rotation="0 3.14926 0" scale="0.7 0.7 0.7" nodeId="208"/>
+            <TransformGroup name="sheep4" translation="0.507559 0.7 2.24333" rotation="0 -5.5278 0" scale="0.7 0.7 0.7" nodeId="209"/>
+            <TransformGroup name="sheep5" translation="0.00928241 0.7 2.24656" scale="0.7 0.7 0.7" nodeId="210"/>
+            <TransformGroup name="sheep1" translation="-0.931051 0.7 1.073" rotation="0 17.3049 0" scale="0.7 0.7 0.7" nodeId="211"/>
+            <TransformGroup name="sheep2" translation="0.980977 0.7 1.073" scale="0.7 0.7 0.7" nodeId="212"/>
+            <TransformGroup name="sheep3" translation="-0.47831 0.7 1.073" rotation="0 3.14926 0" scale="0.7 0.7 0.7" nodeId="213"/>
+            <TransformGroup name="sheep4" translation="0.507559 0.7 1.073" rotation="0 5.46427 0" scale="0.7 0.7 0.7" nodeId="214"/>
+            <TransformGroup name="sheep5" translation="0.00928241 0.7 1.073" rotation="0 -10.2214 0" scale="0.7 0.7 0.7" nodeId="215"/>
+            <TransformGroup name="sheep1" translation="-0.931051 0.7 -0.096" rotation="0 17.3049 0" scale="0.7 0.7 0.7" nodeId="216"/>
+            <TransformGroup name="sheep2" translation="0.980977 0.7 -0.096" rotation="0 -3.54895 0" scale="0.7 0.7 0.7" nodeId="217"/>
+            <TransformGroup name="sheep3" translation="-0.47831 0.7 -0.096" rotation="0 3.14926 0" scale="0.7 0.7 0.7" nodeId="218"/>
+            <TransformGroup name="sheep4" translation="0.507559 0.7 -0.096" rotation="0 -12.2229 0" scale="0.7 0.7 0.7" nodeId="219"/>
+            <TransformGroup name="sheep5" translation="0.00928241 0.7 -0.096" rotation="0 -10.2214 0" scale="0.7 0.7 0.7" nodeId="220"/>
+            <TransformGroup name="sheep1" translation="-0.931051 0.7 -1.25" scale="0.7 0.7 0.7" nodeId="221"/>
+            <TransformGroup name="sheep2" translation="0.980977 0.7 -1.25" rotation="0 -3.54895 0" scale="0.7 0.7 0.7" nodeId="222"/>
+            <TransformGroup name="sheep3" translation="-0.47831 0.7 -1.25" rotation="0 3.14926 0" scale="0.7 0.7 0.7" nodeId="223"/>
+            <TransformGroup name="sheep4" translation="0.507559 0.7 -1.25" rotation="0 -12.2229 0" scale="0.7 0.7 0.7" nodeId="224"/>
+            <TransformGroup name="sheep5" translation="0.00928241 0.7 -1.25" rotation="0 -10.2214 0" scale="0.7 0.7 0.7" nodeId="225"/>
+            <TransformGroup name="sheep1" translation="-0.931051 0.7 -2.419" scale="0.7 0.7 0.7" nodeId="226"/>
+            <TransformGroup name="sheep2" translation="0.980977 0.7 -2.419" rotation="0 -3.54895 0" scale="0.7 0.7 0.7" nodeId="227"/>
+            <TransformGroup name="sheep3" translation="-0.47831 0.7 -2.419" rotation="0 3.14926 0" scale="0.7 0.7 0.7" nodeId="228"/>
+            <TransformGroup name="sheep4" translation="0.507559 0.7 -2.419" rotation="0 -12.2229 0" scale="0.7 0.7 0.7" nodeId="229"/>
+            <TransformGroup name="sheep5" translation="0.00928241 0.7 -2.419" rotation="0 -10.2214 0" scale="0.7 0.7 0.7" nodeId="230"/>
+            <TransformGroup name="sheep1" translation="-0.931051 0.7 -3.589" scale="0.7 0.7 0.7" nodeId="231"/>
+            <TransformGroup name="sheep2" translation="0.980977 0.7 -3.589" rotation="0 -3.54895 0" scale="0.7 0.7 0.7" nodeId="232"/>
+            <TransformGroup name="sheep3" translation="-0.47831 0.7 -3.589" rotation="0 3.14926 0" scale="0.7 0.7 0.7" nodeId="233"/>
+            <TransformGroup name="sheep4" translation="0.507559 0.7 -3.589" rotation="0 -12.2229 0" scale="0.7 0.7 0.7" nodeId="234"/>
+            <TransformGroup name="sheep5" translation="0.00928241 0.7 -3.589" rotation="0 -10.2214 0" scale="0.7 0.7 0.7" nodeId="235"/>
+            <TransformGroup name="sheep1" translation="-0.931051 0.7 -4.761" scale="0.7 0.7 0.7" nodeId="236"/>
+            <TransformGroup name="sheep2" translation="0.980977 0.7 -4.761" rotation="0 -3.54895 0" scale="0.7 0.7 0.7" nodeId="237"/>
+            <TransformGroup name="sheep3" translation="-0.47831 0.7 -4.761" rotation="0 3.14926 0" scale="0.7 0.7 0.7" nodeId="238"/>
+            <TransformGroup name="sheep4" translation="0.507559 0.7 -4.761" rotation="0 -12.2229 0" scale="0.7 0.7 0.7" nodeId="239"/>
+            <TransformGroup name="sheep5" translation="0.00928241 0.7 -4.761" rotation="0 -10.2214 0" scale="0.7 0.7 0.7" nodeId="240"/>
+            <TransformGroup name="sheep1" translation="-0.931051 0.7 -5.943" scale="0.7 0.7 0.7" nodeId="241"/>
+            <TransformGroup name="sheep2" translation="0.980977 0.7 -5.943" rotation="0 -3.54895 0" scale="0.7 0.7 0.7" nodeId="242"/>
+            <TransformGroup name="sheep3" translation="-0.47831 0.7 -5.943" rotation="0 3.14926 0" scale="0.7 0.7 0.7" nodeId="243"/>
+            <TransformGroup name="sheep4" translation="0.507559 0.7 -5.943" rotation="0 -12.2229 0" scale="0.7 0.7 0.7" nodeId="244"/>
+            <TransformGroup name="sheep5" translation="0.00928241 0.7 -5.943" rotation="0 -10.2214 0" scale="0.7 0.7 0.7" nodeId="245"/>
+            <TransformGroup name="sheep1" translation="-0.931051 0.7 -7.112" scale="0.7 0.7 0.7" nodeId="246"/>
+            <TransformGroup name="sheep2" translation="0.980977 0.7 -7.112" rotation="0 -3.54895 0" scale="0.7 0.7 0.7" nodeId="247"/>
+            <TransformGroup name="sheep3" translation="-0.47831 0.7 -7.112" rotation="0 3.14926 0" scale="0.7 0.7 0.7" nodeId="248"/>
+            <TransformGroup name="sheep4" translation="0.507559 0.7 -7.112" rotation="0 -12.2229 0" scale="0.7 0.7 0.7" nodeId="249"/>
+            <TransformGroup name="sheep5" translation="0.00928241 0.7 -7.112" rotation="0 -10.2214 0" scale="0.7 0.7 0.7" nodeId="250"/>
+            <TransformGroup name="sheep1" translation="-0.931051 0.7 -8.269" scale="0.7 0.7 0.7" nodeId="251"/>
+            <TransformGroup name="sheep2" translation="0.980977 0.7 -8.269" rotation="0 -3.54895 0" scale="0.7 0.7 0.7" nodeId="252"/>
+            <TransformGroup name="sheep3" translation="-0.47831 0.7 -8.269" rotation="0 3.14926 0" scale="0.7 0.7 0.7" nodeId="253"/>
+            <TransformGroup name="sheep4" translation="0.507559 0.7 -8.269" rotation="0 -12.2229 0" scale="0.7 0.7 0.7" nodeId="254"/>
+            <TransformGroup name="sheep5" translation="0.00928241 0.7 -8.269" rotation="0 -10.2214 0" scale="0.7 0.7 0.7" nodeId="255"/>
+            <TransformGroup name="sheep1" translation="-0.931051 0.7 -9.45" scale="0.7 0.7 0.7" nodeId="256"/>
+            <TransformGroup name="sheep2" translation="0.980977 0.7 -9.45" rotation="0 -3.54895 0" scale="0.7 0.7 0.7" nodeId="257"/>
+            <TransformGroup name="sheep3" translation="-0.47831 0.7 -9.45" rotation="0 3.14926 0" scale="0.7 0.7 0.7" nodeId="258"/>
+            <TransformGroup name="sheep4" translation="0.507559 0.7 -9.45" rotation="0 -12.2229 0" scale="0.7 0.7 0.7" nodeId="259"/>
+            <TransformGroup name="sheep53" translation="0.00928241 0.7 -9.45" rotation="0 -10.2214 0" scale="0.7 0.7 0.7" nodeId="260"/>
+            <TransformGroup name="sheep1" translation="-0.95 2.435 2.265" scale="0.7 0.7 0.7" nodeId="261"/>
+            <TransformGroup name="sheep2" translation="0.980977 2.435 2.2589" scale="0.7 0.7 0.7" nodeId="262"/>
+            <TransformGroup name="sheep3" translation="-0.47831 2.435 2.26435" rotation="0 3.14926 0" scale="0.7 0.7 0.7" nodeId="263"/>
+            <TransformGroup name="sheep4" translation="0.582327 2.435 2.57562" rotation="-180 -12.6806 -180" scale="0.7 0.7 0.7" nodeId="264"/>
+            <TransformGroup name="sheep5" translation="0.00928241 2.435 2.24656" scale="0.7 0.7 0.7" nodeId="265"/>
+            <TransformGroup name="sheep1" translation="-0.931051 2.435 1.073" rotation="0 17.3049 0" scale="0.7 0.7 0.7" nodeId="266"/>
+            <TransformGroup name="sheep2" translation="0.980977 2.435 1.073" scale="0.7 0.7 0.7" nodeId="267"/>
+            <TransformGroup name="sheep3" translation="-0.47831 2.435 1.073" rotation="0 3.14926 0" scale="0.7 0.7 0.7" nodeId="268"/>
+            <TransformGroup name="sheep4" translation="0.507559 2.435 1.073" rotation="0 5.46427 0" scale="0.7 0.7 0.7" nodeId="269"/>
+            <TransformGroup name="sheep5" translation="0.00928241 2.435 1.073" rotation="0 -10.2214 0" scale="0.7 0.7 0.7" nodeId="270"/>
+            <TransformGroup name="sheep1" translation="-0.931051 2.435 -0.096" rotation="0 17.3049 0" scale="0.7 0.7 0.7" nodeId="271"/>
+            <TransformGroup name="sheep2" translation="0.980977 2.435 -0.096" rotation="0 -3.54895 0" scale="0.7 0.7 0.7" nodeId="272"/>
+            <TransformGroup name="sheep3" translation="-0.47831 2.435 -0.096" rotation="0 3.14926 0" scale="0.7 0.7 0.7" nodeId="273"/>
+            <TransformGroup name="sheep4" translation="0.507559 2.435 -0.096" rotation="0 -12.2229 0" scale="0.7 0.7 0.7" nodeId="274"/>
+            <TransformGroup name="sheep5" translation="0.00928241 2.435 -0.096" rotation="0 -10.2214 0" scale="0.7 0.7 0.7" nodeId="275"/>
+            <TransformGroup name="sheep1" translation="-0.931051 2.435 -1.25" scale="0.7 0.7 0.7" nodeId="276"/>
+            <TransformGroup name="sheep2" translation="0.980977 2.435 -1.25" rotation="0 -3.54895 0" scale="0.7 0.7 0.7" nodeId="277"/>
+            <TransformGroup name="sheep3" translation="-0.47831 2.435 -1.25" rotation="0 3.14926 0" scale="0.7 0.7 0.7" nodeId="278"/>
+            <TransformGroup name="sheep4" translation="0.507559 2.435 -1.25" rotation="0 -12.2229 0" scale="0.7 0.7 0.7" nodeId="279"/>
+            <TransformGroup name="sheep5" translation="0.00928241 2.435 -1.25" rotation="0 -10.2214 0" scale="0.7 0.7 0.7" nodeId="280"/>
+            <TransformGroup name="sheep1" translation="-0.931051 2.435 -2.419" scale="0.7 0.7 0.7" nodeId="281"/>
+            <TransformGroup name="sheep2" translation="0.980977 2.435 -2.419" rotation="0 -3.54895 0" scale="0.7 0.7 0.7" nodeId="282"/>
+            <TransformGroup name="sheep3" translation="-0.47831 2.435 -2.419" rotation="0 3.14926 0" scale="0.7 0.7 0.7" nodeId="283"/>
+            <TransformGroup name="sheep4" translation="0.507559 2.435 -2.419" rotation="0 -12.2229 0" scale="0.7 0.7 0.7" nodeId="284"/>
+            <TransformGroup name="sheep5" translation="0.00928241 2.435 -2.419" rotation="0 -10.2214 0" scale="0.7 0.7 0.7" nodeId="285"/>
+            <TransformGroup name="sheep1" translation="-0.931051 2.435 -3.589" scale="0.7 0.7 0.7" nodeId="286"/>
+            <TransformGroup name="sheep2" translation="0.980977 2.435 -3.589" rotation="0 -3.54895 0" scale="0.7 0.7 0.7" nodeId="287"/>
+            <TransformGroup name="sheep3" translation="-0.47831 2.435 -3.589" rotation="0 3.14926 0" scale="0.7 0.7 0.7" nodeId="288"/>
+            <TransformGroup name="sheep4" translation="0.507559 2.435 -3.589" rotation="0 -26.6869 0" scale="0.7 0.7 0.7" nodeId="289"/>
+            <TransformGroup name="sheep5" translation="0.00928241 2.435 -3.589" rotation="0 -10.2214 0" scale="0.7 0.7 0.7" nodeId="290"/>
+            <TransformGroup name="sheep1" translation="-0.931051 2.435 -4.761" scale="0.7 0.7 0.7" nodeId="291"/>
+            <TransformGroup name="sheep2" translation="0.980977 2.435 -4.761" rotation="0 -3.54895 0" scale="0.7 0.7 0.7" nodeId="292"/>
+            <TransformGroup name="sheep3" translation="-0.47831 2.435 -4.761" rotation="0 3.14926 0" scale="0.7 0.7 0.7" nodeId="293"/>
+            <TransformGroup name="sheep4" translation="0.507559 2.435 -4.761" rotation="0 -12.2229 0" scale="0.7 0.7 0.7" nodeId="294"/>
+            <TransformGroup name="sheep5" translation="0.00928241 2.435 -4.761" rotation="0 -10.2214 0" scale="0.7 0.7 0.7" nodeId="295"/>
+            <TransformGroup name="sheep1" translation="-0.931051 2.435 -5.943" scale="0.7 0.7 0.7" nodeId="296"/>
+            <TransformGroup name="sheep2" translation="0.980977 2.435 -5.943" rotation="0 -3.54895 0" scale="0.7 0.7 0.7" nodeId="297"/>
+            <TransformGroup name="sheep3" translation="-0.47831 2.435 -5.943" rotation="0 3.14926 0" scale="0.7 0.7 0.7" nodeId="298"/>
+            <TransformGroup name="sheep4" translation="0.507559 2.435 -5.943" rotation="0 -12.2229 0" scale="0.7 0.7 0.7" nodeId="299"/>
+            <TransformGroup name="sheep5" translation="0.00928241 2.435 -5.943" rotation="0 -10.2214 0" scale="0.7 0.7 0.7" nodeId="300"/>
+            <TransformGroup name="sheep1" translation="-0.931051 2.435 -7.112" scale="0.7 0.7 0.7" nodeId="301"/>
+            <TransformGroup name="sheep2" translation="0.980977 2.435 -7.112" rotation="0 -3.54895 0" scale="0.7 0.7 0.7" nodeId="302"/>
+            <TransformGroup name="sheep3" translation="-0.47831 2.435 -7.112" rotation="2.00032e-06 17.9473 4.04478e-07" scale="0.7 0.7 0.7" nodeId="303"/>
+            <TransformGroup name="sheep4" translation="0.507559 2.435 -7.112" rotation="0 -12.2229 0" scale="0.7 0.7 0.7" nodeId="304"/>
+            <TransformGroup name="sheep5" translation="0.00928241 2.435 -7.112" rotation="0 -10.2214 0" scale="0.7 0.7 0.7" nodeId="305"/>
+            <TransformGroup name="sheep1" translation="-0.931051 2.435 -8.269" scale="0.7 0.7 0.7" nodeId="306"/>
+            <TransformGroup name="sheep2" translation="0.980977 2.435 -8.269" rotation="0 -3.54895 0" scale="0.7 0.7 0.7" nodeId="307"/>
+            <TransformGroup name="sheep3" translation="-0.47831 2.435 -8.269" rotation="0 3.14926 0" scale="0.7 0.7 0.7" nodeId="308"/>
+            <TransformGroup name="sheep4" translation="0.507559 2.435 -8.269" rotation="0 -12.2229 0" scale="0.7 0.7 0.7" nodeId="309"/>
+            <TransformGroup name="sheep5" translation="0.00928241 2.435 -8.269" rotation="180 13.378 180" scale="0.7 0.7 0.7" nodeId="310"/>
+            <TransformGroup name="sheep1" translation="-0.931051 2.435 -9.45" scale="0.7 0.7 0.7" nodeId="311"/>
+            <TransformGroup name="sheep2" translation="0.980977 2.435 -9.45" rotation="0 -3.54895 0" scale="0.7 0.7 0.7" nodeId="312"/>
+            <TransformGroup name="sheep3" translation="-0.47831 2.435 -9.45" rotation="0 3.14926 0" scale="0.7 0.7 0.7" nodeId="313"/>
+            <TransformGroup name="sheep4" translation="0.507559 2.435 -9.45" rotation="0 -12.2229 0" scale="0.7 0.7 0.7" nodeId="314"/>
+            <TransformGroup name="sheep108" translation="0.00928241 2.435 -9.45" rotation="0 -10.2214 0" scale="0.7 0.7 0.7" nodeId="315"/>
+          </TransformGroup>
+          <TransformGroup name="horses" translation="0 0.573168 -3.84879" nodeId="316">
+            <TransformGroup name="horse1" translation="0.741844 -0.119226 6.54803" scale="0.8 0.8 0.8" nodeId="317"/>
+            <TransformGroup name="horse1" translation="0.0875485 -0.119226 6.54803" scale="0.8 0.8 0.8" nodeId="318"/>
+            <TransformGroup name="horse1" translation="-0.603149 -0.119226 6.54803" scale="0.8 0.8 0.8" nodeId="319"/>
+            <TransformGroup name="horse4" translation="0.741844 -0.119226 4.644" scale="0.8 0.8 0.8" nodeId="320"/>
+            <TransformGroup name="horse1" translation="0.0875485 -0.119226 4.644" scale="0.8 0.8 0.8" nodeId="321"/>
+            <TransformGroup name="horse1" translation="-0.603149 -0.119226 4.644" scale="0.8 0.8 0.8" nodeId="322"/>
+            <TransformGroup name="horse7" translation="0.741844 -0.119226 2.765" scale="0.8 0.8 0.8" nodeId="323"/>
+            <TransformGroup name="horse1" translation="0.0875485 -0.119226 2.765" scale="0.8 0.8 0.8" nodeId="324"/>
+            <TransformGroup name="horse1" translation="-0.603149 -0.119226 2.765" scale="0.8 0.8 0.8" nodeId="325"/>
+            <TransformGroup name="horse10" translation="0.741844 -0.119226 0.879" scale="0.8 0.8 0.8" nodeId="326"/>
+            <TransformGroup name="horse1" translation="0.0875485 -0.119226 0.879" scale="0.8 0.8 0.8" nodeId="327"/>
+            <TransformGroup name="horse1" translation="-0.603149 -0.119226 0.879" scale="0.8 0.8 0.8" nodeId="328"/>
+            <TransformGroup name="horse13" translation="0.741844 -0.119226 -0.989" scale="0.8 0.8 0.8" nodeId="329"/>
+            <TransformGroup name="horse1" translation="0.0875485 -0.119226 -0.989" scale="0.8 0.8 0.8" nodeId="330"/>
+            <TransformGroup name="horse1" translation="-0.603149 -0.119226 -0.989" scale="0.8 0.8 0.8" nodeId="331"/>
+            <TransformGroup name="horse16" translation="0.741844 -0.119226 -2.868" scale="0.8 0.8 0.8" nodeId="332"/>
+            <TransformGroup name="horse1" translation="0.0875485 -0.119226 -2.868" scale="0.8 0.8 0.8" nodeId="333"/>
+            <TransformGroup name="horse1" translation="-0.603149 -0.119226 -2.868" scale="0.8 0.8 0.8" nodeId="334"/>
+            <TransformGroup name="horse19" translation="-0.229912 -0.119226 -4.88719" rotation="0 90 0" scale="0.8 0.8 0.8" nodeId="335"/>
+            <TransformGroup name="horse20" translation="0.10632 -0.119226 -4.26739" rotation="0 270 0" scale="0.8 0.8 0.8" nodeId="336"/>
+            <TransformGroup name="horse21" translation="0.741844 1.6303 6.54803" scale="0.8 0.8 0.8" nodeId="337"/>
+            <TransformGroup name="horse1" translation="0.0875485 1.6303 6.54803" scale="0.8 0.8 0.8" nodeId="338"/>
+            <TransformGroup name="horse1" translation="-0.603149 1.6303 6.54803" scale="0.8 0.8 0.8" nodeId="339"/>
+            <TransformGroup name="horse4" translation="0.741844 1.6303 4.644" scale="0.8 0.8 0.8" nodeId="340"/>
+            <TransformGroup name="horse1" translation="0.0875485 1.6303 4.644" scale="0.8 0.8 0.8" nodeId="341"/>
+            <TransformGroup name="horse1" translation="-0.603149 1.6303 4.644" scale="0.8 0.8 0.8" nodeId="342"/>
+            <TransformGroup name="horse7" translation="0.741844 1.6303 2.765" scale="0.8 0.8 0.8" nodeId="343"/>
+            <TransformGroup name="horse1" translation="0.0875485 1.6303 2.765" scale="0.8 0.8 0.8" nodeId="344"/>
+            <TransformGroup name="horse1" translation="-0.603149 1.6303 2.765" scale="0.8 0.8 0.8" nodeId="345"/>
+            <TransformGroup name="horse10" translation="0.741844 1.6303 0.879" scale="0.8 0.8 0.8" nodeId="346"/>
+            <TransformGroup name="horse1" translation="0.0875485 1.6303 0.879" scale="0.8 0.8 0.8" nodeId="347"/>
+            <TransformGroup name="horse1" translation="-0.603149 1.6303 0.879" scale="0.8 0.8 0.8" nodeId="348"/>
+            <TransformGroup name="horse13" translation="0.741844 1.6303 -0.989" scale="0.8 0.8 0.8" nodeId="349"/>
+            <TransformGroup name="horse1" translation="0.0875485 1.6303 -0.989" scale="0.8 0.8 0.8" nodeId="350"/>
+            <TransformGroup name="horse1" translation="-0.603149 1.6303 -0.989" scale="0.8 0.8 0.8" nodeId="351"/>
+            <TransformGroup name="horse16" translation="0.741844 1.6303 -2.868" scale="0.8 0.8 0.8" nodeId="352"/>
+            <TransformGroup name="horse1" translation="0.0875485 1.6303 -2.868" scale="0.8 0.8 0.8" nodeId="353"/>
+            <TransformGroup name="horse1" translation="-0.603149 1.6303 -2.868" scale="0.8 0.8 0.8" nodeId="354"/>
+            <TransformGroup name="horse19" translation="0.0707284 1.6303 -4.88719" rotation="0 270 0" scale="0.8 0.8 0.8" nodeId="355"/>
+            <TransformGroup name="horse38" translation="-0.097504 1.6303 -4.26739" rotation="0 90 0" scale="0.8 0.8 0.8" nodeId="356"/>
+          </TransformGroup>
+          <TransformGroup name="chicken" translation="0 0.63 -3.849" nodeId="357">
+            <TransformGroup name="chicken1" translation="0.432014 -0.151 7.464" rotation="180 19.4474 180" nodeId="358"/>
+            <TransformGroup name="chicken1" translation="-0.448408 -0.147549 7.44158" rotation="180 19.4474 180" nodeId="359"/>
+            <TransformGroup name="chicken1" translation="0.0821552 -0.147549 7.44349" rotation="180 -50.5376 180" nodeId="360"/>
+            <TransformGroup name="chicken1" translation="0.120821 -0.147549 6.76456" rotation="180 19.4474 180" nodeId="361"/>
+            <TransformGroup name="chicken1" translation="-0.360243 -0.147549 7.16649" rotation="-8.65142e-06 57.4428 -8.65142e-06" nodeId="362"/>
+            <TransformGroup name="chicken1" translation="-0.396166 -0.147549 6.84679" rotation="180 47.0459 180" nodeId="363"/>
+            <TransformGroup name="chicken1" translation="-0.0563051 -0.147549 7.12412" rotation="-8.65142e-06 -82.0879 -8.65142e-06" nodeId="364"/>
+            <TransformGroup name="chicken1" translation="0.307661 -0.148 7.08539" rotation="-8.65142e-06 35.4804 -8.65142e-06" nodeId="365"/>
+            <TransformGroup name="chicken1" translation="0.434279 -0.147549 6.96922" rotation="-8.65142e-06 -45.3924 -8.65142e-06" nodeId="366"/>
+            <TransformGroup name="chicken1" translation="0.383922 -0.147549 6.7136" rotation="2.19094e-06 -62.3537 -1.94897e-06" nodeId="367"/>
+            <TransformGroup name="chicken1" translation="-0.255015 -0.147549 6.71597" rotation="8.80547e-07 64.3358 7.90422e-07" nodeId="368"/>
+            <TransformGroup name="chicken1" translation="-0.143291 -0.147549 7.46637" rotation="180 -5.79519 180" nodeId="369"/>
+            <TransformGroup name="chicken2" translation="-0.433238 -0.147549 5.47373" rotation="180 19.4474 180" nodeId="370"/>
+            <TransformGroup name="chicken1" translation="0.424111 -0.147549 6.16449" rotation="180 19.4474 180" nodeId="371"/>
+            <TransformGroup name="chicken1" translation="0.156631 -0.147549 6.14354" rotation="180 19.4474 180" nodeId="372"/>
+            <TransformGroup name="chicken1" translation="-0.162736 -0.147549 6.095" rotation="180 19.4474 180" nodeId="373"/>
+            <TransformGroup name="chicken1" translation="-0.497155 -0.147549 6.14577" rotation="180 19.4474 180" nodeId="374"/>
+            <TransformGroup name="chicken1" translation="0.43355 -0.147549 5.48673" rotation="180 19.4474 180" nodeId="375"/>
+            <TransformGroup name="chicken1" translation="0.0573028 -0.147549 5.45133" rotation="180 19.4474 180" nodeId="376"/>
+            <TransformGroup name="chicken1" translation="0.159769 -0.147549 5.79376" rotation="180 19.4474 180" nodeId="377"/>
+            <TransformGroup name="chicken1" translation="-0.0813007 -0.147549 5.78634" rotation="180 19.4474 180" nodeId="378"/>
+            <TransformGroup name="chicken1" translation="-0.374167 -0.147549 5.78192" rotation="180 19.4474 180" nodeId="379"/>
+            <TransformGroup name="chicken3" translation="-0.27315 -0.147549 4.84023" rotation="180 19.4474 180" nodeId="380"/>
+            <TransformGroup name="chicken1" translation="0.423264 -0.147549 4.14467" rotation="180 19.4474 180" nodeId="381"/>
+            <TransformGroup name="chicken1" translation="0.0671526 -0.147549 4.16729" rotation="180 142.124 180" nodeId="382"/>
+            <TransformGroup name="chicken1" translation="-0.273103 -0.147549 4.16661" rotation="180 72.2273 180" nodeId="383"/>
+            <TransformGroup name="chicken1" translation="-0.529126 -0.147549 4.21815" rotation="180 19.4474 180" nodeId="384"/>
+            <TransformGroup name="chicken1" translation="0.374901 -0.147549 4.48271" rotation="180 19.4474 180" nodeId="385"/>
+            <TransformGroup name="chicken1" translation="0.0344898 -0.147549 4.47424" rotation="180 76.7758 180" nodeId="386"/>
+            <TransformGroup name="chicken1" translation="-0.230891 -0.147549 4.44937" rotation="180 19.4474 180" nodeId="387"/>
+            <TransformGroup name="chicken1" translation="-0.512542 -0.147549 4.58937" rotation="180 19.4474 180" nodeId="388"/>
+            <TransformGroup name="chicken1" translation="0.150139 -0.147549 4.87193" rotation="180 240.884 180" nodeId="389"/>
+            <TransformGroup name="chicken4" translation="-0.470761 0.480138 6.07871" rotation="5.00896e-06 -60.884 5.00896e-06" nodeId="390"/>
+            <TransformGroup name="chicken1" translation="0.366848 0.480138 6.74772" rotation="5.00896e-06 -60.884 5.00896e-06" nodeId="391"/>
+            <TransformGroup name="chicken1" translation="0.361171 0.475831 6.45071" rotation="5.00896e-06 -60.884 5.00896e-06" nodeId="392"/>
+            <TransformGroup name="chicken1" translation="0.324174 0.480138 6.224" rotation="5.00896e-06 -60.884 5.00896e-06" nodeId="393"/>
+            <TransformGroup name="chicken1" translation="-0.0377643 0.480138 6.78603" rotation="5.00896e-06 112.123 5.00896e-06" nodeId="394"/>
+            <TransformGroup name="chicken1" translation="-0.0129662 0.480138 6.5534" rotation="5.00896e-06 -7.47783 5.00896e-06" nodeId="395"/>
+            <TransformGroup name="chicken1" translation="-0.507039 0.480138 6.88344" rotation="5.00896e-06 2.64089 5.00896e-06" nodeId="396"/>
+            <TransformGroup name="chicken1" translation="-0.487954 0.480138 6.5886" rotation="5.00896e-06 144.786 5.00896e-06" nodeId="397"/>
+            <TransformGroup name="chicken1" translation="0.0215116 0.480138 6.05339" rotation="5.00896e-06 104.817 5.00896e-06" nodeId="398"/>
+            <TransformGroup name="chicken1" translation="-0.283032 0.480138 6.30903" rotation="5.00896e-06 187.942 5.00896e-06" nodeId="399"/>
+            <TransformGroup name="chicken5" translation="0.39029 0.480138 5.04051" rotation="-180 -7.94196 -180" nodeId="400"/>
+            <TransformGroup name="chicken1" translation="0.411242 0.480138 4.76137" rotation="-180 42.1133 -180" nodeId="401"/>
+            <TransformGroup name="chicken1" translation="0.0638433 0.480138 4.75158" rotation="-180 260.748 -180" nodeId="402"/>
+            <TransformGroup name="chicken1" translation="-0.484414 0.480138 5.01845" rotation="-180 -7.94196 -180" nodeId="403"/>
+            <TransformGroup name="chicken1" translation="-0.511341 0.480138 4.70974" rotation="-180 149.662 -180" nodeId="404"/>
+            <TransformGroup name="chicken1" translation="-0.46244 0.480138 5.54211" rotation="-180 44.3545 -180" nodeId="405"/>
+            <TransformGroup name="chicken1" translation="-0.0503916 0.480138 5.52612" rotation="-180 44.3545 -180" nodeId="406"/>
+            <TransformGroup name="chicken1" translation="-0.0858624 0.475831 5.17376" rotation="-180 44.3545 -180" nodeId="407"/>
+            <TransformGroup name="chicken1" translation="0.165511 0.475831 5.1808" rotation="-6.11606e-07 13.6483 -1.364e-07" nodeId="408"/>
+            <TransformGroup name="chicken1" translation="0.391077 0.475831 5.46922" rotation="-6.11606e-07 13.6483 -1.364e-07" nodeId="409"/>
+            <TransformGroup name="chicken5" translation="0.117317 -0.149 2.89904" nodeId="410"/>
+            <TransformGroup name="chicken5" translation="-0.499678 -0.149455 3.59067" rotation="0 251.408 0" nodeId="411"/>
+            <TransformGroup name="chicken5" translation="-0.444646 -0.149455 3.17802" rotation="0 92.5736 0" nodeId="412"/>
+            <TransformGroup name="chicken5" translation="-0.509566 -0.149455 2.86778" nodeId="413"/>
+            <TransformGroup name="chicken5" translation="-0.185806 -0.149455 2.91982" rotation="0 320.448 0" nodeId="414"/>
+            <TransformGroup name="chicken5" translation="-0.290733 -0.149455 3.23298" rotation="0 163.163 0" nodeId="415"/>
+            <TransformGroup name="chicken5" translation="-0.287303 -0.149455 3.65409" rotation="0 29.1147 0" nodeId="416"/>
+            <TransformGroup name="chicken5" translation="0.267236 -0.149455 3.62988" rotation="0 79.6313 0" nodeId="417"/>
+            <TransformGroup name="chicken5" translation="0.0872212 -0.149455 3.28323" rotation="0 132.906 0" nodeId="418"/>
+            <TransformGroup name="chicken5" translation="0.392731 -0.149455 3.12537" rotation="-180 -2.59879 -180" nodeId="419"/>
+            <TransformGroup name="chicken5" translation="-0.252051 0.48 3.77001" nodeId="420"/>
+            <TransformGroup name="chicken5" translation="-0.495889 0.48 4.10171" rotation="0 126.171 0" nodeId="421"/>
+            <TransformGroup name="chicken5" translation="-0.464445 0.479784 3.79148" rotation="0 300.134 0" nodeId="422"/>
+            <TransformGroup name="chicken5" translation="-0.516263 0.48 3.38128" rotation="0 330.622 0" nodeId="423"/>
+            <TransformGroup name="chicken5" translation="-0.316046 0.47952 3.36021" rotation="0 1.40629 0" nodeId="424"/>
+            <TransformGroup name="chicken5" translation="-0.270359 0.480138 4.08472" rotation="0 101.033 0" nodeId="425"/>
+            <TransformGroup name="chicken5" translation="0.284571 0.48 3.44049" nodeId="426"/>
+            <TransformGroup name="chicken5" translation="-0.0180848 0.47952 3.40415" rotation="0 278.776 0" nodeId="427"/>
+            <TransformGroup name="chicken5" translation="0.362587 0.480138 4.06333" nodeId="428"/>
+            <TransformGroup name="chicken5" translation="0.199244 0.48 3.80459" rotation="0 128.5 0" nodeId="429"/>
+            <TransformGroup name="chicken5" translation="0.337445 0.470288 1.88608" nodeId="430"/>
+            <TransformGroup name="chicken5" translation="-0.430878 0.477788 2.50738" rotation="0 244.86 0" nodeId="431"/>
+            <TransformGroup name="chicken5" translation="-0.447818 0.474401 2.2268" rotation="0 49.7916 0" nodeId="432"/>
+            <TransformGroup name="chicken5" translation="-0.416047 0.470188 1.87782" rotation="0 9.26176 0" nodeId="433"/>
+            <TransformGroup name="chicken5" translation="0.151465 0.478 2.56496" rotation="0 122.952 0" nodeId="434"/>
+            <TransformGroup name="chicken5" translation="0.0133355 0.473018 2.11228" rotation="0 312.658 0" nodeId="435"/>
+            <TransformGroup name="chicken5" translation="0.441545 0.477418 2.48726" rotation="0 35.6627 0" nodeId="436"/>
+            <TransformGroup name="chicken5" translation="-0.0693744 0.469924 1.85592" rotation="0 315.416 0" nodeId="437"/>
+            <TransformGroup name="chicken5" translation="0.240201 0.474245 2.21385" rotation="0 249.21 0" nodeId="438"/>
+            <TransformGroup name="chicken5" translation="-0.116291 0.478 2.41953" rotation="0 122.952 0" nodeId="439"/>
+            <TransformGroup name="chicken5" translation="0.265144 -0.164378 2.31417" rotation="180 57.0482 -180" nodeId="440"/>
+            <TransformGroup name="chicken5" translation="-0.44614 -0.164378 2.36366" rotation="180 383.836 -180" nodeId="441"/>
+            <TransformGroup name="chicken5" translation="-0.442706 -0.164378 2.02763" rotation="180 367.367 -180" nodeId="442"/>
+            <TransformGroup name="chicken5" translation="-0.50041 -0.164378 1.6031" rotation="180 383.132 -180" nodeId="443"/>
+            <TransformGroup name="chicken5" translation="-0.0618679 -0.164378 2.31314" rotation="180 361.5 -180" nodeId="444"/>
+            <TransformGroup name="chicken5" translation="-0.0835125 -0.164378 1.91699" rotation="180 387.011 -180" nodeId="445"/>
+            <TransformGroup name="chicken5" translation="-0.147429 -0.164378 1.57014" rotation="180 371.432 -180" nodeId="446"/>
+            <TransformGroup name="chicken5" translation="0.155629 -0.164378 1.57798" rotation="180 376.167 -180" nodeId="447"/>
+            <TransformGroup name="chicken5" translation="0.160202 -0.164378 1.76875" rotation="180 204.379 -180" nodeId="448"/>
+            <TransformGroup name="chicken5" translation="0.428359 -0.164378 1.92983" rotation="-180 6.67973 180" nodeId="449"/>
+            <TransformGroup name="chicken5" translation="0.145469 -0.180165 0.242445" rotation="-180 6.67973 180" nodeId="450"/>
+            <TransformGroup name="chicken5" translation="-0.468035 -0.18 0.858465" rotation="-180 70.5672 180" nodeId="451"/>
+            <TransformGroup name="chicken5" translation="-0.190861 -0.180165 0.895266" rotation="-180 313.065 180" nodeId="452"/>
+            <TransformGroup name="chicken5" translation="0.146913 -0.180165 0.953655" rotation="-180 120.359 180" nodeId="453"/>
+            <TransformGroup name="chicken5" translation="0.41385 -0.180165 0.847347" rotation="-180 136.432 180" nodeId="454"/>
+            <TransformGroup name="chicken5" translation="-0.498776 -0.180165 0.532676" rotation="-180 198.562 180" nodeId="455"/>
+            <TransformGroup name="chicken5" translation="-0.165591 -0.180165 0.559621" rotation="-180 143.2 180" nodeId="456"/>
+            <TransformGroup name="chicken5" translation="0.139407 -0.180165 0.579083" rotation="-180 277.029 180" nodeId="457"/>
+            <TransformGroup name="chicken5" translation="0.382362 -0.18 0.525142" rotation="-180 239.949 180" nodeId="458"/>
+            <TransformGroup name="chicken5" translation="-0.312029 -0.180165 0.238392" rotation="-180 134.026 180" nodeId="459"/>
+            <TransformGroup name="chicken5" translation="-0.137017 -0.193909 -1.20752" rotation="-180 70.5672 180" nodeId="460"/>
+            <TransformGroup name="chicken5" translation="0.397468 -0.193909 -0.475967" rotation="-180 160.976 180" nodeId="461"/>
+            <TransformGroup name="chicken5" translation="0.0523908 -0.193909 -0.446726" rotation="-180 172.095 180" nodeId="462"/>
+            <TransformGroup name="chicken5" translation="-0.193689 -0.193909 -0.448944" rotation="-180 300.595 180" nodeId="463"/>
+            <TransformGroup name="chicken5" translation="-0.449016 -0.193909 -0.423823" rotation="-180 301.309 180" nodeId="464"/>
+            <TransformGroup name="chicken5" translation="0.358667 -0.194 -0.802653" rotation="-180 265.427 180" nodeId="465"/>
+            <TransformGroup name="chicken5" translation="-0.00283259 -0.193909 -0.851467" rotation="-180 308.209 180" nodeId="466"/>
+            <TransformGroup name="chicken5" translation="-0.322462 -0.193909 -0.793386" rotation="-180 395.915 180" nodeId="467"/>
+            <TransformGroup name="chicken5" translation="-0.457057 -0.193909 -0.972323" rotation="-180 265.921 180" nodeId="468"/>
+            <TransformGroup name="chicken5" translation="0.347437 -0.193909 -1.25206" rotation="-180 285.4 180" nodeId="469"/>
+            <TransformGroup name="chicken5" translation="0.160024 0.451799 0.0375881" rotation="8.65142e-06 -85.4266 -8.65142e-06" nodeId="470"/>
+            <TransformGroup name="chicken5" translation="-0.432043 0.452 0.713186" rotation="8.65142e-06 256.05 -8.65142e-06" nodeId="471"/>
+            <TransformGroup name="chicken5" translation="-0.0415764 0.452 0.717917" rotation="8.65142e-06 23.9017 -8.65142e-06" nodeId="472"/>
+            <TransformGroup name="chicken5" translation="0.174477 0.452 0.652258" rotation="8.65142e-06 171.101 -8.65142e-06" nodeId="473"/>
+            <TransformGroup name="chicken5" translation="0.38442 0.45205 0.712908" rotation="8.65142e-06 25.1212 -8.65142e-06" nodeId="474"/>
+            <TransformGroup name="chicken5" translation="-0.420631 0.45205 0.367909" rotation="8.65142e-06 234.703 -8.65142e-06" nodeId="475"/>
+            <TransformGroup name="chicken5" translation="-0.0502393 0.45205 0.379076" rotation="8.65142e-06 63.8382 -8.65142e-06" nodeId="476"/>
+            <TransformGroup name="chicken5" translation="0.210379 0.45205 0.361043" rotation="8.65142e-06 257.819 -8.65142e-06" nodeId="477"/>
+            <TransformGroup name="chicken5" translation="0.420829 0.45205 0.377398" rotation="8.65142e-06 110.466 -8.65142e-06" nodeId="478"/>
+            <TransformGroup name="chicken5" translation="-0.266821 0.45205 -0.0364608" rotation="8.65142e-06 153.918 -8.65142e-06" nodeId="479"/>
+            <TransformGroup name="chicken5" translation="0.243413 0.4352 -1.43949" rotation="-180 -76.0499 180" nodeId="480"/>
+            <TransformGroup name="chicken5" translation="-0.458861 0.4352 -0.745273" rotation="-180 250.133 180" nodeId="481"/>
+            <TransformGroup name="chicken5" translation="-0.187132 0.435 -0.784953" rotation="-180 7.32792 180" nodeId="482"/>
+            <TransformGroup name="chicken5" translation="0.0991288 0.435 -0.755183" rotation="-180 0.900725 180" nodeId="483"/>
+            <TransformGroup name="chicken5" translation="0.435469 0.435 -0.7285" rotation="-180 -32.9602 180" nodeId="484"/>
+            <TransformGroup name="chicken5" translation="-0.478199 0.4352 -1.07576" rotation="-180 -7.11954 180" nodeId="485"/>
+            <TransformGroup name="chicken5" translation="-0.237069 0.435 -1.08177" rotation="-180 135.301 180" nodeId="486"/>
+            <TransformGroup name="chicken5" translation="0.0719983 0.4352 -0.990826" rotation="-180 159.493 180" nodeId="487"/>
+            <TransformGroup name="chicken5" translation="0.241138 0.4352 -1.03139" rotation="-180 140.003 180" nodeId="488"/>
+            <TransformGroup name="chicken5" translation="-0.265251 0.435 -1.4269" rotation="4.58934e-05 -79.1801 -5.29379e-05" nodeId="489"/>
+            <TransformGroup name="chicken5" translation="0.241619 -0.208 -2.60594" rotation="-180 7.32792 180" nodeId="490"/>
+            <TransformGroup name="chicken5" translation="-0.516253 -0.208443 -1.8916" rotation="-180 145.485 180" nodeId="491"/>
+            <TransformGroup name="chicken5" translation="-0.170104 -0.208443 -1.94019" rotation="-180 364.823 180" nodeId="492"/>
+            <TransformGroup name="chicken5" translation="0.114605 -0.208443 -1.94412" rotation="-180 24.0496 180" nodeId="493"/>
+            <TransformGroup name="chicken5" translation="0.353003 -0.208 -1.91716" rotation="-180 267.591 180" nodeId="494"/>
+            <TransformGroup name="chicken5" translation="-0.507794 -0.208443 -2.31374" rotation="-180 232.554 180" nodeId="495"/>
+            <TransformGroup name="chicken5" translation="-0.133131 -0.208443 -2.30487" rotation="-180 217.624 180" nodeId="496"/>
+            <TransformGroup name="chicken5" translation="0.109854 -0.208443 -2.30751" rotation="-180 139.915 180" nodeId="497"/>
+            <TransformGroup name="chicken5" translation="0.431674 -0.208443 -2.32182" rotation="-180 171.238 180" nodeId="498"/>
+            <TransformGroup name="chicken5" translation="-0.253598 -0.208 -2.6261" rotation="-180 28.4772 180" nodeId="499"/>
+            <TransformGroup name="chicken5" translation="-0.527067 -0.208443 -3.7948" rotation="3.67922e-07 8.74511 4.82943e-08" nodeId="500"/>
+            <TransformGroup name="chicken5" translation="0.285818 -0.208443 -3.13115" rotation="8.65142e-06 242.492 -8.65142e-06" nodeId="501"/>
+            <TransformGroup name="chicken5" translation="0.0228685 -0.208443 -3.11606" rotation="8.65142e-06 156.708 -8.65142e-06" nodeId="502"/>
+            <TransformGroup name="chicken5" translation="-0.300824 -0.208443 -3.17974" rotation="8.65142e-06 -11.5084 -8.65142e-06" nodeId="503"/>
+            <TransformGroup name="chicken5" translation="0.301696 -0.208443 -3.44634" rotation="8.65142e-06 182.626 -8.65142e-06" nodeId="504"/>
+            <TransformGroup name="chicken5" translation="0.273095 -0.208443 -3.72166" rotation="8.65142e-06 63.5525 -8.65142e-06" nodeId="505"/>
+            <TransformGroup name="chicken5" translation="0.272507 -0.212 -3.95572" rotation="-180 43.1748 180" nodeId="506"/>
+            <TransformGroup name="chicken5" translation="-0.0635282 -0.208443 -3.55051" rotation="8.65142e-06 246.656 -8.65142e-06" nodeId="507"/>
+            <TransformGroup name="chicken5" translation="-0.121906 -0.208 -3.93097" rotation="8.65142e-06 156.818 -8.65142e-06" nodeId="508"/>
+            <TransformGroup name="chicken5" translation="-0.370779 -0.208443 -3.42936" rotation="8.65142e-06 147.622 -8.65142e-06" nodeId="509"/>
+            <TransformGroup name="chicken5" translation="0.412108 0.423079 -2.97321" rotation="-180 23.1817 180" nodeId="510"/>
+            <TransformGroup name="chicken5" translation="-0.493969 0.423079 -2.61351" rotation="-180 183.389 180" nodeId="511"/>
+            <TransformGroup name="chicken5" translation="-0.119995 0.423079 -2.61272" rotation="-180 116.81 180" nodeId="512"/>
+            <TransformGroup name="chicken5" translation="0.230469 0.423079 -2.57552" rotation="-180 158.318 180" nodeId="513"/>
+            <TransformGroup name="chicken5" translation="0.419378 0.423 -2.59645" rotation="-180 36.3767 180" nodeId="514"/>
+            <TransformGroup name="chicken5" translation="-0.509939 0.423 -3.11408" rotation="-180 324.974 180" nodeId="515"/>
+            <TransformGroup name="chicken5" translation="-0.126982 0.423079 -3.00475" rotation="-180 55.4056 180" nodeId="516"/>
+            <TransformGroup name="chicken5" translation="0.165567 0.423079 -2.96771" rotation="-180 181.401 180" nodeId="517"/>
+            <TransformGroup name="chicken5" translation="0.254508 0.423 -3.33175" rotation="-180 23.1817 180" nodeId="518"/>
+            <TransformGroup name="chicken5" translation="-0.185585 0.423079 -3.33611" rotation="-180 359.33 180" nodeId="519"/>
+            <TransformGroup name="chicken1up" translation="0.432 1.581 7.464" rotation="180 19.4474 180" nodeId="520"/>
+            <TransformGroup name="chicken1" translation="-0.448408 1.581 7.44158" rotation="180 19.4474 180" nodeId="521"/>
+            <TransformGroup name="chicken1" translation="0.0821552 1.581 7.44349" rotation="180 -50.5376 180" nodeId="522"/>
+            <TransformGroup name="chicken1" translation="0.120821 1.581 6.76456" rotation="180 19.4474 180" nodeId="523"/>
+            <TransformGroup name="chicken1" translation="-0.360243 1.581 7.16649" rotation="-8.65142e-06 57.4428 -8.65142e-06" nodeId="524"/>
+            <TransformGroup name="chicken1" translation="-0.396166 1.581 6.84679" rotation="180 47.0459 180" nodeId="525"/>
+            <TransformGroup name="chicken1" translation="-0.0563051 1.581 7.12412" rotation="-8.65142e-06 -82.0879 -8.65142e-06" nodeId="526"/>
+            <TransformGroup name="chicken1" translation="0.307661 1.581 7.08539" rotation="-8.65142e-06 35.4804 -8.65142e-06" nodeId="527"/>
+            <TransformGroup name="chicken1" translation="0.434279 1.581 6.96922" rotation="-8.65142e-06 -45.3924 -8.65142e-06" nodeId="528"/>
+            <TransformGroup name="chicken1" translation="0.383922 1.581 6.7136" rotation="2.19094e-06 -62.3537 -1.94897e-06" nodeId="529"/>
+            <TransformGroup name="chicken1" translation="-0.255015 1.581 6.71597" rotation="8.80547e-07 64.3358 7.90422e-07" nodeId="530"/>
+            <TransformGroup name="chicken1" translation="-0.143291 1.581 7.46637" rotation="180 -5.79519 180" nodeId="531"/>
+            <TransformGroup name="chicken2up" translation="-0.433238 2.209 5.47373" rotation="180 19.4474 180" nodeId="532"/>
+            <TransformGroup name="chicken1" translation="0.424111 2.209 6.16449" rotation="180 19.4474 180" nodeId="533"/>
+            <TransformGroup name="chicken1" translation="0.156631 2.209 6.14354" rotation="180 19.4474 180" nodeId="534"/>
+            <TransformGroup name="chicken1" translation="-0.162736 2.209 6.095" rotation="180 19.4474 180" nodeId="535"/>
+            <TransformGroup name="chicken1" translation="-0.497155 2.209 6.14577" rotation="180 19.4474 180" nodeId="536"/>
+            <TransformGroup name="chicken1" translation="0.43355 2.209 5.48673" rotation="180 19.4474 180" nodeId="537"/>
+            <TransformGroup name="chicken1" translation="0.0573028 2.209 5.45133" rotation="180 19.4474 180" nodeId="538"/>
+            <TransformGroup name="chicken1" translation="0.159769 2.209 5.79376" rotation="180 19.4474 180" nodeId="539"/>
+            <TransformGroup name="chicken1" translation="-0.0813007 2.209 5.78634" rotation="180 19.4474 180" nodeId="540"/>
+            <TransformGroup name="chicken1" translation="-0.374167 2.209 5.78192" rotation="180 19.4474 180" nodeId="541"/>
+            <TransformGroup name="chicken3up" translation="-0.27315 1.581 4.84023" rotation="180 19.4474 180" nodeId="542"/>
+            <TransformGroup name="chicken1" translation="0.423264 1.581 4.14467" rotation="180 19.4474 180" nodeId="543"/>
+            <TransformGroup name="chicken1" translation="0.0671526 1.581 4.16729" rotation="180 142.124 180" nodeId="544"/>
+            <TransformGroup name="chicken1" translation="-0.273103 1.581 4.16661" rotation="180 72.2273 180" nodeId="545"/>
+            <TransformGroup name="chicken1" translation="-0.529126 1.581 4.21815" rotation="180 19.4474 180" nodeId="546"/>
+            <TransformGroup name="chicken1" translation="0.374901 1.581 4.48271" rotation="180 19.4474 180" nodeId="547"/>
+            <TransformGroup name="chicken1" translation="0.0344898 1.581 4.47424" rotation="180 76.7758 180" nodeId="548"/>
+            <TransformGroup name="chicken1" translation="-0.230891 1.581 4.44937" rotation="180 19.4474 180" nodeId="549"/>
+            <TransformGroup name="chicken1" translation="-0.512542 1.581 4.58937" rotation="180 19.4474 180" nodeId="550"/>
+            <TransformGroup name="chicken1" translation="0.150139 1.581 4.87193" rotation="180 240.884 180" nodeId="551"/>
+            <TransformGroup name="chicken4up2" translation="-0.471 2.209 6.07871" rotation="5.00896e-06 -60.884 5.00896e-06" nodeId="552"/>
+            <TransformGroup name="chicken1" translation="0.366848 2.209 6.74772" rotation="5.00896e-06 -60.884 5.00896e-06" nodeId="553"/>
+            <TransformGroup name="chicken1" translation="0.361171 2.209 6.45071" rotation="5.00896e-06 -60.884 5.00896e-06" nodeId="554"/>
+            <TransformGroup name="chicken1" translation="0.324174 2.209 6.224" rotation="5.00896e-06 -60.884 5.00896e-06" nodeId="555"/>
+            <TransformGroup name="chicken1" translation="-0.0377643 2.209 6.78603" rotation="5.00896e-06 112.123 5.00896e-06" nodeId="556"/>
+            <TransformGroup name="chicken1" translation="-0.0129662 2.209 6.5534" rotation="5.00896e-06 -7.47783 5.00896e-06" nodeId="557"/>
+            <TransformGroup name="chicken1" translation="-0.507039 2.209 6.88344" rotation="5.00896e-06 2.64089 5.00896e-06" nodeId="558"/>
+            <TransformGroup name="chicken1" translation="-0.487954 2.209 6.5886" rotation="5.00896e-06 144.786 5.00896e-06" nodeId="559"/>
+            <TransformGroup name="chicken1" translation="0.0215116 2.209 6.05339" rotation="5.00896e-06 104.817 5.00896e-06" nodeId="560"/>
+            <TransformGroup name="chicken1" translation="-0.283032 2.209 6.30903" rotation="5.00896e-06 187.942 5.00896e-06" nodeId="561"/>
+            <TransformGroup name="chicken5up2" translation="0.39029 2.209 5.04051" rotation="-180 -7.94196 -180" nodeId="562"/>
+            <TransformGroup name="chicken1" translation="0.411242 2.209 4.76137" rotation="-180 42.1133 -180" nodeId="563"/>
+            <TransformGroup name="chicken1" translation="0.0638433 2.209 4.75158" rotation="-180 260.748 -180" nodeId="564"/>
+            <TransformGroup name="chicken1" translation="-0.484414 2.209 5.01845" rotation="-180 -7.94196 -180" nodeId="565"/>
+            <TransformGroup name="chicken1" translation="-0.511341 2.209 4.70974" rotation="-180 149.662 -180" nodeId="566"/>
+            <TransformGroup name="chicken1" translation="-0.46244 2.209 5.54211" rotation="-180 44.3545 -180" nodeId="567"/>
+            <TransformGroup name="chicken1" translation="-0.0503916 2.209 5.52612" rotation="-180 44.3545 -180" nodeId="568"/>
+            <TransformGroup name="chicken1" translation="-0.0858624 2.209 5.17376" rotation="-180 44.3545 -180" nodeId="569"/>
+            <TransformGroup name="chicken1" translation="0.165511 2.209 5.1808" rotation="-6.11606e-07 13.6483 -1.364e-07" nodeId="570"/>
+            <TransformGroup name="chicken1" translation="0.391077 2.209 5.46922" rotation="-6.11606e-07 13.6483 -1.364e-07" nodeId="571"/>
+            <TransformGroup name="chicken5" translation="0.117317 1.581 2.89904" nodeId="572"/>
+            <TransformGroup name="chicken5" translation="-0.499678 1.581 3.59067" rotation="0 251.408 0" nodeId="573"/>
+            <TransformGroup name="chicken5" translation="-0.444646 1.581 3.17802" rotation="0 92.5736 0" nodeId="574"/>
+            <TransformGroup name="chicken5" translation="-0.509566 1.581 2.86778" nodeId="575"/>
+            <TransformGroup name="chicken5" translation="-0.185806 1.581 2.91982" rotation="0 320.448 0" nodeId="576"/>
+            <TransformGroup name="chicken5" translation="-0.290733 1.581 3.23298" rotation="0 163.163 0" nodeId="577"/>
+            <TransformGroup name="chicken5" translation="-0.287303 1.581 3.65409" rotation="0 29.1147 0" nodeId="578"/>
+            <TransformGroup name="chicken5" translation="0.267236 1.581 3.62988" rotation="0 79.6313 0" nodeId="579"/>
+            <TransformGroup name="chicken5" translation="0.0872212 1.581 3.28323" rotation="0 132.906 0" nodeId="580"/>
+            <TransformGroup name="chicken5" translation="0.392731 1.581 3.12537" rotation="-180 -2.59879 -180" nodeId="581"/>
+            <TransformGroup name="chicken5" translation="-0.252051 2.209 3.77001" nodeId="582"/>
+            <TransformGroup name="chicken5" translation="-0.495889 2.209 4.10171" rotation="0 126.171 0" nodeId="583"/>
+            <TransformGroup name="chicken5" translation="-0.464445 2.209 3.79148" rotation="0 300.134 0" nodeId="584"/>
+            <TransformGroup name="chicken5" translation="-0.516263 2.209 3.38128" rotation="0 330.622 0" nodeId="585"/>
+            <TransformGroup name="chicken5" translation="-0.316046 2.209 3.36021" rotation="0 1.40629 0" nodeId="586"/>
+            <TransformGroup name="chicken5" translation="-0.270359 2.209 4.08472" rotation="0 101.033 0" nodeId="587"/>
+            <TransformGroup name="chicken5" translation="0.284571 2.209 3.44049" nodeId="588"/>
+            <TransformGroup name="chicken5" translation="-0.0180848 2.209 3.40415" rotation="0 278.776 0" nodeId="589"/>
+            <TransformGroup name="chicken5" translation="0.362587 2.209 4.06333" nodeId="590"/>
+            <TransformGroup name="chicken5" translation="0.199244 2.209 3.80459" rotation="0 128.5 0" nodeId="591"/>
+            <TransformGroup name="chicken5" translation="0.337445 2.209 1.88608" nodeId="592"/>
+            <TransformGroup name="chicken5" translation="-0.430878 2.209 2.50738" rotation="0 244.86 0" nodeId="593"/>
+            <TransformGroup name="chicken5" translation="-0.447818 2.209 2.2268" rotation="0 49.7916 0" nodeId="594"/>
+            <TransformGroup name="chicken5" translation="-0.416047 2.209 1.87782" rotation="0 9.26176 0" nodeId="595"/>
+            <TransformGroup name="chicken5" translation="0.151465 2.209 2.56496" rotation="0 122.952 0" nodeId="596"/>
+            <TransformGroup name="chicken5" translation="0.0133355 2.209 2.11228" rotation="0 312.658 0" nodeId="597"/>
+            <TransformGroup name="chicken5" translation="0.440418 2.209 2.48807" rotation="0 35.6627 0" nodeId="598"/>
+            <TransformGroup name="chicken5" translation="-0.0693744 2.209 1.85592" rotation="0 315.416 0" nodeId="599"/>
+            <TransformGroup name="chicken5" translation="0.240201 2.209 2.21385" rotation="0 249.21 0" nodeId="600"/>
+            <TransformGroup name="chicken5" translation="-0.116291 2.209 2.41953" rotation="0 122.952 0" nodeId="601"/>
+            <TransformGroup name="chicken5" translation="0.265144 1.581 2.31417" rotation="180 57.0482 -180" nodeId="602"/>
+            <TransformGroup name="chicken5" translation="-0.44614 1.581 2.36366" rotation="180 383.836 -180" nodeId="603"/>
+            <TransformGroup name="chicken5" translation="-0.442706 1.581 2.02763" rotation="180 367.367 -180" nodeId="604"/>
+            <TransformGroup name="chicken5" translation="-0.50041 1.581 1.6031" rotation="180 383.132 -180" nodeId="605"/>
+            <TransformGroup name="chicken5" translation="-0.0618679 1.581 2.31314" rotation="180 361.5 -180" nodeId="606"/>
+            <TransformGroup name="chicken5" translation="-0.0835125 1.581 1.91699" rotation="180 387.011 -180" nodeId="607"/>
+            <TransformGroup name="chicken5" translation="-0.147429 1.581 1.57014" rotation="180 371.432 -180" nodeId="608"/>
+            <TransformGroup name="chicken5" translation="0.155629 1.581 1.57798" rotation="180 376.167 -180" nodeId="609"/>
+            <TransformGroup name="chicken5" translation="0.160202 1.581 1.76875" rotation="180 204.379 -180" nodeId="610"/>
+            <TransformGroup name="chicken5" translation="0.428359 1.581 1.92983" rotation="-180 6.67973 180" nodeId="611"/>
+            <TransformGroup name="chicken5" translation="0.145469 1.581 0.242445" rotation="-180 6.67973 180" nodeId="612"/>
+            <TransformGroup name="chicken5" translation="-0.468035 1.581 0.858465" rotation="-180 70.5672 180" nodeId="613"/>
+            <TransformGroup name="chicken5" translation="-0.190861 1.581 0.895266" rotation="-180 313.065 180" nodeId="614"/>
+            <TransformGroup name="chicken5" translation="0.146913 1.581 0.953655" rotation="-180 120.359 180" nodeId="615"/>
+            <TransformGroup name="chicken5" translation="0.41385 1.581 0.847347" rotation="-180 136.432 180" nodeId="616"/>
+            <TransformGroup name="chicken5" translation="-0.498776 1.581 0.532676" rotation="-180 198.562 180" nodeId="617"/>
+            <TransformGroup name="chicken5" translation="-0.165591 1.581 0.559621" rotation="-180 143.2 180" nodeId="618"/>
+            <TransformGroup name="chicken5" translation="0.139407 1.581 0.579083" rotation="-180 277.029 180" nodeId="619"/>
+            <TransformGroup name="chicken5" translation="0.382362 1.581 0.525142" rotation="-180 239.949 180" nodeId="620"/>
+            <TransformGroup name="chicken5" translation="-0.312029 1.581 0.238392" rotation="-180 134.026 180" nodeId="621"/>
+            <TransformGroup name="chicken5" translation="-0.137017 1.581 -1.20752" rotation="-180 70.5672 180" nodeId="622"/>
+            <TransformGroup name="chicken5" translation="0.397468 1.581 -0.475967" rotation="-180 160.976 180" nodeId="623"/>
+            <TransformGroup name="chicken5" translation="0.0523908 1.581 -0.446726" rotation="-180 172.095 180" nodeId="624"/>
+            <TransformGroup name="chicken5" translation="-0.193689 1.581 -0.448944" rotation="-180 300.595 180" nodeId="625"/>
+            <TransformGroup name="chicken5" translation="-0.449016 1.581 -0.423823" rotation="-180 301.309 180" nodeId="626"/>
+            <TransformGroup name="chicken5" translation="0.358667 1.581 -0.802653" rotation="-180 265.427 180" nodeId="627"/>
+            <TransformGroup name="chicken5" translation="-0.00283259 1.581 -0.851467" rotation="-180 308.209 180" nodeId="628"/>
+            <TransformGroup name="chicken5" translation="-0.322462 1.581 -0.793386" rotation="-180 395.915 180" nodeId="629"/>
+            <TransformGroup name="chicken5" translation="-0.457057 1.581 -0.972323" rotation="-180 265.921 180" nodeId="630"/>
+            <TransformGroup name="chicken5" translation="0.347437 1.581 -1.25206" rotation="-180 285.4 180" nodeId="631"/>
+            <TransformGroup name="chicken5" translation="0.160024 2.209 0.0375881" rotation="8.65142e-06 -85.4266 -8.65142e-06" nodeId="632"/>
+            <TransformGroup name="chicken5" translation="-0.432043 2.209 0.713186" rotation="8.65142e-06 256.05 -8.65142e-06" nodeId="633"/>
+            <TransformGroup name="chicken5" translation="-0.0415764 2.209 0.717917" rotation="8.65142e-06 23.9017 -8.65142e-06" nodeId="634"/>
+            <TransformGroup name="chicken5" translation="0.174477 2.209 0.652258" rotation="8.65142e-06 171.101 -8.65142e-06" nodeId="635"/>
+            <TransformGroup name="chicken5" translation="0.38442 2.209 0.712908" rotation="8.65142e-06 25.1212 -8.65142e-06" nodeId="636"/>
+            <TransformGroup name="chicken5" translation="-0.420631 2.209 0.367909" rotation="8.65142e-06 234.703 -8.65142e-06" nodeId="637"/>
+            <TransformGroup name="chicken5" translation="-0.0502393 2.209 0.379076" rotation="8.65142e-06 63.8382 -8.65142e-06" nodeId="638"/>
+            <TransformGroup name="chicken5" translation="0.210379 2.209 0.361043" rotation="8.65142e-06 257.819 -8.65142e-06" nodeId="639"/>
+            <TransformGroup name="chicken5" translation="0.420829 2.209 0.377398" rotation="8.65142e-06 110.466 -8.65142e-06" nodeId="640"/>
+            <TransformGroup name="chicken5" translation="-0.266821 2.209 -0.0364608" rotation="8.65142e-06 153.918 -8.65142e-06" nodeId="641"/>
+            <TransformGroup name="chicken5" translation="0.243413 2.209 -1.43949" rotation="-180 -76.0499 180" nodeId="642"/>
+            <TransformGroup name="chicken5" translation="-0.458861 2.209 -0.745273" rotation="-180 250.133 180" nodeId="643"/>
+            <TransformGroup name="chicken5" translation="-0.187132 2.209 -0.784953" rotation="-180 7.32792 180" nodeId="644"/>
+            <TransformGroup name="chicken5" translation="0.0991288 2.209 -0.755183" rotation="-180 0.900725 180" nodeId="645"/>
+            <TransformGroup name="chicken5" translation="0.435469 2.209 -0.7285" rotation="-180 -32.9602 180" nodeId="646"/>
+            <TransformGroup name="chicken5" translation="-0.478199 2.209 -1.07576" rotation="-180 -7.11954 180" nodeId="647"/>
+            <TransformGroup name="chicken5" translation="-0.237069 2.209 -1.08177" rotation="-180 135.301 180" nodeId="648"/>
+            <TransformGroup name="chicken5" translation="0.0719983 2.209 -0.990826" rotation="-180 159.493 180" nodeId="649"/>
+            <TransformGroup name="chicken5" translation="0.241138 2.209 -1.03139" rotation="-180 140.003 180" nodeId="650"/>
+            <TransformGroup name="chicken5" translation="-0.265251 2.209 -1.4269" rotation="4.58934e-05 -79.1801 -5.29379e-05" nodeId="651"/>
+            <TransformGroup name="chicken5" translation="0.241619 1.581 -2.60594" rotation="-180 7.32792 180" nodeId="652"/>
+            <TransformGroup name="chicken5" translation="-0.516253 1.581 -1.8916" rotation="-180 145.485 180" nodeId="653"/>
+            <TransformGroup name="chicken5" translation="-0.170104 1.581 -1.94019" rotation="-180 364.823 180" nodeId="654"/>
+            <TransformGroup name="chicken5" translation="0.114605 1.581 -1.94412" rotation="-180 24.0496 180" nodeId="655"/>
+            <TransformGroup name="chicken5" translation="0.353003 1.581 -1.91716" rotation="-180 267.591 180" nodeId="656"/>
+            <TransformGroup name="chicken5" translation="-0.507794 1.581 -2.31374" rotation="-180 232.554 180" nodeId="657"/>
+            <TransformGroup name="chicken5" translation="-0.133131 1.581 -2.30487" rotation="-180 217.624 180" nodeId="658"/>
+            <TransformGroup name="chicken5" translation="0.109854 1.581 -2.30751" rotation="-180 139.915 180" nodeId="659"/>
+            <TransformGroup name="chicken5" translation="0.412189 1.581 -2.31882" rotation="-180 171.238 180" nodeId="660"/>
+            <TransformGroup name="chicken5" translation="-0.253598 1.581 -2.6261" rotation="-180 28.4772 180" nodeId="661"/>
+            <TransformGroup name="chicken5" translation="-0.527067 1.581 -3.7948" rotation="3.67922e-07 8.74511 4.82943e-08" nodeId="662"/>
+            <TransformGroup name="chicken5" translation="0.285818 1.581 -3.13115" rotation="8.65142e-06 242.492 -8.65142e-06" nodeId="663"/>
+            <TransformGroup name="chicken5" translation="0.0228685 1.581 -3.11606" rotation="8.65142e-06 156.708 -8.65142e-06" nodeId="664"/>
+            <TransformGroup name="chicken5" translation="-0.300824 1.581 -3.17974" rotation="8.65142e-06 -11.5084 -8.65142e-06" nodeId="665"/>
+            <TransformGroup name="chicken5" translation="0.301696 1.581 -3.44634" rotation="8.65142e-06 182.626 -8.65142e-06" nodeId="666"/>
+            <TransformGroup name="chicken5" translation="0.273095 1.581 -3.72166" rotation="8.65142e-06 63.5525 -8.65142e-06" nodeId="667"/>
+            <TransformGroup name="chicken5" translation="0.272507 1.581 -3.95572" rotation="-180 43.1748 180" nodeId="668"/>
+            <TransformGroup name="chicken5" translation="-0.0635282 1.581 -3.55051" rotation="8.65142e-06 246.656 -8.65142e-06" nodeId="669"/>
+            <TransformGroup name="chicken5" translation="-0.121906 1.581 -3.93097" rotation="8.65142e-06 156.818 -8.65142e-06" nodeId="670"/>
+            <TransformGroup name="chicken5" translation="-0.370779 1.581 -3.42936" rotation="8.65142e-06 147.622 -8.65142e-06" nodeId="671"/>
+            <TransformGroup name="chicken5" translation="0.412108 2.209 -2.97321" rotation="-180 23.1817 180" nodeId="672"/>
+            <TransformGroup name="chicken5" translation="-0.493969 2.209 -2.61351" rotation="-180 183.389 180" nodeId="673"/>
+            <TransformGroup name="chicken5" translation="-0.119995 2.209 -2.61272" rotation="-180 116.81 180" nodeId="674"/>
+            <TransformGroup name="chicken5" translation="0.230469 2.209 -2.57552" rotation="-180 158.318 180" nodeId="675"/>
+            <TransformGroup name="chicken5" translation="0.419378 2.209 -2.59645" rotation="-180 36.3767 180" nodeId="676"/>
+            <TransformGroup name="chicken5" translation="-0.509939 2.209 -3.11408" rotation="-180 324.974 180" nodeId="677"/>
+            <TransformGroup name="chicken5" translation="-0.126982 2.209 -3.00475" rotation="-180 55.4056 180" nodeId="678"/>
+            <TransformGroup name="chicken5" translation="0.165567 2.209 -2.96771" rotation="-180 181.401 180" nodeId="679"/>
+            <TransformGroup name="chicken5" translation="0.254508 2.209 -3.33175" rotation="-180 23.1817 180" nodeId="680"/>
+            <TransformGroup name="chicken5" translation="-0.185585 2.209 -3.33611" rotation="-180 359.33 180" nodeId="681"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="attacher" translation="0 1.1 5.47758" rotation="0 90 0" nodeId="682"/>
+        <Shape shapeId="5" name="soporte" translation="0 -0.2 2.901" clipDistance="350" nodeId="683" materialIds="37" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="6" name="col" visibility="false" compoundChild="true" collisionMask="8194" clipDistance="100" nodeId="684" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        </Shape>
+        <TransformGroup name="lights" translation="0 1.444 -0.4213" nodeId="685">
+          <TransformGroup name="sharedLights" translation="0 -1.444 0.4213" nodeId="686">
+            <TransformGroup name="PlateNumberLight01" translation="0.266628 0.722857 -6.21675" rotation="-90 0 -180" nodeId="687"/>
+            <TransformGroup name="PlateNumberLight02" translation="-0.267758 0.722817 -6.21886" rotation="-90 -0 0" nodeId="688"/>
+            <TransformGroup name="sideMarker_07White_01" translation="-1.185 1.40767 6.975" rotation="90 -0 -90" scale="0.429 0.429 0.429" clipDistance="300" nodeId="689">
+              <TransformGroup name="sideMarker_07White_01_fixedName1" translation="0 0 0.144" clipDistance="300" nodeId="690"/>
+            </TransformGroup>
+            <TransformGroup name="sideMarker_07White_02" translation="1.185 1.40767 6.975" rotation="90 0 270" scale="0.429 0.429 0.429" clipDistance="300" nodeId="691">
+              <TransformGroup name="sideMarker_07White_01_fixedName2" translation="0 0 -0.144" clipDistance="300" nodeId="692"/>
+            </TransformGroup>
+            <TransformGroup name="sideMarker_07OrangeLeft_01" translation="1.235 1.121 -5.752" rotation="0 -0 270" scale="1.2 1 1.2" clipDistance="300" nodeId="869">
+              <Shape shapeId="7" name="sideMarker10Orange" referenceId="18" visibility="false" clipDistance="300" nodeId="870" materialIds="860" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="8" name="innerPartStatic" clipDistance="75" nodeId="871" materialIds="860" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                <Shape shapeId="9" name="glassStatic" translation="0 -0.00060034 0" clipDistance="75" nodeId="872" materialIds="861" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+              </Shape>
+            </TransformGroup>
+            <TransformGroup name="sideMarker_07Orange_right_01" translation="-1.235 1.121 -5.75202" rotation="0 0 90" scale="1.2 1 1.2" clipDistance="300" nodeId="873">
+              <Shape shapeId="7" name="sideMarker10Orange" referenceId="18" visibility="false" clipDistance="300" nodeId="874" materialIds="860" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="8" name="innerPartStatic" clipDistance="75" nodeId="875" materialIds="860" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                <Shape shapeId="9" name="glassStatic" translation="0 -0.00060034 0" clipDistance="75" nodeId="876" materialIds="861" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+              </Shape>
+            </TransformGroup>
+            <TransformGroup name="sideMarker_07OrangeLeft_03" translation="1.235 1.121 -3.24895" rotation="-0 -0 270" scale="1.2 1 1.2" clipDistance="300" nodeId="877">
+              <Shape shapeId="7" name="sideMarker10Orange" referenceId="18" visibility="false" clipDistance="300" nodeId="878" materialIds="860" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="8" name="innerPartStatic" clipDistance="75" nodeId="879" materialIds="860" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                <Shape shapeId="9" name="glassStatic" translation="0 -0.00060034 0" clipDistance="75" nodeId="880" materialIds="861" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+              </Shape>
+            </TransformGroup>
+            <TransformGroup name="sideMarker_07Orange_right_03" translation="-1.235 1.121 -3.24895" rotation="0 0 90" scale="1.2 1 1.2" clipDistance="300" nodeId="881">
+              <Shape shapeId="7" name="sideMarker10Orange" referenceId="18" visibility="false" clipDistance="300" nodeId="882" materialIds="860" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="8" name="innerPartStatic" clipDistance="75" nodeId="883" materialIds="860" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                <Shape shapeId="9" name="glassStatic" translation="0 -0.00060034 0" clipDistance="75" nodeId="884" materialIds="861" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+              </Shape>
+            </TransformGroup>
+            <TransformGroup name="sideMarker_07Orange_right_04" translation="-1.235 1.121 -0.750732" rotation="0 0 90" scale="1.2 1 1.2" clipDistance="300" nodeId="885">
+              <Shape shapeId="7" name="sideMarker10Orange" referenceId="18" visibility="false" clipDistance="300" nodeId="886" materialIds="860" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="8" name="innerPartStatic" clipDistance="75" nodeId="887" materialIds="860" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                <Shape shapeId="9" name="glassStatic" translation="0 -0.00060034 0" clipDistance="75" nodeId="888" materialIds="861" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+              </Shape>
+            </TransformGroup>
+            <TransformGroup name="sideMarker_07OrangeLeft_04" translation="1.235 1.121 -0.750732" rotation="-0 -0 270" scale="1.2 1 1.2" clipDistance="300" nodeId="889">
+              <Shape shapeId="7" name="sideMarker10Orange" referenceId="18" visibility="false" clipDistance="300" nodeId="890" materialIds="860" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="8" name="innerPartStatic" clipDistance="75" nodeId="891" materialIds="860" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                <Shape shapeId="9" name="glassStatic" translation="0 -0.00060034 0" clipDistance="75" nodeId="892" materialIds="861" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+              </Shape>
+            </TransformGroup>
+            <TransformGroup name="sideMarker_07Orange_right_06" translation="-1.235 1.121 1.74866" rotation="0 0 90" scale="1.2 1 1.2" clipDistance="300" nodeId="893">
+              <Shape shapeId="7" name="sideMarker10Orange" referenceId="18" visibility="false" clipDistance="300" nodeId="894" materialIds="860" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="8" name="innerPartStatic" clipDistance="75" nodeId="895" materialIds="860" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                <Shape shapeId="9" name="glassStatic" translation="0 -0.00060034 0" clipDistance="75" nodeId="896" materialIds="861" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+              </Shape>
+            </TransformGroup>
+            <TransformGroup name="sideMarker_07OrangeLeft_06" translation="1.235 1.121 1.74866" rotation="-0 -0 270" scale="1.2 1 1.2" clipDistance="300" nodeId="897">
+              <Shape shapeId="7" name="sideMarker10Orange" referenceId="18" visibility="false" clipDistance="300" nodeId="898" materialIds="860" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="8" name="innerPartStatic" clipDistance="75" nodeId="899" materialIds="860" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                <Shape shapeId="9" name="glassStatic" translation="0 -0.00060034 0" clipDistance="75" nodeId="900" materialIds="861" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+              </Shape>
+            </TransformGroup>
+            <TransformGroup name="sideMarker_07OrangeLeft_07" translation="1.235 1.43763 3.84872" rotation="-0 -0 270" scale="1.2 1 1.2" clipDistance="300" nodeId="901">
+              <Shape shapeId="7" name="sideMarker10Orange" referenceId="18" visibility="false" clipDistance="300" nodeId="902" materialIds="860" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="8" name="innerPartStatic" clipDistance="75" nodeId="903" materialIds="860" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                <Shape shapeId="9" name="glassStatic" translation="0 -0.00060034 0" clipDistance="75" nodeId="904" materialIds="861" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+              </Shape>
+            </TransformGroup>
+            <TransformGroup name="sideMarker_07Orange_right_07" translation="-1.235 1.43763 3.84872" rotation="0 0 90" scale="1.2 1 1.2" clipDistance="300" nodeId="905">
+              <Shape shapeId="7" name="sideMarker10Orange" referenceId="18" visibility="false" clipDistance="300" nodeId="906" materialIds="860" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="8" name="innerPartStatic" clipDistance="75" nodeId="907" materialIds="860" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                <Shape shapeId="9" name="glassStatic" translation="0 -0.00060034 0" clipDistance="75" nodeId="908" materialIds="861" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+              </Shape>
+            </TransformGroup>
+            <TransformGroup name="sideMarker_07Orange_right_08" translation="-1.235 1.43763 6.35057" rotation="0 0 90" scale="1.2 1 1.2" clipDistance="300" nodeId="909">
+              <Shape shapeId="7" name="sideMarker10Orange" referenceId="18" visibility="false" clipDistance="300" nodeId="910" materialIds="860" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="8" name="innerPartStatic" clipDistance="75" nodeId="911" materialIds="860" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                <Shape shapeId="9" name="glassStatic" translation="0 -0.00060034 0" clipDistance="75" nodeId="912" materialIds="861" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+              </Shape>
+            </TransformGroup>
+            <TransformGroup name="sideMarker_07OrangeLeft_08" translation="1.235 1.43763 6.35057" rotation="-0 -0 270" scale="1.2 1 1.2" clipDistance="300" nodeId="913">
+              <Shape shapeId="7" name="sideMarker10Orange" referenceId="18" visibility="false" clipDistance="300" nodeId="914" materialIds="860" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="8" name="innerPartStatic" clipDistance="75" nodeId="915" materialIds="860" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                <Shape shapeId="9" name="glassStatic" translation="0 -0.00060034 0" clipDistance="75" nodeId="916" materialIds="861" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+              </Shape>
+            </TransformGroup>
+            <TransformGroup name="redTriangle_02_01" translation="-0.485 0.833551 -6.30865" rotation="-90 -5.00896e-06 180" scale="1.1 1 1.1" nodeId="705"/>
+            <TransformGroup name="redTriangle_02_02" translation="0.485 0.833551 -6.30865" rotation="90 180 0" scale="1.1 1 1.1" nodeId="706"/>
+            <TransformGroup name="sideMarker_04Right01" translation="-1.368 0.869981 -6.17678" rotation="90 -0 90" scale="0.76 1 0.76" nodeId="707">
+              <TransformGroup name="sideMarker_04Right02" translation="3.11204e-25 -0.00724855 2.24256e-10" rotation="180 0 0" nodeId="708"/>
+            </TransformGroup>
+            <TransformGroup name="sideMarker_04Left01" translation="1.368 0.869981 -6.17678" rotation="90 -0 -90" scale="0.76 1 0.76" nodeId="709">
+              <TransformGroup name="sideMarker_04Left02" translation="-4.01455e-24 -0.00736878 1.57451e-10" rotation="-180 0 -1.52209e-05" nodeId="710"/>
+            </TransformGroup>
+            <TransformGroup name="turnlightLeft" translation="1.132 0.739784 -6.19" rotation="-90 -5.00896e-06 180" scale="1.7 0.8 1.7" clipDistance="300" nodeId="711"/>
+            <TransformGroup name="reverselightLeft" translation="0.713 0.736384 -6.19731" rotation="90 180 0" scale="2.4 1.2 2.4" clipDistance="300" nodeId="712">
+              <TransformGroup name="backlightLeft01" translation="0.09 0 0" clipDistance="300" nodeId="713"/>
+            </TransformGroup>
+            <TransformGroup name="brakelightLeft" translation="0.922 0.739784 -6.19" rotation="90 180 0" scale="1.7 0.8 1.7" clipDistance="300" nodeId="714"/>
+            <TransformGroup name="brakelightRight" translation="-0.922 0.739784 -6.19" rotation="90 180 0" scale="1.7 0.8 1.7" clipDistance="300" nodeId="715"/>
+            <TransformGroup name="reverselightRight" translation="-0.713 0.736384 -6.19731" rotation="90 180 0" scale="2.4 1.2 2.4" clipDistance="300" nodeId="716">
+              <TransformGroup name="backlightRight01" translation="-0.09 0 0" clipDistance="300" nodeId="717"/>
+            </TransformGroup>
+            <TransformGroup name="turnlightRight" translation="-1.132 0.739784 -6.19" rotation="90 180 0" scale="1.7 0.8 1.7" clipDistance="300" nodeId="718"/>
+            <TransformGroup name="sideMarker_07White_03" translation="-1.185 4.416 6.975" rotation="90 -0 -90" scale="0.429 0.429 0.429" clipDistance="300" nodeId="719">
+              <TransformGroup name="sideMarker_07White_031" translation="0 0 0.144" clipDistance="300" nodeId="720"/>
+            </TransformGroup>
+            <TransformGroup name="sideMarker_07White_04" translation="1.185 4.416 6.975" rotation="90 0 270" scale="0.429 0.429 0.429" clipDistance="300" nodeId="721">
+              <TransformGroup name="sideMarker_07White_041" translation="0 0 -0.144" clipDistance="300" nodeId="722"/>
+            </TransformGroup>
+            <TransformGroup name="upMarker_04Right01" translation="-1.023 4.51914 -6.316" rotation="-90 0 90" scale="1.25 1 1.25" nodeId="723"/>
+            <TransformGroup name="upMarker_04Left01" translation="1.023 4.51914 -6.316" rotation="-90 -3.87785e-06 -90" scale="1.25 1 1.25" nodeId="724"/>
+          </TransformGroup>
+          <TransformGroup name="reverseLight" translation="0 -3.55271e-17 7.10559e-17" nodeId="725">
+            <Light name="reverseLight" translation="0.621434 -0.727943 -5.83757" rotation="-4.72096 -0 0" clipDistance="75" nodeId="726" type="spot" color="1.1 0.9 0.9" emitDiffuse="true" emitSpecular="true" range="3" coneAngle="120" dropOff="2">
+              <Light name="reverseLight1" translation="-1.25372 0 0" clipDistance="75" nodeId="727" type="spot" color="1.1 0.9 0.9" emitDiffuse="true" emitSpecular="true" range="3" coneAngle="120" dropOff="2"/>
+            </Light>
+          </TransformGroup>
+          <TransformGroup name="turnLights" translation="0.257342 -7.29967e-07 -3.31729e-05" nodeId="728">
+            <TransformGroup name="turnLeft" nodeId="729">
+              <Light name="turnLightLeftBack" translation="0.872 -0.7172 -5.77896" rotation="-8 -5 -4.9886e-17" clipDistance="75" nodeId="730" type="spot" color="0.31 0.14 0" emitDiffuse="true" emitSpecular="true" range="4" coneAngle="140" dropOff="3"/>
+            </TransformGroup>
+            <TransformGroup name="turnRight" nodeId="731">
+              <Light name="turnLightRightBack" translation="-1.3831 -0.717 -5.73523" rotation="-8 5 4.9886e-17" clipDistance="75" nodeId="732" type="spot" color="0.31 0.14 0" emitDiffuse="true" emitSpecular="true" range="4" coneAngle="140" dropOff="3"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="worklight" translation="0 -3.55271e-17 7.10559e-17" nodeId="733">
+            <Light name="realWorkLight" translation="0.799 2.57034 -6.01172" rotation="-33.4783 -0 0" clipDistance="75" nodeId="734" type="spot" color="1.1 0.8 0.8" emitDiffuse="true" emitSpecular="true" range="6" coneAngle="110" dropOff="2">
+              <Light name="realWorkLight1" translation="-1.59953 0 0" clipDistance="75" nodeId="735" type="spot" color="1.1 0.8 0.8" emitDiffuse="true" emitSpecular="true" range="6" coneAngle="110" dropOff="2"/>
+            </Light>
+          </TransformGroup>
+          <TransformGroup name="workLight" nodeId="736">
+            <TransformGroup name="Deco" translation="0.799 2.56967 -6.00413" rotation="-135.114 -0 0" nodeId="737">
+              <Shape shapeId="10" name="workingLight10" translation="0 -0.0547123 0" referenceId="23" visibility="false" clipDistance="300" nodeId="1046" materialIds="1038" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="11" name="glass_static" translation="-0.011925 0.0551126 -0.00317312" clipDistance="75" nodeId="1047" materialIds="1037" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                <Shape shapeId="12" name="innerPartStatic" clipDistance="75" nodeId="1048" materialIds="1038" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+              </Shape>
+            </TransformGroup>
+            <TransformGroup name="Deco1" translation="-0.799 2.59591 -5.97813" rotation="-135.114 -0 0" nodeId="738">
+              <Shape shapeId="10" name="workingLight10" translation="0 -0.0210962 0" referenceId="23" visibility="false" clipDistance="300" nodeId="1049" materialIds="1038" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="11" name="glass_static" translation="-0.011925 0.0551126 -0.00317312" clipDistance="75" nodeId="1050" materialIds="1037" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                <Shape shapeId="12" name="innerPartStatic" clipDistance="75" nodeId="1051" materialIds="1038" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+              </Shape>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="realLight" translation="0 -3.55271e-17 7.10559e-17" nodeId="739">
+            <Light name="breakLightsHigh" translation="0.88031 -0.727943 -5.83757" rotation="-4.72096 -0 0" clipDistance="75" nodeId="740" type="spot" color="0.5 0 0" emitDiffuse="true" emitSpecular="true" range="3" coneAngle="110" dropOff="2">
+              <Light name="breakLightsHigh1" translation="-1.75579 0 0" clipDistance="75" nodeId="741" type="spot" color="0.5 0 0" emitDiffuse="true" emitSpecular="true" range="3" coneAngle="110" dropOff="2"/>
+            </Light>
+            <Light name="backLight" translation="0.88031 -0.727943 -5.838" rotation="-29.796 -0 0" clipDistance="75" nodeId="742" type="spot" color="0.5 0 0" emitDiffuse="true" emitSpecular="true" range="2" coneAngle="110" dropOff="2">
+              <Light name="backLight1" translation="-1.75579 0 0" clipDistance="75" nodeId="743" type="spot" color="0.5 0 0" emitDiffuse="true" emitSpecular="true" range="2" coneAngle="110" dropOff="2"/>
+            </Light>
+            <Light name="plateLight" translation="0.251519 -0.717135 -5.79094" rotation="0 90 0" clipDistance="75" nodeId="744" type="spot" color="1 1 1" emitDiffuse="true" emitSpecular="true" range="1" coneAngle="110" dropOff="2">
+              <Light name="plateLight1" translation="-2.46038e-07 0 -0.481677" rotation="0 180 0" clipDistance="75" nodeId="745" type="spot" color="1 1 1" emitDiffuse="true" emitSpecular="true" range="1" coneAngle="110" dropOff="2"/>
+            </Light>
+          </TransformGroup>
+          <TransformGroup name="additionalLights" translation="0 -1.444 0.4213" nodeId="917">
+            <TransformGroup name="side" nodeId="918">
+              <TransformGroup name="sideMarker_TLeft_01" translation="1.19963 4.14767 -5.752" rotation="0 -0 -90" scale="1.2 1 1.2" clipDistance="300" nodeId="925">
+                <Shape shapeId="7" name="sideMarker10Orange" referenceId="18" visibility="false" clipDistance="300" nodeId="926" materialIds="860" castsShadows="true" receiveShadows="true">
+                  <Shape shapeId="8" name="innerPartStatic" clipDistance="75" nodeId="927" materialIds="860" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                  <Shape shapeId="9" name="glassStatic" translation="0 -0.00060034 0" clipDistance="75" nodeId="928" materialIds="861" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                </Shape>
+              </TransformGroup>
+              <TransformGroup name="sideMarker_TLeft_02" translation="1.2 4.148 -3.24895" rotation="0 -0 -90" scale="1.2 1 1.2" clipDistance="300" nodeId="929">
+                <Shape shapeId="7" name="sideMarker10Orange" referenceId="18" visibility="false" clipDistance="300" nodeId="930" materialIds="860" castsShadows="true" receiveShadows="true">
+                  <Shape shapeId="8" name="innerPartStatic" clipDistance="75" nodeId="931" materialIds="860" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                  <Shape shapeId="9" name="glassStatic" translation="0 -0.00060034 0" clipDistance="75" nodeId="932" materialIds="861" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                </Shape>
+              </TransformGroup>
+              <TransformGroup name="sideMarker_TLeft_03" translation="1.2 4.148 -0.750732" rotation="0 -0 -90" scale="1.2 1 1.2" clipDistance="300" nodeId="933">
+                <Shape shapeId="7" name="sideMarker10Orange" referenceId="18" visibility="false" clipDistance="300" nodeId="934" materialIds="860" castsShadows="true" receiveShadows="true">
+                  <Shape shapeId="8" name="innerPartStatic" clipDistance="75" nodeId="935" materialIds="860" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                  <Shape shapeId="9" name="glassStatic" translation="0 -0.00060034 0" clipDistance="75" nodeId="936" materialIds="861" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                </Shape>
+              </TransformGroup>
+              <TransformGroup name="sideMarker_TLeft_04" translation="1.2 4.148 1.74866" rotation="0 -0 -90" scale="1.2 1 1.2" clipDistance="300" nodeId="937">
+                <Shape shapeId="7" name="sideMarker10Orange" referenceId="18" visibility="false" clipDistance="300" nodeId="938" materialIds="860" castsShadows="true" receiveShadows="true">
+                  <Shape shapeId="8" name="innerPartStatic" clipDistance="75" nodeId="939" materialIds="860" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                  <Shape shapeId="9" name="glassStatic" translation="0 -0.00060034 0" clipDistance="75" nodeId="940" materialIds="861" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                </Shape>
+              </TransformGroup>
+              <TransformGroup name="sideMarker_TLeft_05" translation="1.2 4.148 3.84872" rotation="0 -0 -90" scale="1.2 1 1.2" clipDistance="300" nodeId="941">
+                <Shape shapeId="7" name="sideMarker10Orange" referenceId="18" visibility="false" clipDistance="300" nodeId="942" materialIds="860" castsShadows="true" receiveShadows="true">
+                  <Shape shapeId="8" name="innerPartStatic" clipDistance="75" nodeId="943" materialIds="860" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                  <Shape shapeId="9" name="glassStatic" translation="0 -0.00060034 0" clipDistance="75" nodeId="944" materialIds="861" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                </Shape>
+              </TransformGroup>
+              <TransformGroup name="sideMarker_TLeft_06" translation="1.2 4.148 6.35057" rotation="0 -0 -90" scale="1.2 1 1.2" clipDistance="300" nodeId="945">
+                <Shape shapeId="7" name="sideMarker10Orange" referenceId="18" visibility="false" clipDistance="300" nodeId="946" materialIds="860" castsShadows="true" receiveShadows="true">
+                  <Shape shapeId="8" name="innerPartStatic" clipDistance="75" nodeId="947" materialIds="860" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                  <Shape shapeId="9" name="glassStatic" translation="0 -0.00060034 0" clipDistance="75" nodeId="948" materialIds="861" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                </Shape>
+              </TransformGroup>
+              <TransformGroup name="sideMarker_BLeft_01" translation="1.27008 0.54595 -5.88334" rotation="0 6.54531 -90" scale="1.2 1 1.2" clipDistance="300" nodeId="949">
+                <Shape shapeId="7" name="sideMarker10Orange" referenceId="18" visibility="false" clipDistance="300" nodeId="950" materialIds="860" castsShadows="true" receiveShadows="true">
+                  <Shape shapeId="8" name="innerPartStatic" clipDistance="75" nodeId="951" materialIds="860" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                  <Shape shapeId="9" name="glassStatic" translation="0 -0.00060034 0" clipDistance="75" nodeId="952" materialIds="861" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                </Shape>
+              </TransformGroup>
+              <TransformGroup name="sideMarker_BLeft_02" translation="1.27008 0.458388 -4.5819" rotation="0 6.545 -90" scale="1.2 1 1.2" clipDistance="300" nodeId="953">
+                <Shape shapeId="7" name="sideMarker10Orange" referenceId="18" visibility="false" clipDistance="300" nodeId="954" materialIds="860" castsShadows="true" receiveShadows="true">
+                  <Shape shapeId="8" name="innerPartStatic" clipDistance="75" nodeId="955" materialIds="860" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                  <Shape shapeId="9" name="glassStatic" translation="0 -0.00060034 0" clipDistance="75" nodeId="956" materialIds="861" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                </Shape>
+              </TransformGroup>
+              <TransformGroup name="sideMarker_BLeft_03" translation="1.28854 0.454388 -0.51127" rotation="0 -0 -90" scale="1.2 1 1.2" clipDistance="300" nodeId="957">
+                <Shape shapeId="7" name="sideMarker10Orange" referenceId="18" visibility="false" clipDistance="300" nodeId="958" materialIds="860" castsShadows="true" receiveShadows="true">
+                  <Shape shapeId="8" name="innerPartStatic" clipDistance="75" nodeId="959" materialIds="860" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                  <Shape shapeId="9" name="glassStatic" translation="0 -0.00060034 0" clipDistance="75" nodeId="960" materialIds="861" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                </Shape>
+              </TransformGroup>
+              <TransformGroup name="sideMarker_BLeft_04" translation="1.289 0.454 1.11808" rotation="0 -0 -90" scale="1.2 1 1.2" clipDistance="300" nodeId="961">
+                <Shape shapeId="7" name="sideMarker10Orange" referenceId="18" visibility="false" clipDistance="300" nodeId="962" materialIds="860" castsShadows="true" receiveShadows="true">
+                  <Shape shapeId="8" name="innerPartStatic" clipDistance="75" nodeId="963" materialIds="860" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                  <Shape shapeId="9" name="glassStatic" translation="0 -0.00060034 0" clipDistance="75" nodeId="964" materialIds="861" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                </Shape>
+              </TransformGroup>
+              <TransformGroup name="sideMarker_BLeft_05" translation="1.289 0.454 2.74329" rotation="0 -0 -90" scale="1.2 1 1.2" clipDistance="300" nodeId="965">
+                <Shape shapeId="7" name="sideMarker10Orange" referenceId="18" visibility="false" clipDistance="300" nodeId="966" materialIds="860" castsShadows="true" receiveShadows="true">
+                  <Shape shapeId="8" name="innerPartStatic" clipDistance="75" nodeId="967" materialIds="860" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                  <Shape shapeId="9" name="glassStatic" translation="0 -0.00060034 0" clipDistance="75" nodeId="968" materialIds="861" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                </Shape>
+              </TransformGroup>
+              <TransformGroup name="sideMarker_Tright_01" translation="-1.2 4.148 -5.75202" rotation="0 -0 90" scale="1.2 1 1.2" clipDistance="300" nodeId="969">
+                <Shape shapeId="7" name="sideMarker10Orange" referenceId="18" visibility="false" clipDistance="300" nodeId="970" materialIds="860" castsShadows="true" receiveShadows="true">
+                  <Shape shapeId="8" name="innerPartStatic" clipDistance="75" nodeId="971" materialIds="860" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                  <Shape shapeId="9" name="glassStatic" translation="0 -0.00060034 0" clipDistance="75" nodeId="972" materialIds="861" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                </Shape>
+              </TransformGroup>
+              <TransformGroup name="sideMarker_Tright_02" translation="-1.2 4.148 -3.24895" rotation="0 -0 90" scale="1.2 1 1.2" clipDistance="300" nodeId="973">
+                <Shape shapeId="7" name="sideMarker10Orange" referenceId="18" visibility="false" clipDistance="300" nodeId="974" materialIds="860" castsShadows="true" receiveShadows="true">
+                  <Shape shapeId="8" name="innerPartStatic" clipDistance="75" nodeId="975" materialIds="860" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                  <Shape shapeId="9" name="glassStatic" translation="0 -0.00060034 0" clipDistance="75" nodeId="976" materialIds="861" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                </Shape>
+              </TransformGroup>
+              <TransformGroup name="sideMarker_Tright_03" translation="-1.2 4.148 -0.750732" rotation="0 -0 90" scale="1.2 1 1.2" clipDistance="300" nodeId="977">
+                <Shape shapeId="7" name="sideMarker10Orange" referenceId="18" visibility="false" clipDistance="300" nodeId="978" materialIds="860" castsShadows="true" receiveShadows="true">
+                  <Shape shapeId="8" name="innerPartStatic" clipDistance="75" nodeId="979" materialIds="860" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                  <Shape shapeId="9" name="glassStatic" translation="0 -0.00060034 0" clipDistance="75" nodeId="980" materialIds="861" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                </Shape>
+              </TransformGroup>
+              <TransformGroup name="sideMarker_Tright_04" translation="-1.2 4.148 1.74866" rotation="0 -0 90" scale="1.2 1 1.2" clipDistance="300" nodeId="981">
+                <Shape shapeId="7" name="sideMarker10Orange" referenceId="18" visibility="false" clipDistance="300" nodeId="982" materialIds="860" castsShadows="true" receiveShadows="true">
+                  <Shape shapeId="8" name="innerPartStatic" clipDistance="75" nodeId="983" materialIds="860" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                  <Shape shapeId="9" name="glassStatic" translation="0 -0.00060034 0" clipDistance="75" nodeId="984" materialIds="861" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                </Shape>
+              </TransformGroup>
+              <TransformGroup name="sideMarker_Tright_05" translation="-1.2 4.148 3.84872" rotation="0 -0 90" scale="1.2 1 1.2" clipDistance="300" nodeId="985">
+                <Shape shapeId="7" name="sideMarker10Orange" referenceId="18" visibility="false" clipDistance="300" nodeId="986" materialIds="860" castsShadows="true" receiveShadows="true">
+                  <Shape shapeId="8" name="innerPartStatic" clipDistance="75" nodeId="987" materialIds="860" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                  <Shape shapeId="9" name="glassStatic" translation="0 -0.00060034 0" clipDistance="75" nodeId="988" materialIds="861" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                </Shape>
+              </TransformGroup>
+              <TransformGroup name="sideMarker_Tright_06" translation="-1.2 4.148 6.35057" rotation="0 -0 90" scale="1.2 1 1.2" clipDistance="300" nodeId="989">
+                <Shape shapeId="7" name="sideMarker10Orange" referenceId="18" visibility="false" clipDistance="300" nodeId="990" materialIds="860" castsShadows="true" receiveShadows="true">
+                  <Shape shapeId="8" name="innerPartStatic" clipDistance="75" nodeId="991" materialIds="860" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                  <Shape shapeId="9" name="glassStatic" translation="0 -0.00060034 0" clipDistance="75" nodeId="992" materialIds="861" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                </Shape>
+              </TransformGroup>
+              <TransformGroup name="sideMarker_Bright_01" translation="-1.27 0.54595 -5.88334" rotation="0 -6.545 90" scale="1.2 1 1.2" clipDistance="300" nodeId="993">
+                <Shape shapeId="7" name="sideMarker10Orange" referenceId="18" visibility="false" clipDistance="300" nodeId="994" materialIds="860" castsShadows="true" receiveShadows="true">
+                  <Shape shapeId="8" name="innerPartStatic" clipDistance="75" nodeId="995" materialIds="860" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                  <Shape shapeId="9" name="glassStatic" translation="0 -0.00060034 0" clipDistance="75" nodeId="996" materialIds="861" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                </Shape>
+              </TransformGroup>
+              <TransformGroup name="sideMarker_Bright_02" translation="-1.27 0.458388 -4.5819" rotation="0 -6.545 90" scale="1.2 1 1.2" clipDistance="300" nodeId="997">
+                <Shape shapeId="7" name="sideMarker10Orange" referenceId="18" visibility="false" clipDistance="300" nodeId="998" materialIds="860" castsShadows="true" receiveShadows="true">
+                  <Shape shapeId="8" name="innerPartStatic" clipDistance="75" nodeId="999" materialIds="860" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                  <Shape shapeId="9" name="glassStatic" translation="0 -0.00060034 0" clipDistance="75" nodeId="1000" materialIds="861" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                </Shape>
+              </TransformGroup>
+              <TransformGroup name="sideMarker_Bright_03" translation="-1.289 0.454388 -0.51127" rotation="0 -0 90" scale="1.2 1 1.2" clipDistance="300" nodeId="1001">
+                <Shape shapeId="7" name="sideMarker10Orange" referenceId="18" visibility="false" clipDistance="300" nodeId="1002" materialIds="860" castsShadows="true" receiveShadows="true">
+                  <Shape shapeId="8" name="innerPartStatic" clipDistance="75" nodeId="1003" materialIds="860" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                  <Shape shapeId="9" name="glassStatic" translation="0 -0.00060034 0" clipDistance="75" nodeId="1004" materialIds="861" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                </Shape>
+              </TransformGroup>
+              <TransformGroup name="sideMarker_Bright_04" translation="-1.289 0.454 1.11808" rotation="0 -0 90" scale="1.2 1 1.2" clipDistance="300" nodeId="1005">
+                <Shape shapeId="7" name="sideMarker10Orange" referenceId="18" visibility="false" clipDistance="300" nodeId="1006" materialIds="860" castsShadows="true" receiveShadows="true">
+                  <Shape shapeId="8" name="innerPartStatic" clipDistance="75" nodeId="1007" materialIds="860" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                  <Shape shapeId="9" name="glassStatic" translation="0 -0.00060034 0" clipDistance="75" nodeId="1008" materialIds="861" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                </Shape>
+              </TransformGroup>
+              <TransformGroup name="sideMarker_Bright_05" translation="-1.289 0.454 2.74329" rotation="0 -0 90" scale="1.2 1 1.2" clipDistance="300" nodeId="1013">
+                <Shape shapeId="7" name="sideMarker10Orange" referenceId="18" visibility="false" clipDistance="300" nodeId="1014" materialIds="860" castsShadows="true" receiveShadows="true">
+                  <Shape shapeId="8" name="innerPartStatic" clipDistance="75" nodeId="1015" materialIds="860" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                  <Shape shapeId="9" name="glassStatic" translation="0 -0.00060034 0" clipDistance="75" nodeId="1016" materialIds="861" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                </Shape>
+              </TransformGroup>
+            </TransformGroup>
+            <TransformGroup name="front" nodeId="919"/>
+            <TransformGroup name="back" nodeId="920"/>
+            <TransformGroup name="work" nodeId="921"/>
+            <TransformGroup name="beacon" nodeId="922"/>
+            <TransformGroup name="misc" nodeId="923"/>
+            <TransformGroup name="real" nodeId="924">
+              <Light name="sidemarkerOrange_real" translation="1.30274 0.450149 2.74128" rotation="90 5.64857e-06 -90" clipDistance="300" nodeId="1027" type="spot" color="0.31 0.14 0" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="1000" shadowExtrusionDistance="200" pcssLightSize="50.7906" pcssLightDistance="0.66" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="1.5" coneAngle="179" dropOff="2">
+                <Light name="sidemarkerOrange_real" translation="1.14812e-14 -1.6272 0" rotation="0 -4.93814e-13 4.07111e-13" clipDistance="300" nodeId="1028" type="spot" color="0.31 0.14 0" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="1000" shadowExtrusionDistance="200" pcssLightSize="50.7906" pcssLightDistance="0.66" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="1.5" coneAngle="179" dropOff="2"/>
+                <Light name="sidemarkerOrange_real" translation="2.30428e-14 -3.25436 0" rotation="0 -4.93814e-13 4.07111e-13" clipDistance="300" nodeId="1029" type="spot" color="0.31 0.14 0" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="1000" shadowExtrusionDistance="200" pcssLightSize="50.7906" pcssLightDistance="0.66" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="1.5" coneAngle="179" dropOff="2"/>
+                <Light name="sidemarkerOrange_real" translation="-0.00942681 -7.32177 -8.12467e-17" rotation="0 -4.93814e-13 4.07111e-13" clipDistance="300" nodeId="1030" type="spot" color="0.31 0.14 0" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="1000" shadowExtrusionDistance="200" pcssLightSize="50.7906" pcssLightDistance="0.66" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="1.5" coneAngle="179" dropOff="2"/>
+                <Light name="sidemarkerOrange_real" translation="-0.0942271 -8.62724 -8.12113e-16" rotation="0 -4.93814e-13 4.07111e-13" clipDistance="300" nodeId="1031" type="spot" color="0.31 0.14 0" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="1000" shadowExtrusionDistance="200" pcssLightSize="50.7906" pcssLightDistance="0.66" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="1.5" coneAngle="179" dropOff="2"/>
+                <Light name="sidemarkerOrange_real" translation="-0.0942271 -8.62724 2.58411" rotation="-180 0 -180" clipDistance="300" nodeId="1032" type="spot" color="0.31 0.14 0" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="1000" shadowExtrusionDistance="200" pcssLightSize="50.7906" pcssLightDistance="0.66" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="1.5" coneAngle="179" dropOff="2"/>
+                <Light name="sidemarkerOrange_real" translation="-0.00875294 -7.31764 2.58411" rotation="-180 0 -180" clipDistance="300" nodeId="1033" type="spot" color="0.31 0.14 0" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="1000" shadowExtrusionDistance="200" pcssLightSize="50.7906" pcssLightDistance="0.66" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="1.5" coneAngle="179" dropOff="2"/>
+                <Light name="sidemarkerOrange_real" translation="-0.00875356 -3.24676 2.58411" rotation="-180 0 -180" clipDistance="300" nodeId="1034" type="spot" color="0.31 0.14 0" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="1000" shadowExtrusionDistance="200" pcssLightSize="50.7906" pcssLightDistance="0.66" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="1.5" coneAngle="179" dropOff="2"/>
+                <Light name="sidemarkerOrange_real" translation="-0.0087538 -1.63664 2.58411" rotation="-180 0 -180" clipDistance="300" nodeId="1035" type="spot" color="0.31 0.14 0" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="1000" shadowExtrusionDistance="200" pcssLightSize="50.7906" pcssLightDistance="0.66" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="1.5" coneAngle="179" dropOff="2"/>
+                <Light name="sidemarkerOrange_real" translation="-0.00875405 0.00315316 2.58411" rotation="-180 0 -180" clipDistance="300" nodeId="1036" type="spot" color="0.31 0.14 0" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="1000" shadowExtrusionDistance="200" pcssLightSize="50.7906" pcssLightDistance="0.66" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="1.5" coneAngle="179" dropOff="2"/>
+              </Light>
+              <Light name="sidemarkerWhite_real" translation="-1.2218 1.40039 7.01263" rotation="-180 -0 0" clipDistance="300" nodeId="1052" type="spot" color="1 1 1" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="1000" shadowExtrusionDistance="200" pcssLightSize="50.7906" pcssLightDistance="0.66" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="0.5" coneAngle="179" dropOff="2">
+                <Light name="sidemarkerWhite_real" translation="2.44488 0 2.05306e-08" clipDistance="300" nodeId="1053" type="spot" color="1 1 1" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="1000" shadowExtrusionDistance="200" pcssLightSize="50.7906" pcssLightDistance="0.66" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="0.5" coneAngle="179" dropOff="2"/>
+                <Light name="sidemarkerWhite_real" translation="2.44488 -3.025 2.05306e-08" clipDistance="300" nodeId="1054" type="spot" color="1 1 1" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="1000" shadowExtrusionDistance="200" pcssLightSize="50.7906" pcssLightDistance="0.66" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="0.5" coneAngle="179" dropOff="2"/>
+                <Light name="sidemarkerWhite_real" translation="0.000671234 -3.025 2.05306e-08" clipDistance="300" nodeId="1055" type="spot" color="1 1 1" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="1000" shadowExtrusionDistance="200" pcssLightSize="50.7906" pcssLightDistance="0.66" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="0.5" coneAngle="179" dropOff="2"/>
+              </Light>
+            </TransformGroup>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="design" translation="-0.663 0.203905 0.597" nodeId="746">
+          <TransformGroup name="GroupName" translation="-0.041 1.331 1.07739" nodeId="747">
+            <Shape shapeId="13" name="boxLS540" translation="0.00342202 -0.25226 5.21937" rotation="-0 90 0" nodeId="748" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="13" name="boxLS540" translation="0.00342196 -0.25226 3.93652" rotation="-0 90 0" nodeId="749" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="13" name="boxLS540" translation="0.00342202 -0.25226 2.63854" rotation="-0 90 0" nodeId="750" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="13" name="boxLS540" translation="0.00742203 0.37112 3.23818" rotation="-0 90 0" nodeId="751" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="13" name="boxLS540" translation="0.00754243 0.37112 4.55586" rotation="-0 90 0" nodeId="752" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="13" name="boxLS540" translation="-0.00757802 -0.269089 0.0546529" rotation="-0 90 0" nodeId="753" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="13" name="boxLS540" translation="-0.00257802 -0.254166 1.34557" rotation="-0 90 0" nodeId="754" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="13" name="boxLS540" translation="-0.00515157 0.374809 1.81286" rotation="-0 90 0" nodeId="755" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="13" name="boxLS540" translation="0.015422 0.376592 0.300585" rotation="-90.0002 89.3084 -90.0002" nodeId="756" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="13" name="boxLS540" translation="-0.00757802 -0.284876 -1.33299" rotation="-0 90 0" nodeId="757" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="13" name="boxLS540" translation="-0.00757802 -0.29862 -2.75239" rotation="-0 90 0" nodeId="758" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="13" name="boxLS540" translation="-0.00757802 -0.313154 -4.12316" rotation="-0 90 0" nodeId="759" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="13" name="boxLS540" translation="0.0052141 0.347339 -1.59545" rotation="-0 90 0" nodeId="760" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="13" name="boxLS540" translation="0.00521404 0.330489 -2.99551" rotation="-0 90 0" nodeId="761" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="13" name="boxLS540" translation="-0.00757807 -0.313154 -5.43571" rotation="-0 90 0" nodeId="762" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="13" name="boxLS540" translation="-0.00546062 0.318368 -4.86693" rotation="-0 90 0" nodeId="763" materialIds="6" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="GroupName" translation="-0.041 3.06 1.07739" nodeId="764">
+            <Shape shapeId="13" name="boxLS540" translation="0.003 -0.25226 5.21937" rotation="-0 90 0" nodeId="765" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="13" name="boxLS540" translation="0.00342196 -0.25226 3.93652" rotation="-0 90 0" nodeId="766" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="13" name="boxLS540" translation="0.00342202 -0.25226 2.63854" rotation="-0 90 0" nodeId="767" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="13" name="boxLS540" translation="0.00742203 0.376 3.23818" rotation="-0 90 0" nodeId="768" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="13" name="boxLS540" translation="0.00754243 0.376 4.55586" rotation="-0 90 0" nodeId="769" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="13" name="boxLS540" translation="-0.00757802 -0.254 0.0546529" rotation="-0 90 0" nodeId="770" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="13" name="boxLS540" translation="-0.00257802 -0.254 1.34557" rotation="-0 90 0" nodeId="771" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="13" name="boxLS540" translation="-0.00515157 0.376 1.81286" rotation="-0 90 0" nodeId="772" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="13" name="boxLS540" translation="0.015422 0.376 0.300585" rotation="-90.0002 89.3084 -90.0002" nodeId="773" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="13" name="boxLS540" translation="-0.00757802 -0.254 -1.33299" rotation="-0 90 0" nodeId="774" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="13" name="boxLS540" translation="-0.00757802 -0.254 -2.75239" rotation="-0 90 0" nodeId="775" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="13" name="boxLS540" translation="-0.00757802 -0.254 -4.12316" rotation="-0 90 0" nodeId="776" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="13" name="boxLS540" translation="0.0052141 0.376 -1.59545" rotation="-0 90 0" nodeId="777" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="13" name="boxLS540" translation="0.00521404 0.376 -2.99551" rotation="-0 90 0" nodeId="778" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="13" name="boxLS540" translation="-0.00757807 -0.254 -5.43571" rotation="-0 90 0" nodeId="779" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="13" name="boxLS540" translation="-0.00546062 0.376 -4.86693" rotation="-0 90 0" nodeId="780" materialIds="6" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="Col" translation="0 3.36948 0.420345" nodeId="781">
+          <Shape shapeId="14" name="colPart0" translation="0 -0.433633 4.5032" visibility="false" compoundChild="true" collisionMask="2109442" density="0.0001" nodeId="782" materialIds="35" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="15" name="colPart1" translation="0 -0.776695 -0.955665" visibility="false" compoundChild="true" collisionMask="2109442" nodeId="783" materialIds="35" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="16" name="colPart2" translation="0 -0.821813 -5.47099" visibility="false" compoundChild="true" collisionMask="2109442" density="0.0001" nodeId="784" materialIds="35" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        </TransformGroup>
+        <TransformGroup name="farmInfo_vis" nodeId="785">
+          <TransformGroup name="DennisK" visibility="false" nodeId="786">
+            <Shape shapeId="17" name="farmLogo_l" translation="1.3139 3.68609 -5.08212" rotation="-90 90 180" nodeId="787" materialIds="8" distanceBlending="false"/>
+            <Shape shapeId="17" name="farmLogo_r" translation="-1.314 3.68609 -5.08212" rotation="-90 -90 -180" nodeId="788" materialIds="8" distanceBlending="false"/>
+            <Shape shapeId="17" name="farmLogo_b" translation="0 4.20235 -6.39531" rotation="-90 0 180" scale="0.5 1 0.5" nodeId="789" materialIds="8" distanceBlending="false"/>
+            <Shape shapeId="17" name="farmName_l" translation="1.3107 3.593 4.54676" rotation="90 90 2.41563e-05" scale="1.75 1 1.75" nodeId="790" materialIds="17" distanceBlending="false"/>
+            <Shape shapeId="17" name="farmName_r" translation="-1.311 3.59349 4.54676" rotation="-90 -90 180" scale="1.75 1 1.75" nodeId="791" materialIds="17" distanceBlending="false"/>
+            <Shape shapeId="17" name="farmName_b" translation="0 1.46371 -6.3345" rotation="-90 0 180" nodeId="792" materialIds="17" distanceBlending="false"/>
+            <Shape shapeId="17" name="farmSlogan_b" translation="-4.98733e-07 2.9946 -6.334" rotation="-90 0 180" nodeId="793" materialIds="26" distanceBlending="false"/>
+          </TransformGroup>
+          <TransformGroup name="farm1" visibility="false" nodeId="794">
+            <Shape shapeId="17" name="farmLogo_l" translation="1.314 3.686 -5.082" rotation="-90 90 180" scale="0.75 1 0.75" nodeId="795" materialIds="9" distanceBlending="false"/>
+            <Shape shapeId="17" name="farmLogo_r" translation="-1.314 3.686 -5.082" rotation="-90 -90 -180" scale="0.75 1 0.75" nodeId="796" materialIds="9" distanceBlending="false"/>
+            <Shape shapeId="17" name="farmLogo_b" translation="0 4.22058 -6.395" rotation="-90 0 180" scale="0.3 1 0.3" nodeId="797" materialIds="9" distanceBlending="false"/>
+            <Shape shapeId="17" name="farmName_l" translation="1.311 3.593 4.547" rotation="90 90 0" scale="1.75 1 1.75" nodeId="798" materialIds="18" distanceBlending="false"/>
+            <Shape shapeId="17" name="farmName_r" translation="-1.311 3.593 4.547" rotation="-90 -90 180" scale="1.75 1 1.75" nodeId="799" materialIds="18" distanceBlending="false"/>
+            <Shape shapeId="17" name="farmName_b" translation="0 1.464 -6.334" rotation="-90 0 180" nodeId="800" materialIds="18" distanceBlending="false"/>
+            <Shape shapeId="17" name="farmSlogan_b" translation="0 2.995 -6.334" rotation="-90 0 180" nodeId="801" materialIds="27" distanceBlending="false"/>
+          </TransformGroup>
+          <TransformGroup name="farm2" visibility="false" nodeId="802">
+            <Shape shapeId="17" name="farmLogo_l" translation="1.314 3.686 -5.082" rotation="-90 90 180" scale="0.75 1 0.75" nodeId="803" materialIds="10" distanceBlending="false"/>
+            <Shape shapeId="17" name="farmLogo_r" translation="-1.314 3.686 -5.082" rotation="-90 -90 -180" scale="0.75 1 0.75" nodeId="804" materialIds="10" distanceBlending="false"/>
+            <Shape shapeId="17" name="farmLogo_b" translation="0 4.202 -6.395" rotation="-90 0 180" scale="0.3 1 0.3" nodeId="805" materialIds="10" distanceBlending="false"/>
+            <Shape shapeId="17" name="farmName_l" translation="1.311 3.593 4.547" rotation="90 90 0" scale="1.75 1 1.75" nodeId="806" materialIds="19" distanceBlending="false"/>
+            <Shape shapeId="17" name="farmName_r" translation="-1.311 3.593 4.547" rotation="-90 -90 180" scale="1.75 1 1.75" nodeId="807" materialIds="19" distanceBlending="false"/>
+            <Shape shapeId="17" name="farmName_b" translation="0 1.464 -6.334" rotation="-90 0 180" nodeId="808" materialIds="19" distanceBlending="false"/>
+            <Shape shapeId="17" name="farmSlogan_b" translation="0 2.995 -6.334" rotation="-90 0 180" nodeId="809" materialIds="28" distanceBlending="false"/>
+          </TransformGroup>
+          <TransformGroup name="farm3" visibility="false" nodeId="810">
+            <Shape shapeId="17" name="farmLogo_l" translation="1.314 3.686 -5.082" rotation="-90 90 180" scale="0.75 1 0.75" nodeId="811" materialIds="11" distanceBlending="false"/>
+            <Shape shapeId="17" name="farmLogo_r" translation="-1.314 3.686 -5.082" rotation="-90 -90 -180" scale="0.75 1 0.75" nodeId="812" materialIds="11" distanceBlending="false"/>
+            <Shape shapeId="17" name="farmLogo_b" translation="0 4.202 -6.395" rotation="-90 0 180" scale="0.3 1 0.3" nodeId="813" materialIds="11" distanceBlending="false"/>
+            <Shape shapeId="17" name="farmName_l" translation="1.311 3.593 4.547" rotation="90 90 0" scale="1.75 1 1.75" nodeId="814" materialIds="20" distanceBlending="false"/>
+            <Shape shapeId="17" name="farmName_r" translation="-1.311 3.593 4.547" rotation="-90 -90 180" scale="1.75 1 1.75" nodeId="815" materialIds="20" distanceBlending="false"/>
+            <Shape shapeId="17" name="farmName_b" translation="0 1.464 -6.334" rotation="-90 0 180" nodeId="816" materialIds="20" distanceBlending="false"/>
+            <Shape shapeId="17" name="farmSlogan_b" translation="0 2.995 -6.334" rotation="-90 0 180" nodeId="817" materialIds="29" distanceBlending="false"/>
+          </TransformGroup>
+          <TransformGroup name="farm4" visibility="false" nodeId="818">
+            <Shape shapeId="17" name="farmLogo_l" translation="1.314 3.686 -5.082" rotation="-90 90 180" scale="0.75 1 0.75" nodeId="819" materialIds="12" distanceBlending="false"/>
+            <Shape shapeId="17" name="farmLogo_r" translation="-1.314 3.686 -5.082" rotation="-90 -90 -180" scale="0.75 1 0.75" nodeId="820" materialIds="12" distanceBlending="false"/>
+            <Shape shapeId="17" name="farmLogo_b" translation="0 4.202 -6.395" rotation="-90 0 180" scale="0.3 1 0.3" nodeId="821" materialIds="12" distanceBlending="false"/>
+            <Shape shapeId="17" name="farmName_l" translation="1.311 3.593 4.547" rotation="90 90 0" scale="1.75 1 1.75" nodeId="822" materialIds="21" distanceBlending="false"/>
+            <Shape shapeId="17" name="farmName_r" translation="-1.311 3.593 4.547" rotation="-90 -90 180" scale="1.75 1 1.75" nodeId="823" materialIds="21" distanceBlending="false"/>
+            <Shape shapeId="17" name="farmName_b" translation="0 1.464 -6.334" rotation="-90 0 180" nodeId="824" materialIds="21" distanceBlending="false"/>
+            <Shape shapeId="17" name="farmSlogan_b" translation="0 2.995 -6.334" rotation="-90 0 180" nodeId="825" materialIds="30" distanceBlending="false"/>
+          </TransformGroup>
+          <TransformGroup name="farm5" visibility="false" nodeId="826">
+            <Shape shapeId="17" name="farmLogo_l" translation="1.314 3.686 -5.082" rotation="-90 90 180" scale="0.75 1 0.75" nodeId="827" materialIds="13" distanceBlending="false"/>
+            <Shape shapeId="17" name="farmLogo_r" translation="-1.314 3.686 -5.082" rotation="-90 -90 -180" scale="0.75 1 0.75" nodeId="828" materialIds="13" distanceBlending="false"/>
+            <Shape shapeId="17" name="farmLogo_b" translation="0 4.202 -6.395" rotation="-90 0 180" scale="0.3 1 0.3" nodeId="829" materialIds="13" distanceBlending="false"/>
+            <Shape shapeId="17" name="farmName_l" translation="1.311 3.593 4.547" rotation="90 90 0" scale="1.75 1 1.75" nodeId="830" materialIds="22" distanceBlending="false"/>
+            <Shape shapeId="17" name="farmName_r" translation="-1.311 3.593 4.547" rotation="-90 -90 180" scale="1.75 1 1.75" nodeId="831" materialIds="22" distanceBlending="false"/>
+            <Shape shapeId="17" name="farmName_b" translation="0 1.464 -6.334" rotation="-90 0 180" nodeId="832" materialIds="22" distanceBlending="false"/>
+            <Shape shapeId="17" name="farmSlogan_b" translation="0 2.995 -6.334" rotation="-90 0 180" nodeId="833" materialIds="31" distanceBlending="false"/>
+          </TransformGroup>
+          <TransformGroup name="farm6" visibility="false" nodeId="834">
+            <Shape shapeId="17" name="farmLogo_l" translation="1.314 3.686 -5.082" rotation="90 90 0" scale="0.75 1 0.75" nodeId="835" materialIds="14" distanceBlending="false"/>
+            <Shape shapeId="17" name="farmLogo_r" translation="-1.314 3.686 -5.082" rotation="-90 -90 -180" scale="0.75 1 0.75" nodeId="836" materialIds="14" distanceBlending="false"/>
+            <Shape shapeId="17" name="farmLogo_b" translation="0 4.202 -6.395" rotation="-90 0 180" scale="0.3 1 0.3" nodeId="837" materialIds="14" distanceBlending="false"/>
+            <Shape shapeId="17" name="farmName_l" translation="1.311 3.593 4.547" rotation="90 90 0" scale="1.75 1 1.75" nodeId="838" materialIds="23" distanceBlending="false"/>
+            <Shape shapeId="17" name="farmName_r" translation="-1.311 3.593 4.547" rotation="-90 -90 180" scale="1.75 1 1.75" nodeId="839" materialIds="23" distanceBlending="false"/>
+            <Shape shapeId="17" name="farmName_b" translation="0 1.464 -6.334" rotation="-90 0 180" nodeId="840" materialIds="23" distanceBlending="false"/>
+            <Shape shapeId="17" name="farmSlogan_b" translation="0 2.995 -6.334" rotation="-90 0 180" nodeId="841" materialIds="32" distanceBlending="false"/>
+          </TransformGroup>
+          <TransformGroup name="farm7" visibility="false" nodeId="842">
+            <Shape shapeId="17" name="farmLogo_l" translation="1.314 3.686 -5.082" rotation="-90 90 180" scale="0.75 1 0.75" nodeId="843" materialIds="15" distanceBlending="false"/>
+            <Shape shapeId="17" name="farmLogo_r" translation="-1.314 3.686 -5.082" rotation="-90 -90 -180" scale="0.75 1 0.75" nodeId="844" materialIds="15" distanceBlending="false"/>
+            <Shape shapeId="17" name="farmLogo_b" translation="0 4.202 -6.395" rotation="-90 0 180" scale="0.3 1 0.3" nodeId="845" materialIds="15" distanceBlending="false"/>
+            <Shape shapeId="17" name="farmName_l" translation="1.311 3.593 4.547" rotation="90 90 0" scale="1.75 1 1.75" nodeId="846" materialIds="24" distanceBlending="false"/>
+            <Shape shapeId="17" name="farmName_r" translation="-1.311 3.593 4.547" rotation="-90 -90 180" scale="1.75 1 1.75" nodeId="847" materialIds="24" distanceBlending="false"/>
+            <Shape shapeId="17" name="farmName_b" translation="0 1.464 -6.334" rotation="-90 0 180" nodeId="848" materialIds="24" distanceBlending="false"/>
+            <Shape shapeId="17" name="farmSlogan_b" translation="0 2.995 -6.334" rotation="-90 0 180" nodeId="849" materialIds="33" distanceBlending="false"/>
+          </TransformGroup>
+          <TransformGroup name="farm8" visibility="false" nodeId="850">
+            <Shape shapeId="17" name="farmLogo_l" translation="1.314 3.686 -5.082" rotation="-90 90 180" scale="0.75 1 0.75" nodeId="851" materialIds="16" distanceBlending="false"/>
+            <Shape shapeId="17" name="farmLogo_r" translation="-1.314 3.686 -5.082" rotation="-90 -90 180" scale="0.75 1 0.75" nodeId="852" materialIds="16" distanceBlending="false"/>
+            <Shape shapeId="17" name="farmLogo_b" translation="0 4.21802 -6.395" rotation="-90 0 180" scale="0.3 1 0.3" nodeId="853" materialIds="16" distanceBlending="false"/>
+            <Shape shapeId="17" name="farmName_l" translation="1.311 3.65383 4.547" rotation="90 90 0" scale="1.75 1 1.75" nodeId="854" materialIds="25" distanceBlending="false"/>
+            <Shape shapeId="17" name="farmName_r" translation="-1.311 3.65383 4.547" rotation="-90 -90 180" scale="1.75 1 1.75" nodeId="855" materialIds="25" distanceBlending="false"/>
+            <Shape shapeId="17" name="farmName_b" translation="0 1.464 -6.33197" rotation="-90 0 180" scale="1.75 1 1.75" nodeId="856" materialIds="25" distanceBlending="false"/>
+            <Shape shapeId="17" name="farmSlogan_b" translation="0 2.995 -6.332" rotation="-90 0 180" scale="1.5 1 1.5" nodeId="857" materialIds="34" distanceBlending="false"/>
+          </TransformGroup>
+        </TransformGroup>
+      </Shape>
+      <Camera name="Working camera" translation="-0.0714424 3.81924 -9.96725" rotation="171.062 -2.55069 -180" nodeId="858" fov="60" nearClip="0.1" farClip="10000" orthographicHeight="1"/>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="726">
+      <Attribute name="miLabel" type="integer" value="0"/>
+    </UserAttribute>
+    <UserAttribute nodeId="727">
+      <Attribute name="miLabel" type="integer" value="0"/>
+    </UserAttribute>
+    <UserAttribute nodeId="730">
+      <Attribute name="miLabel" type="integer" value="0"/>
+    </UserAttribute>
+    <UserAttribute nodeId="732">
+      <Attribute name="miLabel" type="integer" value="0"/>
+    </UserAttribute>
+    <UserAttribute nodeId="734">
+      <Attribute name="miLabel" type="integer" value="0"/>
+    </UserAttribute>
+    <UserAttribute nodeId="735">
+      <Attribute name="miLabel" type="integer" value="0"/>
+    </UserAttribute>
+    <UserAttribute nodeId="740">
+      <Attribute name="miLabel" type="integer" value="0"/>
+    </UserAttribute>
+    <UserAttribute nodeId="741">
+      <Attribute name="miLabel" type="integer" value="0"/>
+    </UserAttribute>
+    <UserAttribute nodeId="742">
+      <Attribute name="miLabel" type="integer" value="0"/>
+    </UserAttribute>
+    <UserAttribute nodeId="743">
+      <Attribute name="miLabel" type="integer" value="0"/>
+    </UserAttribute>
+    <UserAttribute nodeId="744">
+      <Attribute name="miLabel" type="integer" value="0"/>
+    </UserAttribute>
+    <UserAttribute nodeId="745">
+      <Attribute name="miLabel" type="integer" value="0"/>
+    </UserAttribute>
+  </UserAttributes>
+
+</i3D>

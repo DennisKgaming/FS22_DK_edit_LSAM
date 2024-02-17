@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<modDesc descVersion="64">
+    <author>Vanquish081</author>
+	<contributor>DennisK</contributor>
+    <version>1.0.0.0</version>
+    <title>
+<en>Lizard AM Transport Cattle DK Edit</en>
+<de>Lizard AM Tiertransporter DK Edit</de>
+    </title>
+<description>
+<en><![CDATA[Lizard AM Transport Cattle
+
+Model LS-540:
+- 56 Cows
+- 64 Pigs
+- 108 Sheeps
+- 38 Horses
+- 322 Chickens
+
+- Price: 98.000 $
+- Wheel configuration]]></en>
+<de><![CDATA[Lizard AM Tiertransport-Anhänger
+
+LS-540:
+- 56 Kühe
+- 64 Schweine
+- 108 Schafe
+- 38 Pferde
+- 322 Hühner
+
+- Preis: 98.000 €
+- Reifenkonfiguration]]></de>
+<es><![CDATA[Lizard AM Transporte Ganado
+
+Modelo LS-540:
+- 56 vacas
+- 64 cerdos
+- 108 ovejas
+- 38 caballos
+- 322 gallinas
+
+- Precio: 98.000 €
+- Selección de ruedas.]]></es>
+</description>
+	
+    <iconFilename>icons/icon.dds</iconFilename>
+    <multiplayer supported="true"/>
+	
+	<l10n>
+		<text name="Kuhn_White">
+			<en>Ivory White</en>
+			<de>Elfenbeinweiß</de>
+			<es>Blanco Marfil</es>
+		</text>
+		<text name="farminfo_farm1">
+			<en>Farm 1</en>
+		</text>
+		<text name="farminfo_farm2">
+			<en>Farm 2</en>
+		</text>
+		<text name="farminfo_farm3">
+			<en>Farm 3</en>
+		</text>
+		<text name="farminfo_farm4">
+			<en>Farm 4</en>
+		</text>
+		<text name="farminfo_farm5">
+			<en>Farm 5</en>
+		</text>
+		<text name="farminfo_farm6">
+			<en>Farm 6</en>
+		</text>
+		<text name="farminfo_farm7">
+			<en>Farm 7</en>
+		</text>
+		<text name="farminfo_farm8">
+			<en>Farm 8</en>
+		</text>
+	</l10n>
+    <storeItems>
+        <storeItem xmlFilename="xml/LS540.xml"/>
+    </storeItems>
+	
+	<extraSourceFiles>
+        <sourceFile filename="scripts/categorizer.lua"/>
+    </extraSourceFiles>
+
+	<newcategory name="DennisKtools" title="DennisK" type="TOOL" img="Categories/CategoryTools.png" />
+	
+</modDesc>
